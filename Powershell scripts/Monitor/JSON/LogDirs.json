@@ -1,0 +1,22 @@
+{
+  "LogDirectories":[
+    {
+      "name":"Test1",
+      "expectedsize":"90000",
+      "location":"D:\\TestDirectories\\Test1",
+      "retention":"10"
+    },
+    {
+      "name":"Test2",
+      "expectedsize":"70000",
+      "location":"D:\\TestDirectories\\Test2",
+      "retention":"10"
+    },
+    {
+      "name":"Test3",
+      "expectedsize":"90000",
+      "location":"D:\\TestDirectories\\Test3",
+      "retention":"10"
+    }
+  ]
+}

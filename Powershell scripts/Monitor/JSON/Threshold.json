@@ -1,0 +1,34 @@
+{
+  "DiskThresholds":[
+    {
+      "name":"D",
+      "value":"99.08342"
+    },
+    {
+      "name":"C",
+      "value":"10"
+    }
+  ],
+  "MemoryThresholds":[
+    {
+      "name":"Avaliable Bytes",
+      "value":"500"
+    },
+    {
+      "name":"Committed Bytes",
+      "value":"6000"
+    }
+  ],
+  "CPUThresholds":[
+    {
+      "name":"Processor Time",
+      "value":"80"
+    }
+  ],
+  "TCPThresholds":[
+    {
+      "name":"Connections Established",
+      "value":"8000"
+    }
+  ]
+}
