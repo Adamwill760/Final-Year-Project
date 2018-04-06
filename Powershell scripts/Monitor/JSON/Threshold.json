@@ -12,7 +12,7 @@
   "MemoryThresholds":[
     {
       "name":"Avaliable Bytes",
-      "value":"500"
+      "value":"3000"
     },
     {
       "name":"Committed Bytes",

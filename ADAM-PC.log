@@ -1,179 +1,210 @@
-<04/05/2018 15:25:20> C: Under Threshold
-<04/05/2018 15:25:20> D: Under Threshold
-<04/05/2018 15:25:26> C Threshold has been set to 10 %
-<04/05/2018 15:25:26> D Threshold has been set to 99.08342 %
-<04/05/2018 15:25:26> Memory Threshold set to 500 MB
-<04/05/2018 15:25:26> Assessing drive C...
-<04/05/2018 15:25:26> C: Under Threshold
-<04/05/2018 15:25:26> Assessing drive D...
-<04/05/2018 15:25:26> D: Under Threshold
-<04/05/2018 15:25:50> C: Under Threshold
-<04/05/2018 15:25:50> D: Under Threshold
-<04/05/2018 15:25:56> Assessing drive C...
-<04/05/2018 15:25:56> C: Under Threshold
-<04/05/2018 15:25:56> Assessing drive D...
-<04/05/2018 15:25:56> D: Under Threshold
-<04/05/2018 15:26:21> C: Under Threshold
-<04/05/2018 15:26:21> D: Under Threshold
-<04/05/2018 15:26:51> C: Under Threshold
-<04/05/2018 15:26:51> D: Under Threshold
-<04/05/2018 15:27:21> C: Under Threshold
-<04/05/2018 15:27:21> D: Under Threshold
-<04/05/2018 15:27:51> C: Under Threshold
-<04/05/2018 15:27:51> D: Under Threshold
-<04/05/2018 15:28:21> C: Under Threshold
-<04/05/2018 15:28:21> D: Under Threshold
-<04/05/2018 15:28:51> C: Under Threshold
-<04/05/2018 15:28:51> D: Under Threshold
-<04/05/2018 15:29:21> C: Under Threshold
-<04/05/2018 15:29:21> D: Under Threshold
-<04/05/2018 15:29:52> C: Under Threshold
-<04/05/2018 15:29:52> D: Under Threshold
-<04/05/2018 15:30:22> C: Under Threshold
-<04/05/2018 15:30:22> D: Under Threshold
-<04/05/2018 15:30:52> C: Under Threshold
-<04/05/2018 15:30:52> D: Under Threshold
-<04/05/2018 15:31:22> C: Under Threshold
-<04/05/2018 15:31:22> D: Under Threshold
-<04/05/2018 15:31:52> C: Under Threshold
-<04/05/2018 15:31:52> D: Under Threshold
-<04/05/2018 15:32:22> C: Under Threshold
-<04/05/2018 15:32:22> D: Under Threshold
-<04/05/2018 15:32:53> C: Under Threshold
-<04/05/2018 15:32:53> D: Under Threshold
-<04/05/2018 15:33:23> C: Under Threshold
-<04/05/2018 15:33:23> D: Under Threshold
-<04/05/2018 15:33:53> C: Under Threshold
-<04/05/2018 15:33:53> D: Under Threshold
-<04/05/2018 15:34:23> C: Under Threshold
-<04/05/2018 15:34:23> D: Under Threshold
-<04/05/2018 15:34:53> C: Under Threshold
-<04/05/2018 15:34:53> D: Under Threshold
-<04/05/2018 15:35:23> C: Under Threshold
-<04/05/2018 15:35:23> D: Under Threshold
-<04/05/2018 15:35:53> C: Under Threshold
-<04/05/2018 15:35:53> D: Under Threshold
-<04/05/2018 15:36:24> C: Under Threshold
-<04/05/2018 15:36:24> D: Under Threshold
-<04/05/2018 15:36:54> C: Under Threshold
-<04/05/2018 15:36:54> D: Under Threshold
-<04/05/2018 15:37:24> C: Under Threshold
-<04/05/2018 15:37:24> D: Under Threshold
-<04/05/2018 15:37:54> C: Under Threshold
-<04/05/2018 15:37:54> D: Under Threshold
-<04/05/2018 15:38:24> C: Under Threshold
-<04/05/2018 15:38:24> D: Under Threshold
-<04/05/2018 15:38:54> C: Under Threshold
-<04/05/2018 15:38:54> D: Under Threshold
-<04/05/2018 15:39:25> C: Under Threshold
-<04/05/2018 15:39:25> D: Under Threshold
-<04/05/2018 15:39:55> C: Under Threshold
-<04/05/2018 15:39:55> D: Under Threshold
-<04/05/2018 15:40:25> C: Under Threshold
-<04/05/2018 15:40:25> D: Under Threshold
-<04/05/2018 15:40:55> C: Under Threshold
-<04/05/2018 15:40:55> D: Under Threshold
-<04/05/2018 15:41:25> C: Under Threshold
-<04/05/2018 15:41:25> D: Under Threshold
-<04/05/2018 15:41:55> C: Under Threshold
-<04/05/2018 15:41:55> D: Under Threshold
-<04/05/2018 15:42:25> C: Under Threshold
-<04/05/2018 15:42:25> D: Under Threshold
-<04/05/2018 15:42:56> C: Under Threshold
-<04/05/2018 15:42:56> D: Under Threshold
-<04/05/2018 15:43:26> C: Under Threshold
-<04/05/2018 15:43:26> D: Under Threshold
-<04/05/2018 15:43:56> C: Under Threshold
-<04/05/2018 15:43:56> D: Under Threshold
-<04/05/2018 15:44:26> C: Under Threshold
-<04/05/2018 15:44:26> D: Under Threshold
-<04/05/2018 15:44:56> C: Under Threshold
-<04/05/2018 15:44:56> D: Under Threshold
-<04/05/2018 15:45:26> C: Under Threshold
-<04/05/2018 15:45:26> D: Under Threshold
-<04/05/2018 15:45:57> C: Under Threshold
-<04/05/2018 15:45:57> D: Under Threshold
-<04/05/2018 15:46:27> C: Under Threshold
-<04/05/2018 15:46:27> D: Under Threshold
-<04/05/2018 15:46:57> C: Under Threshold
-<04/05/2018 15:46:57> D: Under Threshold
-<04/05/2018 15:47:27> C: Under Threshold
-<04/05/2018 15:47:27> D: Under Threshold
-<04/05/2018 15:47:57> C: Under Threshold
-<04/05/2018 15:47:57> D: Under Threshold
-<04/05/2018 15:48:27> C: Under Threshold
-<04/05/2018 15:48:27> D: Under Threshold
-<04/05/2018 15:48:58> C: Under Threshold
-<04/05/2018 15:48:58> D: Under Threshold
-<04/05/2018 15:49:28> C: Under Threshold
-<04/05/2018 15:49:28> D: Under Threshold
-<04/05/2018 15:49:58> C: Under Threshold
-<04/05/2018 15:49:58> D: Under Threshold
-<04/05/2018 15:50:28> C: Under Threshold
-<04/05/2018 15:50:28> D: Under Threshold
-<04/05/2018 15:50:58> C: Under Threshold
-<04/05/2018 15:50:58> D: Under Threshold
-<04/05/2018 15:51:28> C: Under Threshold
-<04/05/2018 15:51:28> D: Under Threshold
-<04/05/2018 15:51:59> C: Under Threshold
-<04/05/2018 15:51:59> D: Under Threshold
-<04/05/2018 15:52:29> C: Under Threshold
-<04/05/2018 15:52:29> D: Under Threshold
-<04/05/2018 15:52:59> C: Under Threshold
-<04/05/2018 15:52:59> D: Under Threshold
-<04/05/2018 15:53:29> C: Under Threshold
-<04/05/2018 15:53:29> D: Under Threshold
-<04/05/2018 15:53:59> C: Under Threshold
-<04/05/2018 15:53:59> D: Under Threshold
-<04/05/2018 15:54:30> C: Under Threshold
-<04/05/2018 15:54:30> D: Under Threshold
-<04/05/2018 15:55:00> C: Under Threshold
-<04/05/2018 15:55:00> D: Under Threshold
-<04/05/2018 15:55:30> C: Under Threshold
-<04/05/2018 15:55:30> D: Under Threshold
-<04/05/2018 15:56:00> C: Under Threshold
-<04/05/2018 15:56:00> D: Under Threshold
-<04/05/2018 15:56:30> C: Under Threshold
-<04/05/2018 15:56:30> D: Under Threshold
-<04/05/2018 15:57:00> C: Under Threshold
-<04/05/2018 15:57:00> D: Under Threshold
-<04/05/2018 15:57:30> C: Under Threshold
-<04/05/2018 15:57:30> D: Under Threshold
-<04/05/2018 15:58:01> C: Under Threshold
-<04/05/2018 15:58:01> D: Under Threshold
-<04/05/2018 15:58:31> C: Under Threshold
-<04/05/2018 15:58:31> D: Under Threshold
-<04/05/2018 15:59:01> C: Under Threshold
-<04/05/2018 15:59:01> D: Under Threshold
-<04/05/2018 15:59:31> C: Under Threshold
-<04/05/2018 15:59:31> D: Under Threshold
-<04/05/2018 16:00:01> C: Under Threshold
-<04/05/2018 16:00:01> D: Under Threshold
-<04/05/2018 16:00:31> C: Under Threshold
-<04/05/2018 16:00:31> D: Under Threshold
-<04/05/2018 16:01:02> C: Under Threshold
-<04/05/2018 16:01:02> D: Under Threshold
-<04/05/2018 16:01:32> C: Under Threshold
-<04/05/2018 16:01:32> D: Under Threshold
-<04/05/2018 16:02:02> C: Under Threshold
-<04/05/2018 16:02:02> D: Under Threshold
-<04/05/2018 16:02:32> C: Under Threshold
-<04/05/2018 16:02:32> D: Under Threshold
-<04/05/2018 16:03:02> C: Under Threshold
-<04/05/2018 16:03:02> D: Under Threshold
-<04/05/2018 16:03:33> C: Under Threshold
-<04/05/2018 16:03:33> D: Under Threshold
-<04/05/2018 16:04:03> C: Under Threshold
-<04/05/2018 16:04:03> D: Under Threshold
-<04/05/2018 16:04:33> C: Under Threshold
-<04/05/2018 16:04:33> D: Under Threshold
-<04/05/2018 16:05:03> C: Under Threshold
-<04/05/2018 16:05:03> D: Under Threshold
-<04/05/2018 16:05:33> C: Under Threshold
-<04/05/2018 16:05:33> D: Under Threshold
-<04/05/2018 16:06:04> C: Under Threshold
-<04/05/2018 16:06:04> D: Under Threshold
-<04/05/2018 16:06:34> C: Under Threshold
-<04/05/2018 16:06:34> D: Under Threshold
-<04/05/2018 16:07:04> C: Under Threshold
-<04/05/2018 16:07:04> D: Under Threshold
+<04/06/2018 10:13:58> C Threshold has been set to 10 %
+<04/06/2018 10:13:58> D Threshold has been set to 99.08342 %
+<04/06/2018 10:13:58> Memory Threshold set to 3000 MB
+<04/06/2018 10:13:59> Assessing drive C...
+<04/06/2018 10:13:59> C: Under Threshold
+<04/06/2018 10:13:59> Assessing drive D...
+<04/06/2018 10:13:59> D: Under Threshold
+<04/06/2018 10:13:59> Assessing Memory usage...
+<04/06/2018 10:13:59> Avaliable bytes under threshold at 2886 MB
+<04/06/2018 10:13:59> 0 MB from unresponsive processes
+<04/06/2018 10:13:59> WINWORD rule has a running process
+<04/06/2018 10:13:59> WINWORD working set exceeds expected and can be terminated
+<04/06/2018 10:13:59> WINWORD terminated
+<04/06/2018 10:13:59> No Test process running
+<04/06/2018 10:13:59> 37.25390625 total MB recovered
+<04/06/2018 10:14:29> Assessing drive C...
+<04/06/2018 10:14:29> C: Under Threshold
+<04/06/2018 10:14:29> Assessing drive D...
+<04/06/2018 10:14:29> D: Under Threshold
+<04/06/2018 10:14:29> Assessing Memory usage...
+<04/06/2018 10:14:29> Avaliable bytes under threshold at 2972 MB
+<04/06/2018 10:14:29> Action already taken no more memory can be cleared
+<04/06/2018 10:15:00> Assessing drive C...
+<04/06/2018 10:15:00> C: Under Threshold
+<04/06/2018 10:15:00> Assessing drive D...
+<04/06/2018 10:15:00> D: Under Threshold
+<04/06/2018 10:15:00> Assessing Memory usage...
+<04/06/2018 10:15:00> Avaliable bytes under threshold at 2959 MB
+<04/06/2018 10:15:00> Action already taken no more memory can be cleared
+<04/06/2018 10:15:30> Assessing drive C...
+<04/06/2018 10:15:30> C: Under Threshold
+<04/06/2018 10:15:30> Assessing drive D...
+<04/06/2018 10:15:30> D: Under Threshold
+<04/06/2018 10:15:30> Assessing Memory usage...
+<04/06/2018 10:15:30> Avaliable bytes under threshold at 2970 MB
+<04/06/2018 10:15:30> Action already taken no more memory can be cleared
+<04/06/2018 10:16:00> Assessing drive C...
+<04/06/2018 10:16:00> C: Under Threshold
+<04/06/2018 10:16:00> Assessing drive D...
+<04/06/2018 10:16:00> D: Under Threshold
+<04/06/2018 10:16:00> Assessing Memory usage...
+<04/06/2018 10:16:00> Avaliable bytes under threshold at 2966 MB
+<04/06/2018 10:16:00> Action already taken no more memory can be cleared
+<04/06/2018 10:16:31> Assessing drive C...
+<04/06/2018 10:16:31> C: Under Threshold
+<04/06/2018 10:16:31> Assessing drive D...
+<04/06/2018 10:16:31> D: Under Threshold
+<04/06/2018 10:16:31> Assessing Memory usage...
+<04/06/2018 10:16:31> Memory usage under threshold
+<04/06/2018 10:17:01> Assessing drive C...
+<04/06/2018 10:17:01> C: Under Threshold
+<04/06/2018 10:17:01> Assessing drive D...
+<04/06/2018 10:17:01> D: Under Threshold
+<04/06/2018 10:17:01> Assessing Memory usage...
+<04/06/2018 10:17:01> Memory usage under threshold
+<04/06/2018 10:17:31> Assessing drive C...
+<04/06/2018 10:17:31> C: Under Threshold
+<04/06/2018 10:17:31> Assessing drive D...
+<04/06/2018 10:17:31> D: Under Threshold
+<04/06/2018 10:17:31> Assessing Memory usage...
+<04/06/2018 10:17:31> Memory usage under threshold
+<04/06/2018 10:18:01> Assessing drive C...
+<04/06/2018 10:18:01> C: Under Threshold
+<04/06/2018 10:18:01> Assessing drive D...
+<04/06/2018 10:18:01> D: Under Threshold
+<04/06/2018 10:18:02> Assessing Memory usage...
+<04/06/2018 10:18:02> Avaliable bytes under threshold at 2964 MB
+<04/06/2018 10:18:02> 0 MB from unresponsive processes
+<04/06/2018 10:18:02> WINWORD rule has a running process
+<04/06/2018 10:18:02> WINWORD working set exceeds expected and can be terminated
+<04/06/2018 10:18:02> WINWORD terminated
+<04/06/2018 10:18:02> No Test process running
+<04/06/2018 10:18:02> 39.6171875 total MB recovered
+<04/06/2018 11:00:19> firefox Not responding, currently 214151168 MB allocated to this 
+<04/06/2018 11:00:19> notepad Not responding, currently 14090240 MB allocated to this 
+<04/06/2018 11:00:19> System.Object[] have been terminated
+<04/06/2018 11:14:45> 0 MB from unresponsive processes
+<04/06/2018 11:17:03> No processes where found unresponsive
+<04/06/2018 11:17:03> 0 MB from unresponsive processes
+<04/06/2018 11:17:25> No processes where found unresponsive
+<04/06/2018 11:17:25> 0 MB from unresponsive processes
+<04/06/2018 11:34:46> No processes where found unresponsive
+<04/06/2018 11:34:46> 0 MB from unresponsive processes
+<04/06/2018 11:35:11> No processes where found unresponsive
+<04/06/2018 11:35:11>  from unresponsive processes
+<04/06/2018 11:38:35> No processes were found unresponsive
+<04/06/2018 11:39:11> No processes where found unresponsive
+<04/06/2018 11:39:11>  from unresponsive processes
+<04/06/2018 11:39:59> No processes where found unresponsive
+<04/06/2018 11:39:59>  from unresponsive processes
+<04/06/2018 11:41:08> No processes were found unresponsive
+<04/06/2018 11:41:08>  from unresponsive processes
+<04/06/2018 11:44:22> No processes were found unresponsive
+<04/06/2018 11:44:22>  from unresponsive processes
+<04/06/2018 11:45:11> No processes were found unresponsive
+<04/06/2018 11:45:36> No processes were found unresponsive
+<04/06/2018 11:46:28> No processes were found unresponsive
+<04/06/2018 11:46:28> WINWORD rule has a running process
+<04/06/2018 11:46:28> WINWORD working set exceeds expected and can be terminated
+<04/06/2018 11:46:28> WINWORD terminated
+<04/06/2018 11:46:28> No Test process running
+<04/06/2018 11:46:28> 31.9609375 total MB recovered
+<04/06/2018 12:14:21> No processes were found unresponsive
+<04/06/2018 12:14:21> No WINWORD process running
+<04/06/2018 12:14:21> No Test process running
+<04/06/2018 12:14:21> 0 total Working Set recovered
+<04/06/2018 12:15:30> No processes were found unresponsive
+<04/06/2018 12:15:30> No WINWORD process running
+<04/06/2018 12:15:30> No Test process running
+<04/06/2018 12:15:30> 0 total MB recovered
+<04/06/2018 12:15:35> No processes were found unresponsive
+<04/06/2018 12:15:35> No WINWORD process running
+<04/06/2018 12:15:35> No Test process running
+<04/06/2018 12:15:35>  total CPU recovered
+<04/06/2018 12:30:13> No processes were found unresponsive
+<04/06/2018 12:30:13> No WINWORD process running
+<04/06/2018 12:30:13> No Test process running
+<04/06/2018 12:30:13>  total CPU recovered
+<04/06/2018 12:31:29> No processes were found unresponsive
+<04/06/2018 12:31:29> No WINWORD process running
+<04/06/2018 12:31:30> No Test process running
+<04/06/2018 12:31:30>  total CPU recovered
+<04/06/2018 12:35:26> No processes were found unresponsive
+<04/06/2018 12:35:26> No WINWORD process running
+<04/06/2018 12:35:26> No Test process running
+<04/06/2018 12:35:26> 0 total CPU recovered
+<04/06/2018 13:30:32> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/06/2018 13:30:32> C Threshold has been set to 10 %
+<04/06/2018 13:30:32> D Threshold has been set to 99.08342 %
+<04/06/2018 13:30:32> Memory Threshold set to 3000 MB
+<04/06/2018 13:30:32> CPU Threshold set to 80
+<04/06/2018 13:30:33> Assessing drive C...
+<04/06/2018 13:30:33> C: Under Threshold
+<04/06/2018 13:30:33> Assessing drive D...
+<04/06/2018 13:30:33> D: Under Threshold
+<04/06/2018 13:30:33> Assessing Memory usage...
+<04/06/2018 13:30:33> Memory usage under threshold
+<04/06/2018 13:30:33> Assessing CPU usage...
+<04/06/2018 13:30:33> CPU usage over threshold at 16.774853
+<04/06/2018 13:30:33> No processes were found unresponsive
+<04/06/2018 13:30:33> No WINWORD process running
+<04/06/2018 13:30:33> No Test process running
+<04/06/2018 13:30:33> 0 total CPU recovered
+<04/06/2018 13:31:17> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/06/2018 13:31:17> C Threshold has been set to 10 %
+<04/06/2018 13:31:17> D Threshold has been set to 99.08342 %
+<04/06/2018 13:31:18> Memory Threshold set to 3000 MB
+<04/06/2018 13:31:18> CPU Threshold set to 80
+<04/06/2018 13:31:18> Assessing drive C...
+<04/06/2018 13:31:18> C: Under Threshold
+<04/06/2018 13:31:18> Assessing drive D...
+<04/06/2018 13:31:18> D: Under Threshold
+<04/06/2018 13:31:18> Assessing Memory usage...
+<04/06/2018 13:31:18> Avaliable bytes under threshold at 2998 MB
+<04/06/2018 13:31:18> No processes were found unresponsive
+<04/06/2018 13:31:18> No WINWORD process running
+<04/06/2018 13:31:18> No Test process running
+<04/06/2018 13:31:18> 0 total MB recovered
+<04/06/2018 13:31:18> Assessing CPU usage...
+<04/06/2018 13:31:18> CPU usage under threshold
+<04/06/2018 13:31:49> Assessing drive C...
+<04/06/2018 13:31:49> C: Under Threshold
+<04/06/2018 13:31:49> Assessing drive D...
+<04/06/2018 13:31:49> D: Under Threshold
+<04/06/2018 13:31:49> Assessing Memory usage...
+<04/06/2018 13:31:49> Avaliable bytes under threshold at 2981 MB
+<04/06/2018 13:31:49> Action already taken no more memory can be cleared
+<04/06/2018 13:31:49> Assessing CPU usage...
+<04/06/2018 13:31:49> CPU usage under threshold
+<04/06/2018 13:52:17> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/06/2018 13:52:17> ##### GATHERING ALERT THRESHOLDS #####
+<04/06/2018 13:52:17> C Threshold has been set to 10 %
+<04/06/2018 13:52:17> D Threshold has been set to 99.08342 %
+<04/06/2018 13:52:17> Memory Threshold set to 3000 MB
+<04/06/2018 13:52:17> CPU Threshold set to 80
+<04/06/2018 13:52:17> ##### ALERT THRESHOLDS SET #####
+<04/06/2018 13:52:17> ##### RUNNING DATABASE QUERIES #####
+<04/06/2018 13:52:17> ##### DATABASE QUERIES RAN #####
+<04/06/2018 13:52:17> ##### ASSESSING THRESHOLDS #####
+<04/06/2018 13:52:17> Assessing drive C...
+<04/06/2018 13:52:17> C: Under Threshold
+<04/06/2018 13:52:17> Assessing drive D...
+<04/06/2018 13:52:17> D: Under Threshold
+<04/06/2018 13:52:17> Assessing Memory usage...
+<04/06/2018 13:52:17> Avaliable bytes under threshold at 2970 MB
+<04/06/2018 13:52:17> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/06/2018 13:52:17> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/06/2018 13:52:18> No processes were found unresponsive
+<04/06/2018 13:52:18> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/06/2018 13:52:18> No WINWORD process running
+<04/06/2018 13:52:18> No Test process running
+<04/06/2018 13:52:18> 0 total MB recovered
+<04/06/2018 13:52:18> ##### END OF RESOURCE CLEARANCE #####
+<04/06/2018 13:52:18> Assessing CPU usage...
+<04/06/2018 13:52:18> CPU usage under threshold
+<04/06/2018 13:52:18> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/06/2018 13:52:48> ##### RUNNING DATABASE QUERIES #####
+<04/06/2018 13:52:48> ##### DATABASE QUERIES RAN #####
+<04/06/2018 13:52:48> ##### ASSESSING THRESHOLDS #####
+<04/06/2018 13:52:48> Assessing drive C...
+<04/06/2018 13:52:48> C: Under Threshold
+<04/06/2018 13:52:48> Assessing drive D...
+<04/06/2018 13:52:48> D: Under Threshold
+<04/06/2018 13:52:48> Assessing Memory usage...
+<04/06/2018 13:52:48> Avaliable bytes under threshold at 2965 MB
+<04/06/2018 13:52:48> Action already taken no more memory can be cleared
+<04/06/2018 13:52:48> Assessing CPU usage...
+<04/06/2018 13:52:48> CPU usage under threshold
+<04/06/2018 13:52:48> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/06/2018 15:44:52> No CPU threshold defined for Connections Established

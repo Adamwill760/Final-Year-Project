@@ -1,0 +1,16 @@
+{
+  "Processes":[
+    {
+      "name":"WINWORD",
+      "memorythreshold":"50000",
+      "cputhreshold":"4",
+      "terminatable":"true"
+    },
+    {
+      "name":"Test",
+      "memorythreshold":"5000",
+      "cputhreshold":"1",
+      "terminatable":"true"
+    }
+  ]
+}

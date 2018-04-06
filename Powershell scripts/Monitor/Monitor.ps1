@@ -4,14 +4,17 @@ $DbIP = '192.168.56.101'
 #Define the location to write the log file
 $Logfile = "D:\University work\Third Year\Final Year Project\Product\$(gc env:computername).log"
 
-#Location of the JSON files
+#Location of the JSON rule files
 $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\Threshold.json"
 $LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\LogDirs.json"
+$ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\ProcessRules.json"
 
 #Action taken boolean declaration
 $DdriveActionTaken = $false
 $CdriveActionTaken = $false
 $MemoryActionTaken = $false
+$CPUActionTaken = $false
+$TCPActionTaken = $false
 
 Function Write-Log
 {
@@ -114,67 +117,10 @@ Function Query-Database #return relative database entry as PSobject
   {
     #Set table to query
     $FROM = "win_disk"
-
-    #Check for where clause
-    if($WHERE)
-      {
-        $DBquery = "SELECT $SELECT FROM $FROM WHERE $WHERE"
-      }
-      else
-      {
-        $DBquery = "SELECT $SELECT FROM $FROM"
-      }
-      
-    #Create API request
-    $request = "http://$DbIP`:8086/query?&db=telegraf&q=$DBquery"
-    
-    #query for response
-    $response = Invoke-RestMethod -Uri $request -Method Get
-    
-    #select results array
-    $result = $response.results.series.values
-
-
-    #create custom drive object
-    $Drive = New-Object PSObject -Property @{
-      Time = $result[0][0]
-      Value = $result[0][1]
-      Instance = $result[0][2]
-      }
-      
-      return $Drive
   }
   elseif($Memory)
   {
     $FROM = "win_mem"
-
-    #Check for where clause
-    if($WHERE)
-    {
-      $DBquery = "SELECT $SELECT FROM $FROM WHERE $WHERE"
-    }
-    else
-    {
-      $DBquery = "SELECT $SELECT FROM $FROM"
-    }
-      
-    #Create API request
-    $request = "http://$DbIP`:8086/query?&db=telegraf&q=$DBquery"
-    
-    #query for response
-    $response = Invoke-RestMethod -Uri $request -Method Get
-    
-    #select results array
-    $result = $response.results.series.values
-
-    $MemoryObject = New-Object PSobject -Property @{
-                Time = $result[0][0] 
-                Kb =  [int](($result[0][1])/1KB)
-                Mb = [int](($result[0][1])/1MB)
-                Gb = "{0:n2}" -f (($result[0][1])/1GB)}
-
-    return $MemoryObject
-
   }
   elseif($CPU)
   {
@@ -182,14 +128,79 @@ Function Query-Database #return relative database entry as PSobject
   }
   elseif($TCP)
   {
-    $FROM = "win_net"
+    $FROM = "win_tcp"
   }
+
+  #Check for where clause
+  if($WHERE)
+  {
+    $DBquery = "SELECT $SELECT FROM $FROM WHERE $WHERE"
+  }
+  else
+  {
+    $DBquery = "SELECT $SELECT FROM $FROM"
+  }
+
+  #Create API request
+  $request = "http://$DbIP`:8086/query?&db=telegraf&q=$DBquery"
+  
+  #query for response
+  $response = Invoke-RestMethod -Uri $request -Method Get
+  
+  #select results array
+  $result = $response.results.series.values
+
+ if($FreeSpace)
+ {
+   #create custom drive object
+   $Drive = New-Object PSObject -Property @{
+     Time = $result[0][0]
+     Value = $result[0][1]
+     Instance = $result[0][2]
+     }
+     
+     return $Drive
+ }
+ elseif($Memory)
+ { 
+  #create custom memory object 
+  $MemoryObject = New-Object PSobject -Property @{
+              Time = $result[0][0] 
+              Kb =  [int](($result[0][1])/1KB)
+              Mb = [int](($result[0][1])/1MB)
+              Gb = "{0:n2}" -f (($result[0][1])/1GB)}
+
+ return $MemoryObject
+ }
+ elseif($CPU)
+ {
+   #create custom CPU object 
+   $CPUObject = New-Object PSobject -Property @{
+               Time = $result[0][0] 
+               ProcessorTime = $result[0][1]}
+   
+   return $CPUObject
+ }
+ elseif($TCP)
+ {
+   #create custom CPU object 
+   $TCPObject = New-Object PSobject -Property @{
+               Time = $result[0][0] 
+               ConnectionsEstablished = $result[0][1]
+               ConnectionsActive = $result[0][2]
+               ConnectionsPassive= $result[0][3]
+               }
+   
+   return $TCPObject
+ }
 }
 
 Function Clear-Drive
 {
   Param ([String]$RootDirectory,
          [String]$JsonLocation)
+
+  Write-Log "##### BEGINNING DRIVE CLEAR #####"
 
   #load file retention rules from json
   $jsonrules = get-content $JsonLocation | ConvertFrom-Json
@@ -302,17 +313,210 @@ Function Clear-Drive
       }
     }
   }
+
+  Write-Log "##### END OF DRIVE CLEAR ####"
 }
 
-Function Clear-Memory
+Function Clear-Unresponsive
 {
+  param([parameter(parametersetname="Memory",
+         Mandatory=$true)]
+        [switch]$Memory,
+        [parameter(parametersetname="CPU",
+        Mandatory=$true)]
+        [switch]$CPU,
+        [array]$Processlist
+        )
   
+  Write-Log "##### BEGINNING UNRESPONSIVE TERMINATION #####"
+
+  if($Memory)
+  {
+    $resource = "ws"
+  }
+  elseif($CPU)
+  {
+    $resource = "cpu"
+  }
+
+  #initialise empty clearing arrays
+  $UnresponsiveKilledList = @()
+  $UnresponsiveAliveList = @()
+  
+  #check each process responsive
+  foreach($Process in $ProcessList)
+  {
+    #Check whether the process is responsive / close any that arent
+    if($Process.responding -eq $false)
+    {
+     
+     if($Memory)
+     {
+       Write-Log "$($Process.Name) Not responding, currently $($Process.$resource/1MB) MB  allocated to this "
+     }
+
+     if($CPU)
+     {
+       Write-Log "$($Process.Name) Not responding, currently $($Process.$resource) CPU allocated to this "
+     }
+     
+     if(Stop-Process $Process -force -PassThru)
+     {
+       $UnresponsiveKilledList += $Process
+     }
+     else
+     {
+       $UnresponsiveAliveList += $Process
+     }
+    }
+  }
+
+  $ResourceRecovered = ($UnresponsiveKilledList | Measure-Object -Sum -Property $resource).sum
+  
+  if($UnresponsiveKilledList.count -ne 0)
+  {
+   Write-Log "$($UnresponsiveKilledList.name) have been terminated"
+  }
+  
+  if($UnresponsiveAliveList.Count -ne 0)
+  {
+   Write-Log "$($UnresponsiveAliveList.name) could not be terminated"
+ }
+  
+  if($UnresponsiveKilledList.Count -eq 0 -and $UnresponsiveAliveList.count -eq 0)
+  {
+   Write-Log "No processes were found unresponsive"
+  }
+  
+  if($ResourceRecovered -ne $null -and $Memory)
+  {
+   Write-Log "$($ResourceRecovered/1MB) MB from unresponsive processes"
+  }
+  elseif($ResourceRecovered -ne $null -and $CPU)
+  {
+   Write-Log "$ResourceRecovered from unresponsive processes"
+  }
+  
+  Write-Log "##### END OF UNRESPONSIVE TERMINATION #####"
+
+  return $ResourceRecovered
+}
+
+Function Clear-Resource
+{
+
+ param([parameter(parametersetname="Memory", Mandatory=$true)]
+       [switch]$Memory,
+       [parameter(parametersetname="CPU", Mandatory=$true)]
+       [switch]$CPU 
+       )
+
+ Write-Log "##### BEGINNING RESOURCE CLEARANCE #####"
+
+ if($Memory)
+ {
+   $resource = "ws"
+   $threshold = "MemoryThreshold"
+   $measurement = "MB"
+ }
+ elseif($CPU)
+ {
+   $resource = "CPU"
+   $threshold = "CPUThreshold"
+   $measurement = "CPU"
+ }
+
+ $ProcessRules = Get-Content $ProcessesRulesJson | ConvertFrom-Json
+
+ $ProcessList = get-process
+
+ if($Memory)
+ {
+   $ResourceRecovered = Clear-Unresponsive -Processlist $ProcessList -Memory
+ }
+ elseif($CPU)
+ {
+   $ResourceRecovered = Clear-Unresponsive -Processlist $ProcessList -CPU
+ }
+
+ foreach($ProcessRule in $ProcessRules.Processes)
+ {
+   #If running process list contains any process rules
+   if($ProcessList.name.Contains($ProcessRule.name))
+   {
+     Write-Log "$($ProcessRule.name) rule has a running process"
+
+     #Select related process to rule
+     $ComparingProcess = $ProcessList | Where-Object -Property name -Match $ProcessRule.name
+
+     #check threshold exceeded and terminatable
+     if($ComparingProcess.$resource -gt $ProcessRule.$threshold -and $ProcessRule.terminatable -eq "true")
+     {
+       Write-Log "$($ComparingProcess.name) $measurement exceeds expected and can be terminated"
+
+       if(Stop-Process $ComparingProcess -force -PassThru)
+       {
+         Write-Log "$($ComparingProcess.name) terminated"
+         $ResourceRecovered = $ResourceRecovered + $ComparingProcess.$resource
+       }
+       else
+       {
+         Write-Log "$($ComparingProcess.name) could not be terminated"
+       }
+     }
+     elseif($ComparingProcess.$resource -gt $ProcessRule.$threshold -and $ProcessRule.terminatable -eq "false")
+     {
+      Write-Log "$($ComparingProcess.Name) $measurement exceeds expected size but can not be automatically terminated"
+     }
+     elseif($ComparingProcess.$resource -lt $ProcessRule.$threshold)
+     {
+       Write-Log "$($ComparingProcess.Name) $measurement is less than threshold"
+     }
+   }
+   else
+   {
+    Write-Log "No $($ProcessRule.name) process running"
+   }
+ }
+
+ if($Memory)
+ {
+   Write-Log "$($ResourceRecovered/1MB) total $measurement recovered"
+ }
+ elseif($CPU)
+ {
+   Write-Log "$([int]$ResourceRecovered) total $measurement recovered"
+ }
+
+ Write-Log "##### END OF RESOURCE CLEARANCE #####"
+
+}
+
+Function Clear-TCPConnections
+{
+  #Get connections
+
+  #check all attached to running process
+
+  #Group by remote address
+
+  #more than normal highlight
+
+  #check creation time 
+
+  #older than X add to alert list
+
+  #produce final report
 }
 
 #Check connection to DB is live 
 if (Test-Connection $DbIP)
 {
+  Write-Log "CONNECTION TO $DbIP ESTABLISHED"
+
   #### GATHER ALERT THRESHOLDS ####
+  Write-Log "##### GATHERING ALERT THRESHOLDS #####"
+
   $CThreshold = Get-Threshold -FreeSpace -name "C"
   Write-Log "C Threshold has been set to $CThreshold %"
 
@@ -322,15 +526,41 @@ if (Test-Connection $DbIP)
   $MemoryThreshold = Get-Threshold -Memory -name "Avaliable Bytes"
   Write-Log "Memory Threshold set to $MemoryThreshold MB"
 
+  $CPUThreshold = Get-Threshold -CPU -name "Processor Time"
+  Write-Log "CPU Threshold set to $CPUThreshold"
+
+  $TCPThreshold = Get-Threshold -TCP -name "Connections Established"
+  Write-Log "TCP Threshold set to $TCPThreshold"
+
+  Write-Log "##### ALERT THRESHOLDS SET #####"
+
   #### BEGINNING OF MAIN LOOP - FUNCTIONS LOADED - THRESHOLD CHECKS CARRIED OUT HERE ####
+  
   While($true)
   {
+    ##### QUERYING DATABASE
+    Write-Log "##### RUNNING DATABASE QUERIES #####"
+
     #Initialize database entry point objects
     $CDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:'"
 
+
     $DDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:'"
 
-    $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")" 
+
+    $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")"
+
+
+    $CPUusage = Query-Database -CPU -SELECT "LAST(`"% Processor Time`")"
+
+
+    $TCPconnections = Query-Database -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`""
+
+
+    Write-Log "##### DATABASE QUERIES RAN #####"
+
+    ##### ASSESSING THRESHOLDS
+    Write-Log "##### ASSESSING THRESHOLDS #####"
 
     #Check C against threshold values
     Write-Log "Assessing drive C..."
@@ -386,10 +616,10 @@ if (Test-Connection $DbIP)
     Write-Log "Assessing Memory usage..."
     if($MemoryUsage.Mb -lt $MemoryThreshold)
     {
-      Write-Log "Avaliable bytes under threshold at $($MemoryUsage.Mb)"
+      Write-Log "Avaliable bytes under threshold at $($MemoryUsage.Mb) MB"
       if($MemoryActionTaken -eq $false)
       {
-        #### Memory clear action ####
+        Clear-Resource -Memory
         $MemoryActionTaken = $true
       }
       else
@@ -400,11 +630,51 @@ if (Test-Connection $DbIP)
     else
     {
      Write-Log "Memory usage under threshold"
+     if($MemoryActionTaken -eq $true)
+     {
+       $MemoryActionTaken = $false
+       Write-Log "Memory action taken reset to false"
+     }
     }
 
-    Write-host "Query ran, sleeping"
-    start-sleep 30 #sleep 30 until next query
+    #Check CPU against threshold
+    Write-Log "Assessing CPU usage..."
+    if($CPUusage.ProcessorTime -gt $CPUThreshold)
+    {
+      Write-Log "CPU usage over threshold at $($CPUusage.ProcessorTime)"
+      if($CPUActionTaken -eq $false)
+      {
+        Clear-Resource -CPU
+        $CPUActionTaken = $true
+      }
+      else
+      {
+        Write-Log "Action already taken no more CPU can be cleared"
+      }
+    }
+    else
+    {
+      Write-Log "CPU usage under threshold"
+      if($CPUActionTaken -eq $true)
+      {
+        $CPUActionTaken = $false
+      }
+    }
 
+    #Check TCP connection threshold
+    Write-Log "Assessing TCP connection "
+    if($TCPconnections.ConnectionsEstablished -gt $TCPThreshold)
+    {
+
+    }
+    else
+    {
+      Write-Log "TCP connections established under threshold"
+    }
+
+    ##### LOOP COMPLETE SLEEPING 30 UNTIL NEXT LOOP
+    Write-Log "##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####"
+    start-sleep 30
   }
 }
 else
