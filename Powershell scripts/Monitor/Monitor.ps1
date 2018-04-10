@@ -197,13 +197,12 @@ Function Query-Database #return relative database entry as PSobject
 
 Function Clear-Drive
 {
-  Param ([String]$RootDirectory,
-         [String]$JsonLocation)
+  Param ([String]$RootDirectory)
 
   Write-Log "##### BEGINNING DRIVE CLEAR #####"
 
   #load file retention rules from json
-  $jsonrules = get-content $JsonLocation | ConvertFrom-Json
+  $jsonrules = get-content $LogRulesJson | ConvertFrom-Json
 
   #initialise empty directory array
   $directoryarray = @()
@@ -494,19 +493,94 @@ Function Clear-Resource
 
 Function Clear-TCPConnections
 {
-  #Get connections
+  write-log "##### BEGINNING TCP CONNECTION TROUBLESHOOT #####"
+  
+  $Connections = Get-NetTCPConnection -State Established
 
-  #check all attached to running process
+  $ownedconnections = @()
+  $unowndedconnections = @()
 
-  #Group by remote address
+  $oldconnections = @()
 
-  #more than normal highlight
+  $externalconnections = @()
+  $internalconnections = @()
 
-  #check creation time 
+  #Ensure every connection has attached responding owning process
+  foreach($Connection in $Connections)
+  {
+    $owningprocess = $Connection.OwningProcess
+    if(get-process -ID $owningprocess)
+    {
+      if((get-process -ID $owningprocess).Responding -eq $true)
+      {
+        $ownedconnections += $connection
+      }
+      else 
+      {
+        $unowndedconnections += $connection
+      }
+    }
+    else
+    {
+      Write-Log "No process could be found for $Connection"
+    }
+  }
 
-  #older than X add to alert list
+  #Check for connections established created over a week ago
+  foreach($ownedconnection in $ownedconnections)
+  {
+    if($ownedconnection.creationtime -lt ((Get-Date).Subtract((New-TimeSpan -days 7))))
+    {
+      $oldconnections += $ownedconnection
+    }
+  }
 
-  #produce final report
+  #group connections by their remote address
+  $Groupedconnections = $ownedconnections | Group-Object -Property remoteaddress
+  
+  #filter into internal and external address'
+  foreach($Groupedconnection in $Groupedconnections)
+  {
+    if($Groupedconnection.name -eq '::' -or $Groupedconnection.name -eq '0.0.0.0' -or $Groupedconnection.name -eq '127.0.0.1')
+    {
+     $internalconnections += $Groupedconnection
+    }
+    else
+    {
+      $externalconnections += $Groupedconnection
+    }
+  }
+
+  #check each group for more than 100 connections to each remote machine
+  foreach($internalconnection in $internalconnections)
+  {
+    if($internalconnection.count -gt 100)
+    {
+      $exceedinginternalconnections += $internalconnection
+    }
+  }
+
+  #check each group for more than 100 connectiuons to each remote machine
+  foreach($externalconnection in $externalconnections)
+  {
+    if($externalconnection.count -gt 100)
+    {
+      $exceedingexternalconnections += $externalconnection
+    }
+  }
+
+  Write-Log "##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### "
+
+  Write-Log "##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####"
+  Write-Log $unowndedconnections
+  Write-Log "##### CONNECTIONS CREATED OVER 7 DAYS AGO #####"
+  Write-Log $oldconnections
+  Write-Log "##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####"
+  Write-Log $exceedinginternalconnections
+  Write-Log "##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####"
+  Write-Log "$exceedingexternalconnections"
+
+  Write-Log "##### ENDING TCP CONNECTION TROUBLESHOOT #####"
 }
 
 #Check connection to DB is live 
@@ -544,18 +618,13 @@ if (Test-Connection $DbIP)
     #Initialize database entry point objects
     $CDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:'"
 
-
     $DDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:'"
-
 
     $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")"
 
-
     $CPUusage = Query-Database -CPU -SELECT "LAST(`"% Processor Time`")"
 
-
     $TCPconnections = Query-Database -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`""
-
 
     Write-Log "##### DATABASE QUERIES RAN #####"
 
@@ -569,7 +638,7 @@ if (Test-Connection $DbIP)
       Write-Log "C: Threshold exceeded at $($CDrive.Value)"
       if($CdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
       {
-        Clear-drive -RootDirectory $CDrive.Instance -JsonLocation $LogRulesJson
+        Clear-drive -RootDirectory $CDrive.Instance
         $CdriveActionTaken = $true
       }
       else #if action already taken print to log
@@ -594,7 +663,7 @@ if (Test-Connection $DbIP)
       Write-Log "D: Threshold exceeded at $($DDrive.Value)"
       if($DdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
       {
-        Clear-Drive -RootDirectory $DDrive.Instance -JsonLocation $LogRulesJson
+        Clear-Drive -RootDirectory $DDrive.Instance
         $DdriveActionTaken = $true
       }
       else #if action already taken print to log
@@ -665,7 +734,16 @@ if (Test-Connection $DbIP)
     Write-Log "Assessing TCP connection "
     if($TCPconnections.ConnectionsEstablished -gt $TCPThreshold)
     {
-
+     Write-Log "TCP connections over threshold at $($TCPconnections.ConnectionsEstablished)"
+     if($TCPActionTaken -eq $false)
+     {
+       Clear-TCPConnections
+       $TCPActionTaken = $true
+     }
+     else
+     {
+       Write-Log "Report already produced please check logs"
+     }
     }
     else
     {
