@@ -554,7 +554,7 @@ Function Clear-TCPConnections
   #check each group for more than 100 connections to each remote machine
   foreach($internalconnection in $internalconnections)
   {
-    if($internalconnection.count -gt 100)
+    if($internalconnection.count -gt 20)
     {
       $exceedinginternalconnections += $internalconnection
     }
@@ -563,7 +563,7 @@ Function Clear-TCPConnections
   #check each group for more than 100 connectiuons to each remote machine
   foreach($externalconnection in $externalconnections)
   {
-    if($externalconnection.count -gt 100)
+    if($externalconnection.count -gt 20)
     {
       $exceedingexternalconnections += $externalconnection
     }
@@ -592,16 +592,16 @@ if (Test-Connection $DbIP)
   Write-Log "##### GATHERING ALERT THRESHOLDS #####"
 
   $CThreshold = Get-Threshold -FreeSpace -name "C"
-  Write-Log "C Threshold has been set to $CThreshold %"
+  Write-Log "C Threshold has been set to $CThreshold%"
 
   $DThreshold = Get-Threshold -FreeSpace -name "D"
-  Write-Log "D Threshold has been set to $DThreshold %"
+  Write-Log "D Threshold has been set to $DThreshold%"
 
   $MemoryThreshold = Get-Threshold -Memory -name "Avaliable Bytes"
   Write-Log "Memory Threshold set to $MemoryThreshold MB"
 
   $CPUThreshold = Get-Threshold -CPU -name "Processor Time"
-  Write-Log "CPU Threshold set to $CPUThreshold"
+  Write-Log "CPU Threshold set to $CPUThreshold%"
 
   $TCPThreshold = Get-Threshold -TCP -name "Connections Established"
   Write-Log "TCP Threshold set to $TCPThreshold"
@@ -648,7 +648,7 @@ if (Test-Connection $DbIP)
     }
     else
     {
-      Write-Log "C: Under Threshold"
+      Write-Log "C: Under Threshold at $("{0:n2}" -f $CDrive.Value)%"
       if($CdriveActionTaken -eq $true) #once under threshold again reset automated action to false
       {
         $CdriveActionTaken = $false
@@ -673,7 +673,7 @@ if (Test-Connection $DbIP)
     }
     else
     {
-      Write-Log "D: Under Threshold"
+      Write-Log "D: Under Threshold at $("{0:n2}" -f $DDrive.Value)%"
       if($DdriveActionTaken -eq $true) #once under threshold again reset automated action to false
       {
         $DdriveActionTaken = $false
@@ -698,7 +698,7 @@ if (Test-Connection $DbIP)
     }
     else
     {
-     Write-Log "Memory usage under threshold"
+     Write-Log "Memory usage under threshold at $($MemoryUsage.Mb) MB"
      if($MemoryActionTaken -eq $true)
      {
        $MemoryActionTaken = $false
@@ -723,10 +723,11 @@ if (Test-Connection $DbIP)
     }
     else
     {
-      Write-Log "CPU usage under threshold"
+      Write-Log "CPU usage under threshold at $("{0:n2}" -f $CPUusage.ProcessorTime)%"
       if($CPUActionTaken -eq $true)
       {
         $CPUActionTaken = $false
+        Write-Log "CPU action taken reset to false"
       }
     }
 
@@ -747,7 +748,11 @@ if (Test-Connection $DbIP)
     }
     else
     {
-      Write-Log "TCP connections established under threshold"
+      Write-Log "TCP connections established under threshold at $($TCPconnections.ConnectionsEstablished)"
+      if($TCPActionTaken -eq $true)
+      {
+        $TCPActionTaken = $false
+      }
     }
 
     ##### LOOP COMPLETE SLEEPING 30 UNTIL NEXT LOOP

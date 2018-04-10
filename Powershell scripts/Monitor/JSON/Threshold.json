@@ -2,7 +2,7 @@
   "DiskThresholds":[
     {
       "name":"D",
-      "value":"99.08342"
+      "value":"20"
     },
     {
       "name":"C",
@@ -12,7 +12,7 @@
   "MemoryThresholds":[
     {
       "name":"Avaliable Bytes",
-      "value":"3000"
+      "value":"2000"
     },
     {
       "name":"Committed Bytes",
@@ -28,7 +28,7 @@
   "TCPThresholds":[
     {
       "name":"Connections Established",
-      "value":"8000"
+      "value":"50"
     }
   ]
 }

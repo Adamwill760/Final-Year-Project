@@ -219,3 +219,331 @@
 <04/10/2018 02:13:50> ##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
 <04/10/2018 02:13:50> 
 <04/10/2018 02:13:50> ##### ENDING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:33:25> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 13:33:25> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 13:33:29> C Threshold has been set to 10 %
+<04/10/2018 13:33:29> D Threshold has been set to 99.08342 %
+<04/10/2018 13:33:29> Memory Threshold set to 3000 MB
+<04/10/2018 13:33:29> CPU Threshold set to 80
+<04/10/2018 13:33:29> TCP Threshold set to 8000
+<04/10/2018 13:33:30> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 13:33:30> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:33:38> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:33:38> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:33:38> Assessing drive C...
+<04/10/2018 13:33:39> C: Under Threshold
+<04/10/2018 13:33:39> Assessing drive D...
+<04/10/2018 13:33:39> D: Under Threshold
+<04/10/2018 13:33:39> Assessing Memory usage...
+<04/10/2018 13:33:39> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:33:39> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/10/2018 13:33:39> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/10/2018 13:33:39> ShellExperienceHost Not responding, currently 70.8046875 MB  allocated to this 
+<04/10/2018 13:33:40> ShellExperienceHost have been terminated
+<04/10/2018 13:33:40> 70.8046875 MB from unresponsive processes
+<04/10/2018 13:33:40> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/10/2018 13:33:40> No WINWORD process running
+<04/10/2018 13:33:40> No Test process running
+<04/10/2018 13:33:40> 70.8046875 total MB recovered
+<04/10/2018 13:33:40> ##### END OF RESOURCE CLEARANCE #####
+<04/10/2018 13:33:40> Assessing CPU usage...
+<04/10/2018 13:33:40> CPU usage under threshold
+<04/10/2018 13:33:40> Assessing TCP connection 
+<04/10/2018 13:33:40> TCP connections established under threshold
+<04/10/2018 13:33:40> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:34:10> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:34:15> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:34:15> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:34:15> Assessing drive C...
+<04/10/2018 13:34:15> C: Under Threshold
+<04/10/2018 13:34:15> Assessing drive D...
+<04/10/2018 13:34:15> D: Under Threshold
+<04/10/2018 13:34:15> Assessing Memory usage...
+<04/10/2018 13:34:15> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:34:15> Action already taken no more memory can be cleared
+<04/10/2018 13:34:15> Assessing CPU usage...
+<04/10/2018 13:34:15> CPU usage under threshold
+<04/10/2018 13:34:15> Assessing TCP connection 
+<04/10/2018 13:34:15> TCP connections established under threshold
+<04/10/2018 13:34:15> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:34:45> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:34:46> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:34:46> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:34:46> Assessing drive C...
+<04/10/2018 13:34:46> C: Under Threshold
+<04/10/2018 13:34:46> Assessing drive D...
+<04/10/2018 13:34:46> D: Under Threshold
+<04/10/2018 13:34:46> Assessing Memory usage...
+<04/10/2018 13:34:46> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:34:46> Action already taken no more memory can be cleared
+<04/10/2018 13:34:46> Assessing CPU usage...
+<04/10/2018 13:34:46> CPU usage under threshold
+<04/10/2018 13:34:46> Assessing TCP connection 
+<04/10/2018 13:34:46> TCP connections established under threshold
+<04/10/2018 13:34:46> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:35:16> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:35:16> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:35:16> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:35:16> Assessing drive C...
+<04/10/2018 13:35:16> C: Under Threshold
+<04/10/2018 13:35:16> Assessing drive D...
+<04/10/2018 13:35:16> D: Under Threshold
+<04/10/2018 13:35:17> Assessing Memory usage...
+<04/10/2018 13:35:17> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:35:17> Action already taken no more memory can be cleared
+<04/10/2018 13:35:17> Assessing CPU usage...
+<04/10/2018 13:35:17> CPU usage under threshold
+<04/10/2018 13:35:17> Assessing TCP connection 
+<04/10/2018 13:35:17> TCP connections established under threshold
+<04/10/2018 13:35:17> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:35:47> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:35:47> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:35:47> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:35:47> Assessing drive C...
+<04/10/2018 13:35:47> C: Under Threshold
+<04/10/2018 13:35:47> Assessing drive D...
+<04/10/2018 13:35:47> D: Under Threshold
+<04/10/2018 13:35:47> Assessing Memory usage...
+<04/10/2018 13:35:47> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:35:47> Action already taken no more memory can be cleared
+<04/10/2018 13:35:47> Assessing CPU usage...
+<04/10/2018 13:35:47> CPU usage under threshold
+<04/10/2018 13:35:47> Assessing TCP connection 
+<04/10/2018 13:35:47> TCP connections established under threshold
+<04/10/2018 13:35:47> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:36:17> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:36:18> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:36:18> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:36:18> Assessing drive C...
+<04/10/2018 13:36:18> C: Under Threshold
+<04/10/2018 13:36:18> Assessing drive D...
+<04/10/2018 13:36:18> D: Under Threshold
+<04/10/2018 13:36:18> Assessing Memory usage...
+<04/10/2018 13:36:18> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:36:18> Action already taken no more memory can be cleared
+<04/10/2018 13:36:18> Assessing CPU usage...
+<04/10/2018 13:36:18> CPU usage under threshold
+<04/10/2018 13:36:18> Assessing TCP connection 
+<04/10/2018 13:36:18> TCP connections established under threshold
+<04/10/2018 13:36:18> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:36:48> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:36:49> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:36:49> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:36:49> Assessing drive C...
+<04/10/2018 13:36:49> C: Under Threshold
+<04/10/2018 13:36:49> Assessing drive D...
+<04/10/2018 13:36:49> D: Under Threshold
+<04/10/2018 13:36:49> Assessing Memory usage...
+<04/10/2018 13:36:49> Avaliable bytes under threshold at 2167 MB
+<04/10/2018 13:36:49> Action already taken no more memory can be cleared
+<04/10/2018 13:36:49> Assessing CPU usage...
+<04/10/2018 13:36:49> CPU usage under threshold
+<04/10/2018 13:36:49> Assessing TCP connection 
+<04/10/2018 13:36:49> TCP connections established under threshold
+<04/10/2018 13:36:49> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:41:31> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 13:41:31> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 13:41:31> C Threshold has been set to 10 %
+<04/10/2018 13:41:31> D Threshold has been set to 20 %
+<04/10/2018 13:41:31> Memory Threshold set to 2000 MB
+<04/10/2018 13:41:31> CPU Threshold set to 80
+<04/10/2018 13:41:31> TCP Threshold set to 50
+<04/10/2018 13:41:31> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 13:41:31> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:41:32> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:41:32> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:41:32> Assessing drive C...
+<04/10/2018 13:41:32> C: Under Threshold
+<04/10/2018 13:41:32> Assessing drive D...
+<04/10/2018 13:41:32> D: Under Threshold
+<04/10/2018 13:41:32> Assessing Memory usage...
+<04/10/2018 13:41:32> Memory usage under threshold
+<04/10/2018 13:41:32> Assessing CPU usage...
+<04/10/2018 13:41:32> CPU usage under threshold
+<04/10/2018 13:41:32> Assessing TCP connection 
+<04/10/2018 13:41:32> TCP connections over threshold at 70
+<04/10/2018 13:41:32> ##### BEGINNING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:41:33> ##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### 
+<04/10/2018 13:41:33> ##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####
+<04/10/2018 13:41:33> 
+<04/10/2018 13:41:33> ##### CONNECTIONS CREATED OVER 7 DAYS AGO #####
+<04/10/2018 13:41:33> 
+<04/10/2018 13:41:33> ##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:41:33> 
+<04/10/2018 13:41:33> ##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:41:33> 
+<04/10/2018 13:41:33> ##### ENDING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:41:33> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:43:35> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 13:43:35> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 13:43:35> C Threshold has been set to 10 %
+<04/10/2018 13:43:35> D Threshold has been set to 20 %
+<04/10/2018 13:43:35> Memory Threshold set to 2000 MB
+<04/10/2018 13:43:35> CPU Threshold set to 80
+<04/10/2018 13:43:35> TCP Threshold set to 50
+<04/10/2018 13:43:35> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 13:43:35> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:43:36> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:43:36> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:43:36> Assessing drive C...
+<04/10/2018 13:43:36> C: Under Threshold
+<04/10/2018 13:43:36> Assessing drive D...
+<04/10/2018 13:43:36> D: Under Threshold
+<04/10/2018 13:43:36> Assessing Memory usage...
+<04/10/2018 13:43:36> Memory usage under threshold
+<04/10/2018 13:43:36> Assessing CPU usage...
+<04/10/2018 13:43:36> CPU usage under threshold
+<04/10/2018 13:43:36> Assessing TCP connection 
+<04/10/2018 13:43:36> TCP connections over threshold at 70
+<04/10/2018 13:43:36> ##### BEGINNING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:43:36> ##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### 
+<04/10/2018 13:43:36> ##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####
+<04/10/2018 13:43:36> 
+<04/10/2018 13:43:36> ##### CONNECTIONS CREATED OVER 7 DAYS AGO #####
+<04/10/2018 13:43:36> 
+<04/10/2018 13:43:36> ##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:43:36> 
+<04/10/2018 13:43:36> ##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:43:36> 
+<04/10/2018 13:43:36> ##### ENDING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:43:36> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:44:53> ##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### 
+<04/10/2018 13:44:53> ##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####
+<04/10/2018 13:44:53> 
+<04/10/2018 13:44:53> ##### CONNECTIONS CREATED OVER 7 DAYS AGO #####
+<04/10/2018 13:44:53> 
+<04/10/2018 13:44:53> ##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:44:53> 
+<04/10/2018 13:44:53> ##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/10/2018 13:44:53> 
+<04/10/2018 13:44:53> ##### ENDING TCP CONNECTION TROUBLESHOOT #####
+<04/10/2018 13:49:15> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 13:49:15> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 13:49:15> C Threshold has been set to 10 %
+<04/10/2018 13:49:15> D Threshold has been set to 20 %
+<04/10/2018 13:49:15> Memory Threshold set to 2000 MB
+<04/10/2018 13:49:15> CPU Threshold set to 80
+<04/10/2018 13:49:15> TCP Threshold set to 50
+<04/10/2018 13:49:16> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 13:49:16> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:49:16> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:49:16> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:49:16> Assessing drive C...
+<04/10/2018 13:49:16> C: Under Threshold
+<04/10/2018 13:49:16> Assessing drive D...
+<04/10/2018 13:49:16> D: Under Threshold
+<04/10/2018 13:49:16> Assessing Memory usage...
+<04/10/2018 13:49:16> Memory usage under threshold
+<04/10/2018 13:49:16> Assessing CPU usage...
+<04/10/2018 13:49:16> CPU usage under threshold
+<04/10/2018 13:49:16> Assessing TCP connection 
+<04/10/2018 13:49:16> TCP connections established under threshold
+<04/10/2018 13:49:16> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:49:46> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:49:47> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:49:47> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:49:47> Assessing drive C...
+<04/10/2018 13:49:47> C: Under Threshold
+<04/10/2018 13:49:47> Assessing drive D...
+<04/10/2018 13:49:47> D: Under Threshold
+<04/10/2018 13:49:47> Assessing Memory usage...
+<04/10/2018 13:49:47> Memory usage under threshold
+<04/10/2018 13:49:47> Assessing CPU usage...
+<04/10/2018 13:49:47> CPU usage under threshold
+<04/10/2018 13:49:47> Assessing TCP connection 
+<04/10/2018 13:49:47> TCP connections established under threshold
+<04/10/2018 13:49:47> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:50:17> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:50:18> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:50:18> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:50:18> Assessing drive C...
+<04/10/2018 13:50:18> C: Under Threshold
+<04/10/2018 13:50:18> Assessing drive D...
+<04/10/2018 13:50:18> D: Under Threshold
+<04/10/2018 13:50:18> Assessing Memory usage...
+<04/10/2018 13:50:18> Memory usage under threshold
+<04/10/2018 13:50:18> Assessing CPU usage...
+<04/10/2018 13:50:18> CPU usage under threshold
+<04/10/2018 13:50:18> Assessing TCP connection 
+<04/10/2018 13:50:18> TCP connections established under threshold
+<04/10/2018 13:50:18> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 13:56:56> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 13:56:56> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 13:56:56> C Threshold has been set to 10 %
+<04/10/2018 13:56:56> D Threshold has been set to 20 %
+<04/10/2018 13:56:56> Memory Threshold set to 2000 MB
+<04/10/2018 13:56:56> CPU Threshold set to 80
+<04/10/2018 13:56:56> TCP Threshold set to 50
+<04/10/2018 13:56:56> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 13:56:56> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 13:56:57> ##### DATABASE QUERIES RAN #####
+<04/10/2018 13:56:57> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 13:56:57> Assessing drive C...
+<04/10/2018 13:56:57> C: Under Threshold at 22.211561
+<04/10/2018 13:56:57> Assessing drive D...
+<04/10/2018 13:56:57> D: Under Threshold at 99.778366
+<04/10/2018 13:56:57> Assessing Memory usage...
+<04/10/2018 13:56:57> Memory usage under threshold at 3717 MB
+<04/10/2018 13:56:57> Assessing CPU usage...
+<04/10/2018 13:56:57> CPU usage under threshold at 32.85941
+<04/10/2018 13:56:57> Assessing TCP connection 
+<04/10/2018 13:56:57> TCP connections established under threshold at 10
+<04/10/2018 13:56:57> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 14:03:34> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 14:03:34> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 14:03:34> C Threshold has been set to 10 %
+<04/10/2018 14:03:34> D Threshold has been set to 20 %
+<04/10/2018 14:03:34> Memory Threshold set to 2000 MB
+<04/10/2018 14:03:34> CPU Threshold set to 80
+<04/10/2018 14:03:34> TCP Threshold set to 50
+<04/10/2018 14:03:34> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 14:03:34> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 14:03:35> ##### DATABASE QUERIES RAN #####
+<04/10/2018 14:03:35> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 14:03:35> Assessing drive C...
+<04/10/2018 14:03:35> C: Under Threshold at 22.21
+<04/10/2018 14:03:35> Assessing drive D...
+<04/10/2018 14:03:35> D: Under Threshold at 99.78
+<04/10/2018 14:03:35> Assessing Memory usage...
+<04/10/2018 14:03:35> Memory usage under threshold at 3770 MB
+<04/10/2018 14:03:35> Assessing CPU usage...
+<04/10/2018 14:03:35> CPU usage under threshold at 32.53
+<04/10/2018 14:03:35> Assessing TCP connection 
+<04/10/2018 14:03:35> TCP connections established under threshold at 10
+<04/10/2018 14:03:35> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 14:04:56> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/10/2018 14:04:56> ##### GATHERING ALERT THRESHOLDS #####
+<04/10/2018 14:04:56> C Threshold has been set to 10%
+<04/10/2018 14:04:56> D Threshold has been set to 20%
+<04/10/2018 14:04:56> Memory Threshold set to 2000 MB
+<04/10/2018 14:04:56> CPU Threshold set to 80%
+<04/10/2018 14:04:56> TCP Threshold set to 50
+<04/10/2018 14:04:56> ##### ALERT THRESHOLDS SET #####
+<04/10/2018 14:04:56> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 14:04:57> ##### DATABASE QUERIES RAN #####
+<04/10/2018 14:04:57> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 14:04:57> Assessing drive C...
+<04/10/2018 14:04:57> C: Under Threshold at 22.21%
+<04/10/2018 14:04:57> Assessing drive D...
+<04/10/2018 14:04:57> D: Under Threshold at 99.78%
+<04/10/2018 14:04:57> Assessing Memory usage...
+<04/10/2018 14:04:57> Memory usage under threshold at 3767 MB
+<04/10/2018 14:04:57> Assessing CPU usage...
+<04/10/2018 14:04:57> CPU usage under threshold at 17.67%
+<04/10/2018 14:04:57> Assessing TCP connection 
+<04/10/2018 14:04:57> TCP connections established under threshold at 11
+<04/10/2018 14:04:57> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/10/2018 14:05:27> ##### RUNNING DATABASE QUERIES #####
+<04/10/2018 14:05:27> ##### DATABASE QUERIES RAN #####
+<04/10/2018 14:05:27> ##### ASSESSING THRESHOLDS #####
+<04/10/2018 14:05:27> Assessing drive C...
+<04/10/2018 14:05:27> C: Under Threshold at 22.21%
+<04/10/2018 14:05:27> Assessing drive D...
+<04/10/2018 14:05:27> D: Under Threshold at 99.78%
+<04/10/2018 14:05:27> Assessing Memory usage...
+<04/10/2018 14:05:27> Memory usage under threshold at 3767 MB
+<04/10/2018 14:05:27> Assessing CPU usage...
+<04/10/2018 14:05:27> CPU usage under threshold at 20.55%
+<04/10/2018 14:05:27> Assessing TCP connection 
+<04/10/2018 14:05:27> TCP connections established under threshold at 11
+<04/10/2018 14:05:27> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
