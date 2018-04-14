@@ -547,3 +547,682 @@
 <04/10/2018 14:05:27> Assessing TCP connection 
 <04/10/2018 14:05:27> TCP connections established under threshold at 11
 <04/10/2018 14:05:27> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/13/2018 20:01:43> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/13/2018 20:01:43> ##### GATHERING HOSTNAMES #####
+<04/13/2018 20:01:43> ##### HOSTNAMES GATHERED #####
+<04/13/2018 20:01:43> ##### GATHERING ALERT THRESHOLDS #####
+<04/13/2018 20:01:44> C Threshold has been set to 10%
+<04/13/2018 20:01:44> D Threshold has been set to 20%
+<04/13/2018 20:01:44> Memory Threshold set to 2000 MB
+<04/13/2018 20:01:44> CPU Threshold set to 80%
+<04/13/2018 20:01:44> TCP Threshold set to 50
+<04/13/2018 20:01:44> ##### ALERT THRESHOLDS SET #####
+<04/13/2018 20:01:44> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/13/2018 20:01:44> ##### RUNNING DATABASE QUERIES #####
+<04/13/2018 20:01:45> ##### DATABASE QUERIES RAN #####
+<04/13/2018 20:01:45> ##### ASSESSING THRESHOLDS #####
+<04/13/2018 20:01:45> Assessing drive C...
+<04/13/2018 20:01:45> C: Under Threshold at 22.16%
+<04/13/2018 20:01:45> Assessing drive D...
+<04/13/2018 20:01:45> D: Under Threshold at 99.78%
+<04/13/2018 20:01:45> Assessing Memory usage...
+<04/13/2018 20:01:45> Avaliable bytes under threshold at 1835 MB
+<04/13/2018 20:01:45> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/13/2018 20:01:45> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/13/2018 20:01:45> Calculator Not responding, currently 0.4765625 MB  allocated to this 
+<04/13/2018 20:01:46> onenoteim Not responding, currently 0.86328125 MB  allocated to this 
+<04/13/2018 20:01:46> SystemSettings Not responding, currently 0.7109375 MB  allocated to this 
+<04/13/2018 20:01:47> Calculator onenoteim SystemSettings have been terminated
+<04/13/2018 20:01:47> 2.05078125 MB from unresponsive processes
+<04/13/2018 20:01:47> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/13/2018 20:01:47> No WINWORD process running
+<04/13/2018 20:01:47> No Test process running
+<04/13/2018 20:01:47> 2.05078125 total MB recovered
+<04/13/2018 20:01:47> ##### END OF RESOURCE CLEARANCE #####
+<04/13/2018 20:01:47> Assessing CPU usage...
+<04/13/2018 20:01:47> CPU usage under threshold at 28.30%
+<04/13/2018 20:01:47> Assessing TCP connection 
+<04/13/2018 20:01:47> TCP connections over threshold at 108
+<04/13/2018 20:01:47> ##### BEGINNING TCP CONNECTION TROUBLESHOOT #####
+<04/13/2018 20:01:56> ##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### 
+<04/13/2018 20:01:56> ##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####
+<04/13/2018 20:01:56> 
+<04/13/2018 20:01:56> ##### CONNECTIONS CREATED OVER 7 DAYS AGO #####
+<04/13/2018 20:01:56> 
+<04/13/2018 20:01:56> ##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/13/2018 20:01:56> Microsoft.PowerShell.Commands.GroupInfo
+<04/13/2018 20:01:56> ##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####
+<04/13/2018 20:01:56> 
+<04/13/2018 20:01:56> ##### ENDING TCP CONNECTION TROUBLESHOOT #####
+<04/13/2018 20:01:56> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/13/2018 23:55:40> InfluxHost not defined in thresholds JSON
+<04/13/2018 23:55:40> InfluxHost not defined in thresholds JSON
+<04/13/2018 23:55:40> InfluxHost not defined in thresholds JSON
+<04/13/2018 23:55:40> InfluxHost not defined in thresholds JSON
+<04/13/2018 23:55:40> InfluxHost not defined in thresholds JSON
+<04/14/2018 00:18:51> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/14/2018 00:18:51> ##### GATHERING HOSTNAMES #####
+<04/14/2018 00:18:51> ##### HOSTNAMES GATHERED #####
+<04/14/2018 00:18:51> ##### GATHERING ALERT THRESHOLDS #####
+<04/14/2018 00:18:51> ##### ALERT THRESHOLDS SET #####
+<04/14/2018 00:18:51> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:18:51> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:18:53> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:18:53> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:18:53> Assessing drive C...
+<04/14/2018 00:18:53> C: Under Threshold at 17.21%
+<04/14/2018 00:18:53> Assessing drive D...
+<04/14/2018 00:18:53> D: Under Threshold at 99.78%
+<04/14/2018 00:18:53> Assessing Memory usage...
+<04/14/2018 00:18:53> Avaliable bytes under threshold at 1496 MB
+<04/14/2018 00:18:53> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/14/2018 00:18:53> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:18:53> No processes were found unresponsive
+<04/14/2018 00:18:53> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:18:53> No WINWORD process running
+<04/14/2018 00:18:53> No Test process running
+<04/14/2018 00:18:53> 0 total MB recovered
+<04/14/2018 00:18:53> ##### END OF RESOURCE CLEARANCE #####
+<04/14/2018 00:18:53> Assessing CPU usage...
+<04/14/2018 00:18:53> CPU usage under threshold at 32.09%
+<04/14/2018 00:18:53> Assessing TCP connection 
+<04/14/2018 00:18:53> TCP connections established under threshold at 44
+<04/14/2018 00:18:53> ##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####
+<04/14/2018 00:20:06> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/14/2018 00:20:06> ##### GATHERING HOSTNAMES #####
+<04/14/2018 00:20:06> ##### HOSTNAMES GATHERED #####
+<04/14/2018 00:20:06> ##### GATHERING ALERT THRESHOLDS #####
+<04/14/2018 00:20:06> ##### ALERT THRESHOLDS SET #####
+<04/14/2018 00:20:06> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:20:06> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:20:07> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:20:07> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:20:07> Assessing drive C...
+<04/14/2018 00:20:07> C: Under Threshold at 17.21%
+<04/14/2018 00:20:07> Assessing drive D...
+<04/14/2018 00:20:07> D: Under Threshold at 99.78%
+<04/14/2018 00:20:07> Assessing Memory usage...
+<04/14/2018 00:20:07> Avaliable bytes under threshold at 1549 MB
+<04/14/2018 00:20:07> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/14/2018 00:20:07> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:20:07> No processes were found unresponsive
+<04/14/2018 00:20:07> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:20:07> No WINWORD process running
+<04/14/2018 00:20:07> No Test process running
+<04/14/2018 00:20:07> 0 total MB recovered
+<04/14/2018 00:20:07> ##### END OF RESOURCE CLEARANCE #####
+<04/14/2018 00:20:07> Assessing CPU usage...
+<04/14/2018 00:20:07> CPU usage under threshold at 30.28%
+<04/14/2018 00:20:07> Assessing TCP connection 
+<04/14/2018 00:20:07> TCP connections established under threshold at 47
+<04/14/2018 00:20:07> ##### Adam-PC ASSESED #####
+<04/14/2018 00:20:07> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:20:07> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:20:07> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:20:07> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:20:07> Assessing drive C...
+<04/14/2018 00:20:07> C: Under Threshold at 51.28%
+<04/14/2018 00:20:07> Assessing drive D...
+<04/14/2018 00:20:08> D: Threshold exceeded at 
+<04/14/2018 00:20:08> ##### BEGINNING DRIVE CLEAR #####
+<04/14/2018 00:20:10> Test1 json rule found in root directory
+<04/14/2018 00:21:25> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/14/2018 00:21:25> ##### GATHERING HOSTNAMES #####
+<04/14/2018 00:21:25> ##### HOSTNAMES GATHERED #####
+<04/14/2018 00:21:25> ##### GATHERING ALERT THRESHOLDS #####
+<04/14/2018 00:21:25> ##### ALERT THRESHOLDS SET #####
+<04/14/2018 00:21:25> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:25> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:26> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:26> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:26> Assessing drive C...
+<04/14/2018 00:21:26> C: Under Threshold at 17.21%
+<04/14/2018 00:21:26> Assessing drive D...
+<04/14/2018 00:21:26> D: Under Threshold at 99.78%
+<04/14/2018 00:21:26> Assessing Memory usage...
+<04/14/2018 00:21:26> Avaliable bytes under threshold at 1532 MB
+<04/14/2018 00:21:26> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/14/2018 00:21:26> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:21:26> No processes were found unresponsive
+<04/14/2018 00:21:26> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:21:26> No WINWORD process running
+<04/14/2018 00:21:26> No Test process running
+<04/14/2018 00:21:26> 0 total MB recovered
+<04/14/2018 00:21:26> ##### END OF RESOURCE CLEARANCE #####
+<04/14/2018 00:21:26> Assessing CPU usage...
+<04/14/2018 00:21:26> CPU usage under threshold at 28.57%
+<04/14/2018 00:21:26> Assessing TCP connection 
+<04/14/2018 00:21:26> TCP connections established under threshold at 46
+<04/14/2018 00:21:26> ##### Adam-PC ASSESED #####
+<04/14/2018 00:21:26> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:21:26> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:27> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:27> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:27> Assessing drive C...
+<04/14/2018 00:21:27> C: Under Threshold at 51.28%
+<04/14/2018 00:21:27> Assessing drive D...
+<04/14/2018 00:21:27> D: Threshold exceeded at 
+<04/14/2018 00:21:27> ##### BEGINNING DRIVE CLEAR #####
+<04/14/2018 00:21:28> Test1 json rule found in root directory
+<04/14/2018 00:21:28> Test1 does not exceed its expected size, no action taken
+<04/14/2018 00:21:28> Test2 json rule found in root directory
+<04/14/2018 00:21:28> Actual size of Test2 exceeds expected size
+<04/14/2018 00:21:28> The following files exceeding retention of Test2 have been removed
+<04/14/2018 00:21:28> 74.592 Kb recovered
+<04/14/2018 00:21:28> Test3 retention rule does not match any directory
+<04/14/2018 00:21:28> ##### END OF DRIVE CLEAR ####
+<04/14/2018 00:21:28> Assessing Memory usage...
+<04/14/2018 00:21:28> Memory usage under threshold at 824 MB
+<04/14/2018 00:21:28> Assessing CPU usage...
+<04/14/2018 00:21:28> CPU usage under threshold at 0.91%
+<04/14/2018 00:21:28> Assessing TCP connection 
+<04/14/2018 00:21:28> TCP connections established under threshold at 1
+<04/14/2018 00:21:28> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:21:28> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:28> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:29> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:29> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:29> Assessing drive C...
+<04/14/2018 00:21:29> C: Under Threshold at 17.21%
+<04/14/2018 00:21:29> Assessing drive D...
+<04/14/2018 00:21:29> D: Under Threshold at 99.78%
+<04/14/2018 00:21:29> Assessing Memory usage...
+<04/14/2018 00:21:29> Avaliable bytes under threshold at 1532 MB
+<04/14/2018 00:21:29> Action already taken no more memory can be cleared
+<04/14/2018 00:21:29> Assessing CPU usage...
+<04/14/2018 00:21:29> CPU usage under threshold at 28.57%
+<04/14/2018 00:21:29> Assessing TCP connection 
+<04/14/2018 00:21:29> TCP connections established under threshold at 46
+<04/14/2018 00:21:29> ##### Adam-PC ASSESED #####
+<04/14/2018 00:21:29> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:21:29> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:29> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:29> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:29> Assessing drive C...
+<04/14/2018 00:21:29> C: Under Threshold at 51.28%
+<04/14/2018 00:21:29> Assessing drive D...
+<04/14/2018 00:21:29> D: Threshold exceeded at 
+<04/14/2018 00:21:29> Action already taken no more space can be cleared
+<04/14/2018 00:21:29> Assessing Memory usage...
+<04/14/2018 00:21:29> Memory usage under threshold at 824 MB
+<04/14/2018 00:21:29> Assessing CPU usage...
+<04/14/2018 00:21:29> CPU usage under threshold at 0.91%
+<04/14/2018 00:21:29> Assessing TCP connection 
+<04/14/2018 00:21:29> TCP connections established under threshold at 1
+<04/14/2018 00:21:29> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:21:29> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:29> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:30> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:30> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:30> Assessing drive C...
+<04/14/2018 00:21:30> C: Under Threshold at 17.21%
+<04/14/2018 00:21:30> Assessing drive D...
+<04/14/2018 00:21:30> D: Under Threshold at 99.78%
+<04/14/2018 00:21:30> Assessing Memory usage...
+<04/14/2018 00:21:30> Avaliable bytes under threshold at 1532 MB
+<04/14/2018 00:21:30> Action already taken no more memory can be cleared
+<04/14/2018 00:21:30> Assessing CPU usage...
+<04/14/2018 00:21:30> CPU usage under threshold at 28.57%
+<04/14/2018 00:21:30> Assessing TCP connection 
+<04/14/2018 00:21:30> TCP connections established under threshold at 46
+<04/14/2018 00:21:30> ##### Adam-PC ASSESED #####
+<04/14/2018 00:21:30> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:21:30> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:30> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:30> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:30> Assessing drive C...
+<04/14/2018 00:21:30> C: Under Threshold at 51.28%
+<04/14/2018 00:21:30> Assessing drive D...
+<04/14/2018 00:21:30> D: Threshold exceeded at 
+<04/14/2018 00:21:30> Action already taken no more space can be cleared
+<04/14/2018 00:21:30> Assessing Memory usage...
+<04/14/2018 00:21:30> Memory usage under threshold at 825 MB
+<04/14/2018 00:21:30> Assessing CPU usage...
+<04/14/2018 00:21:30> CPU usage under threshold at 2.04%
+<04/14/2018 00:21:30> Assessing TCP connection 
+<04/14/2018 00:21:30> TCP connections established under threshold at 1
+<04/14/2018 00:21:30> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:21:30> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:30> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:31> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:31> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:31> Assessing drive C...
+<04/14/2018 00:21:31> C: Under Threshold at 17.21%
+<04/14/2018 00:21:31> Assessing drive D...
+<04/14/2018 00:21:31> D: Under Threshold at 99.78%
+<04/14/2018 00:21:31> Assessing Memory usage...
+<04/14/2018 00:21:31> Avaliable bytes under threshold at 1522 MB
+<04/14/2018 00:21:31> Action already taken no more memory can be cleared
+<04/14/2018 00:21:31> Assessing CPU usage...
+<04/14/2018 00:21:31> CPU usage under threshold at 31.16%
+<04/14/2018 00:21:31> Assessing TCP connection 
+<04/14/2018 00:21:31> TCP connections established under threshold at 46
+<04/14/2018 00:21:31> ##### Adam-PC ASSESED #####
+<04/14/2018 00:21:31> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:21:31> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:31> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:31> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:31> Assessing drive C...
+<04/14/2018 00:21:31> C: Under Threshold at 51.28%
+<04/14/2018 00:21:31> Assessing drive D...
+<04/14/2018 00:21:31> D: Threshold exceeded at 
+<04/14/2018 00:21:31> Action already taken no more space can be cleared
+<04/14/2018 00:21:31> Assessing Memory usage...
+<04/14/2018 00:21:31> Memory usage under threshold at 825 MB
+<04/14/2018 00:21:31> Assessing CPU usage...
+<04/14/2018 00:21:31> CPU usage under threshold at 2.04%
+<04/14/2018 00:21:31> Assessing TCP connection 
+<04/14/2018 00:21:31> TCP connections established under threshold at 1
+<04/14/2018 00:21:31> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:21:31> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:31> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:32> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:32> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:32> Assessing drive C...
+<04/14/2018 00:21:32> C: Under Threshold at 17.21%
+<04/14/2018 00:21:32> Assessing drive D...
+<04/14/2018 00:21:32> D: Under Threshold at 99.78%
+<04/14/2018 00:21:32> Assessing Memory usage...
+<04/14/2018 00:21:32> Avaliable bytes under threshold at 1522 MB
+<04/14/2018 00:21:32> Action already taken no more memory can be cleared
+<04/14/2018 00:21:32> Assessing CPU usage...
+<04/14/2018 00:21:32> CPU usage under threshold at 31.16%
+<04/14/2018 00:21:32> Assessing TCP connection 
+<04/14/2018 00:21:32> TCP connections established under threshold at 46
+<04/14/2018 00:21:32> ##### Adam-PC ASSESED #####
+<04/14/2018 00:21:32> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:21:32> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:21:32> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:21:32> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:21:32> Assessing drive C...
+<04/14/2018 00:21:32> C: Under Threshold at 51.28%
+<04/14/2018 00:21:32> Assessing drive D...
+<04/14/2018 00:21:32> D: Threshold exceeded at 
+<04/14/2018 00:21:32> Action already taken no more space can be cleared
+<04/14/2018 00:21:32> Assessing Memory usage...
+<04/14/2018 00:21:32> Memory usage under threshold at 825 MB
+<04/14/2018 00:21:32> Assessing CPU usage...
+<04/14/2018 00:21:32> CPU usage under threshold at 2.04%
+<04/14/2018 00:21:32> Assessing TCP connection 
+<04/14/2018 00:21:32> TCP connections established under threshold at 1
+<04/14/2018 00:21:32> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:21:32> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:21:32> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:44> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/14/2018 00:29:44> ##### GATHERING HOSTNAMES #####
+<04/14/2018 00:29:44> ##### HOSTNAMES GATHERED #####
+<04/14/2018 00:29:44> ##### GATHERING ALERT THRESHOLDS #####
+<04/14/2018 00:29:44> No Disk threshold defined for D
+<04/14/2018 00:29:44> ##### ALERT THRESHOLDS SET #####
+<04/14/2018 00:29:44> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:29:44> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:44> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:44> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:44> Assessing drive C...
+<04/14/2018 00:29:45> C: Under Threshold at 17.21%
+<04/14/2018 00:29:45> Assessing drive D...
+<04/14/2018 00:29:45> D: Under Threshold at 99.78%
+<04/14/2018 00:29:45> Assessing Memory usage...
+<04/14/2018 00:29:45> Avaliable bytes under threshold at 1422 MB
+<04/14/2018 00:29:45> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/14/2018 00:29:45> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:29:45> No processes were found unresponsive
+<04/14/2018 00:29:45> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:29:45> No WINWORD process running
+<04/14/2018 00:29:45> No Test process running
+<04/14/2018 00:29:45> 0 total MB recovered
+<04/14/2018 00:29:45> ##### END OF RESOURCE CLEARANCE #####
+<04/14/2018 00:29:45> Assessing CPU usage...
+<04/14/2018 00:29:45> CPU usage under threshold at 27.03%
+<04/14/2018 00:29:45> Assessing TCP connection 
+<04/14/2018 00:29:45> TCP connections established under threshold at 43
+<04/14/2018 00:29:45> ##### Adam-PC ASSESED #####
+<04/14/2018 00:29:46> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:29:46> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:46> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:46> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:46> Assessing drive C...
+<04/14/2018 00:29:46> C: Under Threshold at 51.28%
+<04/14/2018 00:29:46> Assessing Memory usage...
+<04/14/2018 00:29:46> Memory usage under threshold at 791 MB
+<04/14/2018 00:29:46> Assessing CPU usage...
+<04/14/2018 00:29:46> CPU usage under threshold at 0.63%
+<04/14/2018 00:29:46> Assessing TCP connection 
+<04/14/2018 00:29:46> TCP connections established under threshold at 2
+<04/14/2018 00:29:46> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:29:46> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:29:46> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:46> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:46> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:46> Assessing drive C...
+<04/14/2018 00:29:46> C: Under Threshold at 17.21%
+<04/14/2018 00:29:46> Assessing drive D...
+<04/14/2018 00:29:46> D: Under Threshold at 99.78%
+<04/14/2018 00:29:46> Assessing Memory usage...
+<04/14/2018 00:29:46> Avaliable bytes under threshold at 1455 MB
+<04/14/2018 00:29:46> Action already taken no more memory can be cleared
+<04/14/2018 00:29:46> Assessing CPU usage...
+<04/14/2018 00:29:46> CPU usage under threshold at 32.09%
+<04/14/2018 00:29:46> Assessing TCP connection 
+<04/14/2018 00:29:46> TCP connections established under threshold at 44
+<04/14/2018 00:29:46> ##### Adam-PC ASSESED #####
+<04/14/2018 00:29:46> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:29:46> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:46> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:46> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:46> Assessing drive C...
+<04/14/2018 00:29:46> C: Under Threshold at 51.28%
+<04/14/2018 00:29:46> Assessing Memory usage...
+<04/14/2018 00:29:46> Memory usage under threshold at 791 MB
+<04/14/2018 00:29:47> Assessing CPU usage...
+<04/14/2018 00:29:47> CPU usage under threshold at 0.63%
+<04/14/2018 00:29:47> Assessing TCP connection 
+<04/14/2018 00:29:47> TCP connections established under threshold at 2
+<04/14/2018 00:29:47> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:29:47> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:29:47> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:47> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:47> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:47> Assessing drive C...
+<04/14/2018 00:29:47> C: Under Threshold at 17.21%
+<04/14/2018 00:29:47> Assessing drive D...
+<04/14/2018 00:29:47> D: Under Threshold at 99.78%
+<04/14/2018 00:29:47> Assessing Memory usage...
+<04/14/2018 00:29:47> Avaliable bytes under threshold at 1455 MB
+<04/14/2018 00:29:47> Action already taken no more memory can be cleared
+<04/14/2018 00:29:47> Assessing CPU usage...
+<04/14/2018 00:29:47> CPU usage under threshold at 32.09%
+<04/14/2018 00:29:47> Assessing TCP connection 
+<04/14/2018 00:29:47> TCP connections established under threshold at 44
+<04/14/2018 00:29:47> ##### Adam-PC ASSESED #####
+<04/14/2018 00:29:47> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:29:47> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:29:47> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:29:47> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:29:47> Assessing drive C...
+<04/14/2018 00:29:47> C: Under Threshold at 51.28%
+<04/14/2018 00:29:47> Assessing Memory usage...
+<04/14/2018 00:29:47> Memory usage under threshold at 791 MB
+<04/14/2018 00:29:47> Assessing CPU usage...
+<04/14/2018 00:29:47> CPU usage under threshold at 0.63%
+<04/14/2018 00:29:47> Assessing TCP connection 
+<04/14/2018 00:29:47> TCP connections established under threshold at 2
+<04/14/2018 00:29:47> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:29:47> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:29:47> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:16> CONNECTION TO 192.168.56.101 ESTABLISHED
+<04/14/2018 00:53:16> ##### GATHERING HOSTNAMES #####
+<04/14/2018 00:53:16> ##### HOSTNAMES GATHERED #####
+<04/14/2018 00:53:16> ##### GATHERING ALERT THRESHOLDS #####
+<04/14/2018 00:53:16> No Disk threshold defined for D on Windows-VM-01 setting to default
+<04/14/2018 00:53:16> ##### ALERT THRESHOLDS SET #####
+<04/14/2018 00:53:16> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:16> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:17> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:17> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:17> Assessing drive C...
+<04/14/2018 00:53:17> C: Under Threshold at 17.21%
+<04/14/2018 00:53:17> Assessing drive D...
+<04/14/2018 00:53:17> D: Under Threshold at 99.78%
+<04/14/2018 00:53:17> Assessing Memory usage...
+<04/14/2018 00:53:17> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:17> ##### BEGINNING RESOURCE CLEARANCE #####
+<04/14/2018 00:53:17> ##### BEGINNING UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:53:17> No processes were found unresponsive
+<04/14/2018 00:53:17> ##### END OF UNRESPONSIVE TERMINATION #####
+<04/14/2018 00:53:17> No WINWORD process running
+<04/14/2018 00:53:17> No Test process running
+<04/14/2018 00:53:17> 0 total MB recovered
+<04/14/2018 00:53:17> ##### END OF RESOURCE CLEARANCE #####
+<04/14/2018 00:53:17> Assessing CPU usage...
+<04/14/2018 00:53:17> CPU usage under threshold at 25.62%
+<04/14/2018 00:53:17> Assessing TCP connection 
+<04/14/2018 00:53:17> TCP connections established under threshold at 44
+<04/14/2018 00:53:17> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:17> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:17> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:17> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:17> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:17> Assessing drive C...
+<04/14/2018 00:53:17> C: Under Threshold at 51.27%
+<04/14/2018 00:53:17> Assessing Memory usage...
+<04/14/2018 00:53:17> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:17> Assessing CPU usage...
+<04/14/2018 00:53:17> CPU usage under threshold at 0.97%
+<04/14/2018 00:53:17> Assessing TCP connection 
+<04/14/2018 00:53:17> TCP connections established under threshold at 1
+<04/14/2018 00:53:17> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:17> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:17> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:18> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:18> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:18> Assessing drive C...
+<04/14/2018 00:53:18> C: Under Threshold at 17.21%
+<04/14/2018 00:53:18> Assessing drive D...
+<04/14/2018 00:53:18> D: Under Threshold at 99.78%
+<04/14/2018 00:53:18> Assessing Memory usage...
+<04/14/2018 00:53:18> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:18> Action already taken no more memory can be cleared
+<04/14/2018 00:53:18> Assessing CPU usage...
+<04/14/2018 00:53:18> CPU usage under threshold at 25.62%
+<04/14/2018 00:53:18> Assessing TCP connection 
+<04/14/2018 00:53:18> TCP connections established under threshold at 44
+<04/14/2018 00:53:18> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:18> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:18> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:18> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:18> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:18> Assessing drive C...
+<04/14/2018 00:53:18> C: Under Threshold at 51.27%
+<04/14/2018 00:53:18> Assessing Memory usage...
+<04/14/2018 00:53:18> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:18> Assessing CPU usage...
+<04/14/2018 00:53:18> CPU usage under threshold at 0.97%
+<04/14/2018 00:53:18> Assessing TCP connection 
+<04/14/2018 00:53:18> TCP connections established under threshold at 1
+<04/14/2018 00:53:18> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:18> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:18> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:19> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:19> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:19> Assessing drive C...
+<04/14/2018 00:53:19> C: Under Threshold at 17.21%
+<04/14/2018 00:53:19> Assessing drive D...
+<04/14/2018 00:53:19> D: Under Threshold at 99.78%
+<04/14/2018 00:53:19> Assessing Memory usage...
+<04/14/2018 00:53:19> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:19> Action already taken no more memory can be cleared
+<04/14/2018 00:53:19> Assessing CPU usage...
+<04/14/2018 00:53:19> CPU usage under threshold at 25.62%
+<04/14/2018 00:53:19> Assessing TCP connection 
+<04/14/2018 00:53:19> TCP connections established under threshold at 44
+<04/14/2018 00:53:19> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:19> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:19> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:19> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:19> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:19> Assessing drive C...
+<04/14/2018 00:53:19> C: Under Threshold at 51.27%
+<04/14/2018 00:53:19> Assessing Memory usage...
+<04/14/2018 00:53:19> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:19> Assessing CPU usage...
+<04/14/2018 00:53:19> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:19> Assessing TCP connection 
+<04/14/2018 00:53:19> TCP connections established under threshold at 1
+<04/14/2018 00:53:19> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:19> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:19> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:20> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:20> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:20> Assessing drive C...
+<04/14/2018 00:53:20> C: Under Threshold at 17.21%
+<04/14/2018 00:53:20> Assessing drive D...
+<04/14/2018 00:53:20> D: Under Threshold at 99.78%
+<04/14/2018 00:53:20> Assessing Memory usage...
+<04/14/2018 00:53:20> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:20> Action already taken no more memory can be cleared
+<04/14/2018 00:53:20> Assessing CPU usage...
+<04/14/2018 00:53:20> CPU usage under threshold at 27.14%
+<04/14/2018 00:53:20> Assessing TCP connection 
+<04/14/2018 00:53:20> TCP connections established under threshold at 45
+<04/14/2018 00:53:20> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:20> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:20> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:20> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:20> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:20> Assessing drive C...
+<04/14/2018 00:53:20> C: Under Threshold at 51.27%
+<04/14/2018 00:53:20> Assessing Memory usage...
+<04/14/2018 00:53:20> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:20> Assessing CPU usage...
+<04/14/2018 00:53:20> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:20> Assessing TCP connection 
+<04/14/2018 00:53:20> TCP connections established under threshold at 1
+<04/14/2018 00:53:20> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:20> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:20> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:21> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:21> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:21> Assessing drive C...
+<04/14/2018 00:53:21> C: Under Threshold at 17.21%
+<04/14/2018 00:53:21> Assessing drive D...
+<04/14/2018 00:53:21> D: Under Threshold at 99.78%
+<04/14/2018 00:53:21> Assessing Memory usage...
+<04/14/2018 00:53:21> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:21> Action already taken no more memory can be cleared
+<04/14/2018 00:53:21> Assessing CPU usage...
+<04/14/2018 00:53:21> CPU usage under threshold at 27.14%
+<04/14/2018 00:53:21> Assessing TCP connection 
+<04/14/2018 00:53:21> TCP connections established under threshold at 45
+<04/14/2018 00:53:21> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:21> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:21> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:21> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:21> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:21> Assessing drive C...
+<04/14/2018 00:53:21> C: Under Threshold at 51.27%
+<04/14/2018 00:53:21> Assessing Memory usage...
+<04/14/2018 00:53:21> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:21> Assessing CPU usage...
+<04/14/2018 00:53:21> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:21> Assessing TCP connection 
+<04/14/2018 00:53:21> TCP connections established under threshold at 1
+<04/14/2018 00:53:21> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:21> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:21> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:21> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:21> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:21> Assessing drive C...
+<04/14/2018 00:53:21> C: Under Threshold at 17.21%
+<04/14/2018 00:53:21> Assessing drive D...
+<04/14/2018 00:53:21> D: Under Threshold at 99.78%
+<04/14/2018 00:53:21> Assessing Memory usage...
+<04/14/2018 00:53:21> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:21> Action already taken no more memory can be cleared
+<04/14/2018 00:53:21> Assessing CPU usage...
+<04/14/2018 00:53:21> CPU usage under threshold at 27.14%
+<04/14/2018 00:53:22> Assessing TCP connection 
+<04/14/2018 00:53:22> TCP connections established under threshold at 45
+<04/14/2018 00:53:22> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:22> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:22> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:22> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:22> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:22> Assessing drive C...
+<04/14/2018 00:53:22> C: Under Threshold at 51.27%
+<04/14/2018 00:53:22> Assessing Memory usage...
+<04/14/2018 00:53:22> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:22> Assessing CPU usage...
+<04/14/2018 00:53:22> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:22> Assessing TCP connection 
+<04/14/2018 00:53:22> TCP connections established under threshold at 1
+<04/14/2018 00:53:22> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:22> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:22> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:22> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:22> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:22> Assessing drive C...
+<04/14/2018 00:53:22> C: Under Threshold at 17.21%
+<04/14/2018 00:53:22> Assessing drive D...
+<04/14/2018 00:53:22> D: Under Threshold at 99.78%
+<04/14/2018 00:53:22> Assessing Memory usage...
+<04/14/2018 00:53:22> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:22> Action already taken no more memory can be cleared
+<04/14/2018 00:53:22> Assessing CPU usage...
+<04/14/2018 00:53:22> CPU usage under threshold at 27.14%
+<04/14/2018 00:53:22> Assessing TCP connection 
+<04/14/2018 00:53:23> TCP connections established under threshold at 45
+<04/14/2018 00:53:23> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:23> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:23> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:23> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:23> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:23> Assessing drive C...
+<04/14/2018 00:53:23> C: Under Threshold at 51.27%
+<04/14/2018 00:53:23> Assessing Memory usage...
+<04/14/2018 00:53:23> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:23> Assessing CPU usage...
+<04/14/2018 00:53:23> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:23> Assessing TCP connection 
+<04/14/2018 00:53:23> TCP connections established under threshold at 1
+<04/14/2018 00:53:23> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:23> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:23> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:24> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:24> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:24> Assessing drive C...
+<04/14/2018 00:53:24> C: Under Threshold at 17.21%
+<04/14/2018 00:53:24> Assessing drive D...
+<04/14/2018 00:53:24> D: Under Threshold at 99.78%
+<04/14/2018 00:53:24> Assessing Memory usage...
+<04/14/2018 00:53:24> Avaliable bytes under threshold at 1506 MB
+<04/14/2018 00:53:24> Action already taken no more memory can be cleared
+<04/14/2018 00:53:24> Assessing CPU usage...
+<04/14/2018 00:53:24> CPU usage under threshold at 27.14%
+<04/14/2018 00:53:24> Assessing TCP connection 
+<04/14/2018 00:53:24> TCP connections established under threshold at 45
+<04/14/2018 00:53:24> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:24> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:24> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:24> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:24> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:24> Assessing drive C...
+<04/14/2018 00:53:24> C: Under Threshold at 51.27%
+<04/14/2018 00:53:24> Assessing Memory usage...
+<04/14/2018 00:53:24> Memory usage under threshold at 816 MB
+<04/14/2018 00:53:24> Assessing CPU usage...
+<04/14/2018 00:53:24> CPU usage under threshold at 1.21%
+<04/14/2018 00:53:24> Assessing TCP connection 
+<04/14/2018 00:53:24> TCP connections established under threshold at 1
+<04/14/2018 00:53:24> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:24> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:24> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:24> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:24> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:24> Assessing drive C...
+<04/14/2018 00:53:24> C: Under Threshold at 17.21%
+<04/14/2018 00:53:24> Assessing drive D...
+<04/14/2018 00:53:24> D: Under Threshold at 99.78%
+<04/14/2018 00:53:24> Assessing Memory usage...
+<04/14/2018 00:53:24> Avaliable bytes under threshold at 1504 MB
+<04/14/2018 00:53:24> Action already taken no more memory can be cleared
+<04/14/2018 00:53:24> Assessing CPU usage...
+<04/14/2018 00:53:24> CPU usage under threshold at 29.87%
+<04/14/2018 00:53:24> Assessing TCP connection 
+<04/14/2018 00:53:25> TCP connections established under threshold at 45
+<04/14/2018 00:53:25> ##### Adam-PC ASSESED #####
+<04/14/2018 00:53:25> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/14/2018 00:53:25> ##### RUNNING DATABASE QUERIES #####
+<04/14/2018 00:53:25> ##### DATABASE QUERIES RAN #####
+<04/14/2018 00:53:25> ##### ASSESSING THRESHOLDS #####
+<04/14/2018 00:53:25> Assessing drive C...
+<04/14/2018 00:53:25> C: Under Threshold at 51.27%
+<04/14/2018 00:53:25> Assessing Memory usage...
+<04/14/2018 00:53:25> Memory usage under threshold at 817 MB
+<04/14/2018 00:53:25> Assessing CPU usage...
+<04/14/2018 00:53:25> CPU usage under threshold at 2.22%
+<04/14/2018 00:53:25> Assessing TCP connection 
+<04/14/2018 00:53:25> TCP connections established under threshold at 1
+<04/14/2018 00:53:25> ##### Windows-VM-01 ASSESED #####
+<04/14/2018 00:53:25> ##### BEGINNING Adam-PC ASSESSMENT #####
+<04/14/2018 00:53:25> ##### RUNNING DATABASE QUERIES #####

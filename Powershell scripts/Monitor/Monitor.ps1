@@ -9,20 +9,60 @@ $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powe
 $LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\LogDirs.json"
 $ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\ProcessRules.json"
 
-#Action taken boolean declaration
-$DdriveActionTaken = $false
-$CdriveActionTaken = $false
-$MemoryActionTaken = $false
-$CPUActionTaken = $false
-$TCPActionTaken = $false
-
 Function Write-Log
 {
   Param([string]$logstring)
 
   $time = get-date
-  Add-content $Logfile -value "<$time> $logstring"
+  Add-content $Logfile -value "<$time> $logstring" -ErrorAction SilentlyContinue
   write-host "<$time> $logstring"
+}
+
+class InfluxHost
+{
+  [string]$Hostname
+  [bool]$DdriveActionTaken
+  [bool]$CdriveActionTaken
+  [bool]$MemoryActionTaken
+  [bool]$CPUActionTaken
+  [bool]$TCPActionTaken
+  [int]$CThreshold
+  [int]$DThreshold
+  [int]$CPUThreshold
+  [int]$MemoryThreshold
+  [int]$TCPThreshold
+}
+
+Function Get-Hostnames
+{
+  $hostarray = @()
+  
+  $DBquery = "SHOW TAG VALUES FROM win_cpu WITH KEY=`"host`""
+
+  #Create API request
+  $request = "http://$DbIP`:8086/query?&db=telegraf&q=$DBquery"
+  
+  #query for response
+  $response = Invoke-RestMethod -Uri $request -Method Get
+  
+  #select results array
+  $results = $response.results.series.values
+
+  $trimmedarray = @()
+
+  foreach($result in $results)
+  {
+    $trimmedarray += $result[1]
+  }
+
+  foreach($trimmedname in $trimmedarray)
+  { 
+    $influxhost = New-Object InfluxHost
+    $influxhost.hostname = $trimmedname
+    $hostarray += $influxhost
+  }
+  
+  return $hostarray
 }
 
 Function Get-Threshold 
@@ -40,58 +80,70 @@ Function Get-Threshold
         [parameter(ParameterSetName='TCP',
         Mandatory=$false)]
         [switch]$TCP,
-        [string]$name)
+        [string]$name,
+        [string]$Computername)
 
   $jsondata = get-content $ThresholdsFile | convertfrom-json
 
-  if($FreeSpace) 
-    {
-      if($jsondata.DiskThresholds.name.Contains($name))
+  if($jsondata.$Computername)
+  {
+    if($FreeSpace) 
       {
-        $DiskThreshold = $jsondata.DiskThresholds | Where-Object -Property name -match $name
-        return $DiskThreshold.value
+        if($jsondata.$computername.DiskThresholds.name.Contains($name))
+        {
+          $DiskThreshold = $jsondata.$computername.DiskThresholds | Where-Object -Property name -match $name
+          return $DiskThreshold.value
+        }
+        else
+        {
+          Write-Log "No Disk threshold defined for $name on $Computername setting to default"
+          return 100
+        }
       }
-      else
+      elseif($Memory) 
       {
-        Write-Log "No Disk threshold defined for $name"
+        if($jsondata.$computername.MemoryThresholds.name.Contains($name))
+        {
+          $MemoryThreshold = $jsondata.$computername.MemoryThresholds | Where-Object -Property name -match $name
+          return $MemoryThreshold.value
+        }
+        else
+        {
+          Write-Log "No Memory threshold defined for $name on $Computername setting to default"
+          return 100000
+        }
       }
-    }
-    elseif($Memory) 
-    {
-      if($jsondata.MemoryThresholds.name.Contains($name))
+      elseif($CPU)
       {
-        $MemoryThreshold = $jsondata.MemoryThresholds | Where-Object -Property name -match $name
-        return $MemoryThreshold.value
+        if($jsondata.$computername.CPUThresholds.name.Contains($name))
+        {
+          $CPUThreshold = $jsondata.$computername.CPUThresholds | Where-Object -Property name -match $name
+          return $CPUThreshold.value
+        }
+        else
+        {
+          Write-Log "No CPU threshold defined for $name on $Computername setting to default"
+          return 101
+        }
       }
-      else
+      elseif($TCP)
       {
-        Write-Log "No Memory threshold defined for $name"
+        if($jsondata.$computername.TCPThresholds.name.Contains($name))
+        {
+          $TCPThreshold = $jsondata.$computername.TCPThresholds | Where-Object -Property name -match $name
+          return $TCPThreshold.value
+        }
+        else
+        {
+          Write-Log "No TCP threshold defined for $name on $Computername setting to default"
+          return 1000000
+        }
       }
-    }
-    elseif($CPU)
-    {
-      if($jsondata.CPUThresholds.name.Contains($name))
-      {
-        $CPUThreshold = $jsondata.CPUThresholds | Where-Object -Property name -match $name
-        return $CPUThreshold.value
-      }
-      else
-      {
-        Write-Log "No CPU threshold defined for $name"
-      }
-    }
-    elseif($TCP)
-    {
-      if($jsondata.TCPThresholds.name.Contains($name))
-      {
-        $TCPThreshold = $jsondata.TCPThresholds | Where-Object -Property name -match $name
-        return $TCPThreshold.value
-      }
-      else
-      {
-        Write-Log "No TCP threshold defined for $name"
-      }
-    }
+  }
+  else
+  {
+    Write-Log "$computername not defined in thresholds JSON"
+  }
 }
 
 Function Query-Database #return relative database entry as PSobject
@@ -572,13 +624,28 @@ Function Clear-TCPConnections
   Write-Log "##### REPORT OF POTENTIALLY UNWANTED CONNECTIONS ##### "
 
   Write-Log "##### CONNECTIONS WITH A NON RESPONSIVE OWNING PROCESS #####"
-  Write-Log $unowndedconnections
+  if($unowndedconnections.count -ne 0)
+  {
+    Write-Log "$($unowndedconnections.name)"
+  }
+
   Write-Log "##### CONNECTIONS CREATED OVER 7 DAYS AGO #####"
-  Write-Log $oldconnections
-  Write-Log "##### INTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####"
-  Write-Log $exceedinginternalconnections
+  if($oldconnections.count -ne 0)
+  {
+    Write-Log "$($oldconnections.name)"
+  }
+
+  Write-Log "##### INTERNAL ADDRESS' WITH OVER 100 CONNECTIONS #####"
+  if($exceedinginternalconnections.count -ne 0)
+  {
+    Write-Log "$($exceedinginternalconnections.name)"
+  }
+
   Write-Log "##### EXTERNAL REMOTE ADDRESS' WITH OVER 100 CONNECTIONS #####"
-  Write-Log "$exceedingexternalconnections"
+  if($exceedingexternalconnections.count -ne 0)
+  {
+    Write-Log "$($exceedingexternalconnections.name)"
+  }
 
   Write-Log "##### ENDING TCP CONNECTION TROUBLESHOOT #####"
 }
@@ -588,23 +655,24 @@ if (Test-Connection $DbIP)
 {
   Write-Log "CONNECTION TO $DbIP ESTABLISHED"
 
+  Write-Log "##### GATHERING HOSTNAMES #####"
+
+  $Influxhosts = Get-Hostnames
+
+  Write-Log "##### HOSTNAMES GATHERED #####"
+
   #### GATHER ALERT THRESHOLDS ####
   Write-Log "##### GATHERING ALERT THRESHOLDS #####"
 
-  $CThreshold = Get-Threshold -FreeSpace -name "C"
-  Write-Log "C Threshold has been set to $CThreshold%"
-
-  $DThreshold = Get-Threshold -FreeSpace -name "D"
-  Write-Log "D Threshold has been set to $DThreshold%"
-
-  $MemoryThreshold = Get-Threshold -Memory -name "Avaliable Bytes"
-  Write-Log "Memory Threshold set to $MemoryThreshold MB"
-
-  $CPUThreshold = Get-Threshold -CPU -name "Processor Time"
-  Write-Log "CPU Threshold set to $CPUThreshold%"
-
-  $TCPThreshold = Get-Threshold -TCP -name "Connections Established"
-  Write-Log "TCP Threshold set to $TCPThreshold"
+  #set thresholds for each host in array from relative json
+  foreach($Influxhost in $Influxhosts)
+  {
+    $Influxhost.CThreshold = Get-Threshold -FreeSpace -name "C" -Computername $Influxhost.hostname
+    $Influxhost.DThreshold = Get-Threshold -FreeSpace -name "D" -Computername $Influxhost.hostname
+    $Influxhost.CPUThreshold = Get-Threshold -CPU -name "Processor Time" -Computername $Influxhost.hostname
+    $Influxhost.MemoryThreshold = Get-Threshold -Memory -name "Avaliable Bytes" -Computername $Influxhost.hostname
+    $Influxhost.TCPThreshold = Get-Threshold -TCP -name "Connections Established" -Computername $Influxhost.hostname
+  }
 
   Write-Log "##### ALERT THRESHOLDS SET #####"
 
@@ -612,152 +680,165 @@ if (Test-Connection $DbIP)
   
   While($true)
   {
-    ##### QUERYING DATABASE
-    Write-Log "##### RUNNING DATABASE QUERIES #####"
-
-    #Initialize database entry point objects
-    $CDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:'"
-
-    $DDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:'"
-
-    $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")"
-
-    $CPUusage = Query-Database -CPU -SELECT "LAST(`"% Processor Time`")"
-
-    $TCPconnections = Query-Database -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`""
-
-    Write-Log "##### DATABASE QUERIES RAN #####"
-
-    ##### ASSESSING THRESHOLDS
-    Write-Log "##### ASSESSING THRESHOLDS #####"
-
-    #Check C against threshold values
-    Write-Log "Assessing drive C..."
-    if($CDrive.Value -lt $CThreshold)
+    foreach($Influxhost in $Influxhosts)
     {
-      Write-Log "C: Threshold exceeded at $($CDrive.Value)"
-      if($CdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
-      {
-        Clear-drive -RootDirectory $CDrive.Instance
-        $CdriveActionTaken = $true
-      }
-      else #if action already taken print to log
-      {
-        Write-Log "Action already taken no more space can be cleared"
-      }
-    }
-    else
-    {
-      Write-Log "C: Under Threshold at $("{0:n2}" -f $CDrive.Value)%"
-      if($CdriveActionTaken -eq $true) #once under threshold again reset automated action to false
-      {
-        $CdriveActionTaken = $false
-        Write-Log "C drive action taken set to false"
-      }
-    }
+      #set hostname to query in influxDB
+      $Name = $Influxhost.hostname
 
-    #Check D against threshold
-    Write-Log "Assessing drive D..."
-    if($DDrive.Value -lt $DThreshold)
-    {
-      Write-Log "D: Threshold exceeded at $($DDrive.Value)"
-      if($DdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
-      {
-        Clear-Drive -RootDirectory $DDrive.Instance
-        $DdriveActionTaken = $true
-      }
-      else #if action already taken print to log
-      {
-        Write-Log "Action already taken no more space can be cleared"
-      }
-    }
-    else
-    {
-      Write-Log "D: Under Threshold at $("{0:n2}" -f $DDrive.Value)%"
-      if($DdriveActionTaken -eq $true) #once under threshold again reset automated action to false
-      {
-        $DdriveActionTaken = $false
-        Write-Log "D drive action taken set to false"
-      }
-    }
+      Write-Log "##### BEGINNING $NAME ASSESSMENT #####"
 
-    #Check Memory against threshold values
-    Write-Log "Assessing Memory usage..."
-    if($MemoryUsage.Mb -lt $MemoryThreshold)
-    {
-      Write-Log "Avaliable bytes under threshold at $($MemoryUsage.Mb) MB"
-      if($MemoryActionTaken -eq $false)
+      ##### QUERYING DATABASE
+      Write-Log "##### RUNNING DATABASE QUERIES #####"
+      
+      #Initialize database entry point objects
+      $CDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:' AND host = '$name'" -ErrorAction SilentlyContinue
+      
+      $DDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:' AND host = '$name'" -ErrorAction SilentlyContinue
+      
+      $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      
+      $CPUusage = Query-Database -CPU -SELECT "LAST(`"% Processor Time`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      
+      $TCPconnections = Query-Database -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`"" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      
+      Write-Log "##### DATABASE QUERIES RAN #####"
+      
+      ##### ASSESSING THRESHOLDS
+      Write-Log "##### ASSESSING THRESHOLDS #####"
+      
+      if($CDrive)
       {
-        Clear-Resource -Memory
-        $MemoryActionTaken = $true
+        #Check C against threshold values
+        Write-Log "Assessing drive C..."
+        if($CDrive.Value -lt $Influxhost.CThreshold)
+        {
+        Write-Log "C: Threshold exceeded at $($CDrive.Value)"
+        if($Influxhost.CdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
+        {
+          Clear-drive -RootDirectory $CDrive.Instance
+          $Influxhost.CdriveActionTaken = $true
+        }
+        else #if action already taken print to log
+        {
+          Write-Log "Action already taken no more space can be cleared"
+        }
+      }
+        else
+        {
+        Write-Log "C: Under Threshold at $("{0:n2}" -f $CDrive.Value)%"
+        if($Influxhost.CdriveActionTaken -eq $true) #once under threshold again reset automated action to false
+        {
+          $Influxhost.CdriveActionTaken = $false
+          Write-Log "C drive action taken set to false"
+        }
+      }
+      }
+
+      if($DDrive)
+      {
+        #Check D against threshold
+        Write-Log "Assessing drive D..."
+        if($DDrive.Value -lt $Influxhost.DThreshold)
+        {
+        Write-Log "D: Threshold exceeded at $($DDrive.Value)"
+        if($Influxhost.DdriveActionTaken -eq $false) #if automated action not already taken, run clear-drive
+        {
+          Clear-Drive -RootDirectory $DDrive.Instance
+          $Influxhost.DdriveActionTaken = $true
+        }
+        else #if action already taken print to log
+        {
+          Write-Log "Action already taken no more space can be cleared"
+        }
+      }
+        else
+        {
+        Write-Log "D: Under Threshold at $("{0:n2}" -f $DDrive.Value)%"
+        if($Influxhost.DdriveActionTaken -eq $true) #once under threshold again reset automated action to false
+        {
+          $Influxhost.DdriveActionTaken = $false
+          Write-Log "D drive action taken set to false"
+        }
+      }
+      }
+      
+      #Check Memory against threshold values
+      Write-Log "Assessing Memory usage..."
+      if($MemoryUsage.Mb -lt $influxhost.MemoryThreshold)
+      {
+        Write-Log "Avaliable bytes under threshold at $($MemoryUsage.Mb) MB"
+        if($Influxhost.MemoryActionTaken -eq $false)
+        {
+          Clear-Resource -Memory
+          $Influxhost.MemoryActionTaken = $true
+        }
+        else
+        {
+          Write-Log "Action already taken no more memory can be cleared"
+        }
       }
       else
       {
-        Write-Log "Action already taken no more memory can be cleared"
+       Write-Log "Memory usage under threshold at $($MemoryUsage.Mb) MB"
+       if($Influxhost.MemoryActionTaken -eq $true)
+       {
+         $Influxhost.MemoryActionTaken = $false
+         Write-Log "Memory action taken reset to false"
+       }
       }
-    }
-    else
-    {
-     Write-Log "Memory usage under threshold at $($MemoryUsage.Mb) MB"
-     if($MemoryActionTaken -eq $true)
-     {
-       $MemoryActionTaken = $false
-       Write-Log "Memory action taken reset to false"
-     }
-    }
-
-    #Check CPU against threshold
-    Write-Log "Assessing CPU usage..."
-    if($CPUusage.ProcessorTime -gt $CPUThreshold)
-    {
-      Write-Log "CPU usage over threshold at $($CPUusage.ProcessorTime)"
-      if($CPUActionTaken -eq $false)
+      
+      #Check CPU against threshold
+      Write-Log "Assessing CPU usage..."
+      if($CPUusage.ProcessorTime -gt $Influxhost.CPUThreshold)
       {
-        Clear-Resource -CPU
-        $CPUActionTaken = $true
+        Write-Log "CPU usage over threshold at $($CPUusage.ProcessorTime)"
+        if($Influxhost.CPUActionTaken -eq $false)
+        {
+          Clear-Resource -CPU
+          $Influxhost.CPUActionTaken = $true
+        }
+        else
+        {
+          Write-Log "Action already taken no more CPU can be cleared"
+        }
       }
       else
       {
-        Write-Log "Action already taken no more CPU can be cleared"
+        Write-Log "CPU usage under threshold at $("{0:n2}" -f $CPUusage.ProcessorTime)%"
+        if($Influxhost.CPUActionTaken -eq $true)
+        {
+          $Influxhost.CPUActionTaken = $false
+          Write-Log "CPU action taken reset to false"
+        }
       }
-    }
-    else
-    {
-      Write-Log "CPU usage under threshold at $("{0:n2}" -f $CPUusage.ProcessorTime)%"
-      if($CPUActionTaken -eq $true)
+      
+      #Check TCP connection threshold
+      Write-Log "Assessing TCP connection "
+      if($TCPconnections.ConnectionsEstablished -gt $Influxhost.TCPThreshold)
       {
-        $CPUActionTaken = $false
-        Write-Log "CPU action taken reset to false"
+       Write-Log "TCP connections over threshold at $($TCPconnections.ConnectionsEstablished)"
+       if($Influxhost.TCPActionTaken -eq $false)
+       {
+         Clear-TCPConnections
+         $Influxhost.TCPActionTaken = $true
+       }
+       else
+       {
+         Write-Log "Report already produced please check logs"
+       }
       }
-    }
-
-    #Check TCP connection threshold
-    Write-Log "Assessing TCP connection "
-    if($TCPconnections.ConnectionsEstablished -gt $TCPThreshold)
-    {
-     Write-Log "TCP connections over threshold at $($TCPconnections.ConnectionsEstablished)"
-     if($TCPActionTaken -eq $false)
-     {
-       Clear-TCPConnections
-       $TCPActionTaken = $true
-     }
-     else
-     {
-       Write-Log "Report already produced please check logs"
-     }
-    }
-    else
-    {
-      Write-Log "TCP connections established under threshold at $($TCPconnections.ConnectionsEstablished)"
-      if($TCPActionTaken -eq $true)
+      else
       {
-        $TCPActionTaken = $false
+        Write-Log "TCP connections established under threshold at $($TCPconnections.ConnectionsEstablished)"
+        if($Influxhost.TCPActionTaken -eq $true)
+        {
+          $Influxhost.TCPActionTaken = $false
+        }
       }
+      
+      ##### LOOP COMPLETE SLEEPING 30 UNTIL NEXT LOOP
+      Write-Log "##### $($Influxhost.Hostname) ASSESED #####"
     }
-
-    ##### LOOP COMPLETE SLEEPING 30 UNTIL NEXT LOOP
-    Write-Log "##### THRESHOLDS ASSESSED SLEEPING UNTIL NEXT LOOP #####"
-    start-sleep 30
   }
 }
 else
