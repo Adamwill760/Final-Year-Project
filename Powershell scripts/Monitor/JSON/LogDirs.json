@@ -18,5 +18,23 @@
       "location":"D:\\TestDirectories\\Test3",
       "retention":"10"
     }
+  ],
+  "Exclusions":[
+    {
+      "name":"Windows",
+      "location":"C:\\Windows"
+    },
+    {
+      "name":"Program Files",
+      "location":"C:\\Program Files"
+    },
+    {
+      "name":"Program Files (X86)",
+      "location":"C:\\Program Files (X86)"
+    },
+    {
+      "name":"Uni",
+      "location":"D:\\University Work"
+    }
   ]
 }

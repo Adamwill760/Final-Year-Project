@@ -1,0 +1,11 @@
+<04/16/2018 06:19:35> ##### BEGINNING DRIVE CLEAR #####
+<04/16/2018 06:19:35> ##### LOADED LOG RULES #####
+<04/16/2018 06:19:35> D:\TestDirectories\Test1 D:\TestDirectories\Test2 D:\TestDirectories\Test3
+<04/16/2018 06:19:35> ##### LOADED EXCLUSIONS #####
+<04/16/2018 06:19:35> C:\Windows C:\Program Files C:\Program Files (X86) D:\University Work
+<04/16/2018 06:20:07> ##### Largest Directories on logical disk #####
+<04/16/2018 06:20:07> Telegraf - 28.31 MB AdamN - 0.02 MB Users - 0.02 MB Downloads - 0.02 MB Favorites - 0.00 MB
+<04/16/2018 06:20:07> Test1 retention rule does not match any directory
+<04/16/2018 06:20:07> Test2 retention rule does not match any directory
+<04/16/2018 06:20:07> Test3 retention rule does not match any directory
+<04/16/2018 06:20:07> ##### END OF DRIVE CLEAR ####

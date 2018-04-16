@@ -42,7 +42,7 @@
       "DiskThresholds":[
         {
           "name":"C",
-          "value":"10"
+          "value":"100"
         }
       ]
     },
