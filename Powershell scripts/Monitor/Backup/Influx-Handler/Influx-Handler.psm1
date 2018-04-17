@@ -15,6 +15,8 @@
 
 Function Get-Hostnames
 {
+  param([string]$DbIP)
+
   $hostarray = @()
   
   $DBquery = "SHOW TAG VALUES FROM win_cpu WITH KEY=`"host`""
@@ -61,7 +63,8 @@ Function Query-Database #return relative database entry as PSobject
         Mandatory=$false)]
         [switch]$TCP,
         [string]$SELECT,
-        [string]$WHERE
+        [string]$WHERE,
+        [string]$DbIP
         )
   
   if($FreeSpace)
@@ -146,76 +149,3 @@ Function Query-Database #return relative database entry as PSobject
  }
 }
 
-Function Get-Threshold 
-{
-  param(
-        [parameter(ParameterSetName='Freespace',
-        Mandatory=$false)]
-        [switch]$FreeSpace,
-        [parameter(ParameterSetName='Memory',
-        Mandatory=$false)]
-        [switch]$Memory,
-        [parameter(ParameterSetName='CPU',
-        Mandatory=$false)]
-        [switch]$CPU,
-        [parameter(ParameterSetName='TCP',
-        Mandatory=$false)]
-        [switch]$TCP,
-        [string]$name,
-        [string]$Computername)
-
-  $jsondata = get-content $ThresholdsFile | convertfrom-json
-
-  if($FreeSpace) 
-    {
-      if($jsondata.$computername.DiskThresholds.name.Contains($name))
-      {
-        $DiskThreshold = $jsondata.$computername.DiskThresholds | Where-Object -Property name -match $name
-        return $DiskThreshold.value
-      }
-      else
-      {
-        Write-Log "No Disk threshold defined for $name on $Computername setting to default"
-        return 100
-      }
-    }
-    elseif($Memory) 
-    {
-      if($jsondata.$computername.MemoryThresholds.name.Contains($name))
-      {
-        $MemoryThreshold = $jsondata.$computername.MemoryThresholds | Where-Object -Property name -match $name
-        return $MemoryThreshold.value
-      }
-      else
-      {
-        Write-Log "No Memory threshold defined for $name on $Computername setting to default"
-        return 100000
-      }
-    }
-    elseif($CPU)
-    {
-      if($jsondata.$computername.CPUThresholds.name.Contains($name))
-      {
-        $CPUThreshold = $jsondata.$computername.CPUThresholds | Where-Object -Property name -match $name
-        return $CPUThreshold.value
-      }
-      else
-      {
-        Write-Log "No CPU threshold defined for $name on $Computername setting to default"
-        return 101
-      }
-    }
-    elseif($TCP)
-    {
-      if($jsondata.$computername.TCPThresholds.name.Contains($name))
-      {
-        $TCPThreshold = $jsondata.$computername.TCPThresholds | Where-Object -Property name -match $name
-        return $TCPThreshold.value
-      }
-      else
-      {
-        Write-Log "No TCP threshold defined for $name on $Computername setting to default"
-        return 1000000
-      }
-    }
-}

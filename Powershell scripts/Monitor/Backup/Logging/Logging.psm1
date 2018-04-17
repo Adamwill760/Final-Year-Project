@@ -1,8 +1,9 @@
 ﻿Function Write-Log
 {
-  Param([string]$logstring)
+  Param([string]$Logstring,
+        [string]$Logfile)
 
   $time = get-date
-  Add-content $Logfile -value "<$time> $logstring" -ErrorAction SilentlyContinue
-  write-host "<$time> $logstring"
+  Add-content $Logfile -value "<$time> $Logstring" -ErrorAction SilentlyContinue
+  write-host "<$time> $Logstring"
 }

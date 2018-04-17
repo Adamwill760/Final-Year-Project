@@ -1,7 +1,8 @@
 ﻿Function Clear-Drive
 {
   Param ([String]$RootDirectory,
-         [String]$LogRulesJson)
+         [String]$LogRulesJson,
+         [String]$Logfile)
 
   write-log -logfile $logfile -logstring "##### BEGINNING DRIVE CLEAR #####"
 
@@ -153,7 +154,8 @@ Function Clear-Unresponsive
         [parameter(parametersetname="CPU",
         Mandatory=$true)]
         [switch]$CPU,
-        [array]$Processlist
+        [array]$Processlist,
+        [string]$logfile
         )
   
   write-log -logfile $logfile -logstring "##### BEGINNING UNRESPONSIVE TERMINATION #####"
@@ -237,7 +239,8 @@ Function Clear-Resource
        [switch]$Memory,
        [parameter(parametersetname="CPU", Mandatory=$true)]
        [switch]$CPU, 
-       [string]$ProcessesRulesJson
+       [string]$ProcessesRulesJson,
+       [string]$logfile
        )
 
  write-log -logfile $logfile -logstring "##### BEGINNING RESOURCE CLEARANCE #####"
@@ -323,6 +326,8 @@ Function Clear-Resource
 
 Function Clear-TCPConnections
 {
+  param([string]$logfile)
+
   write-log -logfile $logfile -logstring "##### BEGINNING TCP CONNECTION TROUBLESHOOT #####"
   
   $Connections = Get-NetTCPConnection -State Established

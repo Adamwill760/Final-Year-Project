@@ -1,6 +1,7 @@
 #import custom modules
-Import-Module Logging
+Import-Module Logging 
 Import-Module Credentials
+Import-Module Thresholds
 Import-Module Resource-Clearance
 Import-Module Influx-Handler
 
@@ -8,7 +9,7 @@ Import-Module Influx-Handler
 $DbIP = '192.168.56.103'
 
 #Define the location to write the log file
-$Logfile = "D:\University work\Third Year\Final Year Project\Product\$(gc env:computername).log"
+$Logfile = "D:\University work\Third Year\Final Year Project\Product\PerformanceMonitor.log"
 
 #Location of the JSON rule files
 $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\Threshold.json"
@@ -24,7 +25,7 @@ if (Test-Connection $DbIP)
 
   write-log -logfile $logfile -logstring "##### GATHERING HOSTNAMES #####"
 
-  $Influxhosts = Get-Hostnames
+  $Influxhosts = Get-Hostnames -DbIP $DbIP
 
   write-log -logfile $logfile -logstring "##### HOSTNAMES GATHERED #####"
 
@@ -34,11 +35,11 @@ if (Test-Connection $DbIP)
   #set thresholds for each host in array from relative json
   foreach($Influxhost in $Influxhosts)
   {
-    $Influxhost.CThreshold = Get-Threshold -FreeSpace -name "C" -Computername $Influxhost.hostname
-    $Influxhost.DThreshold = Get-Threshold -FreeSpace -name "D" -Computername $Influxhost.hostname
-    $Influxhost.CPUThreshold = Get-Threshold -CPU -name "Processor Time" -Computername $Influxhost.hostname
-    $Influxhost.MemoryThreshold = Get-Threshold -Memory -name "Avaliable Bytes" -Computername $Influxhost.hostname
-    $Influxhost.TCPThreshold = Get-Threshold -TCP -name "Connections Established" -Computername $Influxhost.hostname
+    $Influxhost.CThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "C" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.DThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "D" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.CPUThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -CPU -name "Processor Time" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.MemoryThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -Memory -name "Avaliable Bytes" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.TCPThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -TCP -name "Connections Established" -Computername $Influxhost.hostname -logfile $logfile
   }
 
   write-log -logfile $logfile -logstring "##### ALERT THRESHOLDS SET #####"
@@ -58,15 +59,15 @@ if (Test-Connection $DbIP)
       write-log -logfile $logfile -logstring "##### RUNNING DATABASE QUERIES #####"
       
       #Initialize database entry point objects
-      $CDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:' AND host = '$name'" -ErrorAction SilentlyContinue
+      $CDrive = Query-Database -DbIP $DbIP -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:' AND host = '$name'" -ErrorAction SilentlyContinue
       
-      $DDrive = Query-Database -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:' AND host = '$name'" -ErrorAction SilentlyContinue
+      $DDrive = Query-Database -DbIP $DbIP -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:' AND host = '$name'" -ErrorAction SilentlyContinue
       
-      $MemoryUsage = Query-Database -Memory -SELECT "LAST(`"Available Bytes`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      $MemoryUsage = Query-Database -DbIP $DbIP -Memory -SELECT "LAST(`"Available Bytes`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
       
-      $CPUusage = Query-Database -CPU -SELECT "LAST(`"% Processor Time`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      $CPUusage = Query-Database -DbIP $DbIP -CPU -SELECT "LAST(`"% Processor Time`")" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
       
-      $TCPconnections = Query-Database -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`"" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
+      $TCPconnections = Query-Database -DbIP $DbIP -TCP -SELECT "LAST(`"Connections Established`"), `"Connections Active`", `"Connections Passive`"" -WHERE "host = '$name'" -ErrorAction SilentlyContinue
       
       write-log -logfile $logfile -logstring "##### DATABASE QUERIES RAN #####"
       
@@ -90,10 +91,10 @@ if (Test-Connection $DbIP)
             $Logfile = New-Item "C:\Performance Monitor\logs\$(gc env:computername)-CDrive.log" -force
             $Rules = "C:\Performance Monitor\Rules\LogDirs.json"
 
-            Clear-Drive -RootDirectory "$($CDrive.Instance)\" -LogRulesJson $Rules
+            Clear-Drive -RootDirectory "$($CDrive.Instance)\" -LogRulesJson $Rules -Logfile $Logfile
           }
           #move log file back to host PC
-          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product"
+          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -force
 
           $Influxhost.CdriveActionTaken = $true
         }
@@ -130,11 +131,11 @@ if (Test-Connection $DbIP)
             $Logfile = New-Item "C:\Performance Monitor\logs\$(gc env:computername)-Ddrive.log"
             $Rules = "C:\Performance Monitor\Rules\LogDirs.json"
 
-            Clear-Drive -RootDirectory "$($DDrive.Instance)\" -LogRulesJson $Rules
+            Clear-Drive -RootDirectory "$($DDrive.Instance)\" -LogRulesJson $Rules -Logfile $Logfile
             }
 
           #move log file back to host PC
-          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product"
+          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -Force
 
           $Influxhost.DdriveActionTaken = $true
         }
@@ -169,7 +170,7 @@ if (Test-Connection $DbIP)
           $Logfile = New-Item "C:\Performance Monitor\logs\$(gc env:computername)-Memory.log" -force
           $Rules = "C:\Performance Monitor\Rules\ProcessRules.json"
 
-          Clear-Resource -Memory -ProcessesRulesJson $Rules
+          Clear-Resource -Memory -ProcessesRulesJson $Rules -logfile $Logfile
           }
 
           #move log file back to host PC
@@ -207,7 +208,7 @@ if (Test-Connection $DbIP)
             $Logfile = New-Item "C:\Performance Monitor\logs\$(gc env:computername)-CPU.log" -force
             $Rules = "C:\Performance Monitor\Rules\ProcessRules.json"
 
-            Clear-Resource -CPU -ProcessesRulesJson $Rules
+            Clear-Resource -CPU -ProcessesRulesJson $Rules -logfile $Logfile
           }
 
           #move log file back to host PC
@@ -244,7 +245,7 @@ if (Test-Connection $DbIP)
 
             $Logfile = New-Item "C:\Performance Monitor\logs\$(gc env:computername)-TCP.log" -force
 
-            Clear-TCPConnections
+            Clear-TCPConnections -logfile $Logfile
           }
 
           #move log file back to host PC
