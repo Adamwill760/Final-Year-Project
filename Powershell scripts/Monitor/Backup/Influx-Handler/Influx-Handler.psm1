@@ -1,6 +1,6 @@
 ﻿class InfluxHost
 {
-  [string]$Hostname
+  [string]$Name
   [bool]$CdriveActionTaken
   [bool]$MemoryActionTaken
   [bool]$CPUActionTaken
@@ -80,50 +80,23 @@ Function Query-Database #return relative database entry as PSobject
   $result = $response.results.series.values
 
  if($FreeSpace)
- {
-   ##create custom drive object
-   #$Drive = New-Object PSObject -Property @{
-   #  Time = $result[0][0]
-   #  Value = $result[0][1]
-   #  Instance = $result[0][2]
-   #  }
-     
+ {     
      return $result[0][1]
  }
  elseif($Memory)
  { 
-  #create custom memory object 
-  #$MemoryObject = New-Object PSobject -Property @{
-  #            Time = $result[0][0] 
-  #            Kb =  [int](($result[0][1])/1KB)
-  #            Mb = [int](($result[0][1])/1MB)
-  #            Gb = "{0:n2}" -f (($result[0][1])/1GB)}
-  #
- return [int](($result[0][1])/1MB)
+   return [int](($result[0][1])/1MB)
  }
  elseif($CPU)
  {
-   #create custom CPU object 
-   #$CPUObject = New-Object PSobject -Property @{
-   #            Time = $result[0][0] 
-   #            ProcessorTime = $result[0][1]}
-   
    return $result[0][1]
  }
  elseif($TCP)
  {
-   #create custom CPU object 
-   #$TCPObject = New-Object PSobject -Property @{
-   #            Time = $result[0][0] 
-   #            ConnectionsEstablished = $result[0][1]
-   #            ConnectionsActive = $result[0][2]
-   #            ConnectionsPassive= $result[0][3]
-   #            }
-   
+
    return $result[0][1]
  }
 }
-
 
 Function Get-Hostnames
 {
@@ -155,13 +128,13 @@ Function Get-Hostnames
       {
         Query-Database -DbIP $DbIP -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'D:' AND host = '$trimmedname'"
         $influxhost = New-Object InfluxDHost
-        $influxhost.hostname = $trimmedname
+        $influxhost.Name = $trimmedname
         $hostarray += $influxhost
       }
       catch
       {
         $influxhost = New-Object InfluxHost
-        $influxhost.hostname = $trimmedname
+        $influxhost.Name = $trimmedname
         $hostarray += $influxhost
       } 
   }

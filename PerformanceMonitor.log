@@ -1,140 +1,2654 @@
-<04/18/2018 18:53:35> ##### LOADING GUI #####
-<04/18/2018 18:53:36> CONNECTION TO 192.168.56.103 ESTABLISHED
-<04/18/2018 18:53:36> ##### GATHERING HOSTNAMES #####
-<04/18/2018 18:53:36> ##### HOSTNAMES GATHERED #####
-<04/18/2018 18:53:36> ##### GATHERING ALERT THRESHOLDS #####
-<04/18/2018 18:53:36> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
-<04/18/2018 18:53:36> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
-<04/18/2018 18:53:36> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
-<04/18/2018 18:53:36> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
-<04/18/2018 18:53:36> ##### ALERT THRESHOLDS SET #####
-<04/18/2018 18:53:36> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
-<04/18/2018 18:53:36> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:36> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:36> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:36> Assessing drive C...
-<04/18/2018 18:53:36> C: Under Threshold at 52.00%
-<04/18/2018 18:53:36> Assessing Memory usage...
-<04/18/2018 18:53:36> Memory usage under threshold at 907 MB
-<04/18/2018 18:53:36> Assessing CPU usage...
-<04/18/2018 18:53:36> CPU usage under threshold at 10.00%
-<04/18/2018 18:53:36> Assessing TCP connection 
-<04/18/2018 18:53:36> TCP connections established under threshold at 5
-<04/18/2018 18:53:36> ##### Windows-VM-01 ASSESED #####
-<04/18/2018 18:53:36> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
-<04/18/2018 18:53:36> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:37> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:37> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:37> Assessing drive C...
-<04/18/2018 18:53:37> C: Under Threshold at 51.00%
-<04/18/2018 18:53:37> Assessing Memory usage...
-<04/18/2018 18:53:37> Memory usage under threshold at 426 MB
-<04/18/2018 18:53:37> Assessing CPU usage...
-<04/18/2018 18:53:37> CPU usage under threshold at 50.00%
-<04/18/2018 18:53:37> Assessing TCP connection 
-<04/18/2018 18:53:37> TCP connections established under threshold at 2
-<04/18/2018 18:53:37> ##### Windows-VM-02 ASSESED #####
-<04/18/2018 18:53:37> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
-<04/18/2018 18:53:37> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:37> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:37> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:37> Assessing drive C...
-<04/18/2018 18:53:37> C: Under Threshold at 52.00%
-<04/18/2018 18:53:37> Assessing Memory usage...
-<04/18/2018 18:53:37> Memory usage under threshold at 907 MB
-<04/18/2018 18:53:37> Assessing CPU usage...
-<04/18/2018 18:53:37> CPU usage under threshold at 10.00%
-<04/18/2018 18:53:37> Assessing TCP connection 
-<04/18/2018 18:53:37> TCP connections established under threshold at 5
-<04/18/2018 18:53:37> ##### Windows-VM-01 ASSESED #####
-<04/18/2018 18:53:37> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
-<04/18/2018 18:53:37> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:37> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:37> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:37> Assessing drive C...
-<04/18/2018 18:53:37> C: Under Threshold at 51.00%
-<04/18/2018 18:53:37> Assessing Memory usage...
-<04/18/2018 18:53:37> Memory usage under threshold at 426 MB
-<04/18/2018 18:53:37> Assessing CPU usage...
-<04/18/2018 18:53:37> CPU usage under threshold at 50.00%
-<04/18/2018 18:53:37> Assessing TCP connection 
-<04/18/2018 18:53:37> TCP connections established under threshold at 2
-<04/18/2018 18:53:37> ##### Windows-VM-02 ASSESED #####
-<04/18/2018 18:53:37> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
-<04/18/2018 18:53:37> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:37> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:37> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:37> Assessing drive C...
-<04/18/2018 18:53:37> C: Under Threshold at 52.00%
-<04/18/2018 18:53:37> Assessing Memory usage...
-<04/18/2018 18:53:37> Memory usage under threshold at 907 MB
-<04/18/2018 18:53:37> Assessing CPU usage...
-<04/18/2018 18:53:37> CPU usage under threshold at 10.00%
-<04/18/2018 18:53:37> Assessing TCP connection 
-<04/18/2018 18:53:37> TCP connections established under threshold at 5
-<04/18/2018 18:53:37> ##### Windows-VM-01 ASSESED #####
-<04/18/2018 18:53:37> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
-<04/18/2018 18:53:37> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:37> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:37> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:37> Assessing drive C...
-<04/18/2018 18:53:38> C: Under Threshold at 51.00%
-<04/18/2018 18:53:38> Assessing Memory usage...
-<04/18/2018 18:53:38> Memory usage under threshold at 426 MB
-<04/18/2018 18:53:38> Assessing CPU usage...
-<04/18/2018 18:53:38> CPU usage under threshold at 50.00%
-<04/18/2018 18:53:38> Assessing TCP connection 
-<04/18/2018 18:53:38> TCP connections established under threshold at 2
-<04/18/2018 18:53:38> ##### Windows-VM-02 ASSESED #####
-<04/18/2018 18:53:38> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
-<04/18/2018 18:53:38> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:38> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:38> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:38> Assessing drive C...
-<04/18/2018 18:53:38> C: Under Threshold at 52.00%
-<04/18/2018 18:53:38> Assessing Memory usage...
-<04/18/2018 18:53:38> Memory usage under threshold at 907 MB
-<04/18/2018 18:53:38> Assessing CPU usage...
-<04/18/2018 18:53:38> CPU usage under threshold at 10.00%
-<04/18/2018 18:53:38> Assessing TCP connection 
-<04/18/2018 18:53:38> TCP connections established under threshold at 5
-<04/18/2018 18:53:38> ##### Windows-VM-01 ASSESED #####
-<04/18/2018 18:53:38> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
-<04/18/2018 18:53:38> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:38> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:38> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:38> Assessing drive C...
-<04/18/2018 18:53:38> C: Under Threshold at 51.00%
-<04/18/2018 18:53:38> Assessing Memory usage...
-<04/18/2018 18:53:38> Memory usage under threshold at 426 MB
-<04/18/2018 18:53:38> Assessing CPU usage...
-<04/18/2018 18:53:38> CPU usage under threshold at 50.00%
-<04/18/2018 18:53:38> Assessing TCP connection 
-<04/18/2018 18:53:38> TCP connections established under threshold at 2
-<04/18/2018 18:53:38> ##### Windows-VM-02 ASSESED #####
-<04/18/2018 18:53:38> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
-<04/18/2018 18:53:38> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:38> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:38> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:38> Assessing drive C...
-<04/18/2018 18:53:38> C: Under Threshold at 52.00%
-<04/18/2018 18:53:38> Assessing Memory usage...
-<04/18/2018 18:53:38> Memory usage under threshold at 907 MB
-<04/18/2018 18:53:38> Assessing CPU usage...
-<04/18/2018 18:53:38> CPU usage under threshold at 10.00%
-<04/18/2018 18:53:38> Assessing TCP connection 
-<04/18/2018 18:53:38> TCP connections established under threshold at 5
-<04/18/2018 18:53:38> ##### Windows-VM-01 ASSESED #####
-<04/18/2018 18:53:38> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
-<04/18/2018 18:53:38> ##### RUNNING DATABASE QUERIES #####
-<04/18/2018 18:53:38> ##### DATABASE QUERIES RAN #####
-<04/18/2018 18:53:38> ##### ASSESSING THRESHOLDS #####
-<04/18/2018 18:53:38> Assessing drive C...
-<04/18/2018 18:53:38> C: Under Threshold at 51.00%
-<04/18/2018 18:53:38> Assessing Memory usage...
-<04/18/2018 18:53:38> Memory usage under threshold at 426 MB
-<04/18/2018 18:53:38> Assessing CPU usage...
-<04/18/2018 18:53:38> CPU usage under threshold at 50.00%
-<04/18/2018 18:53:38> Assessing TCP connection 
-<04/18/2018 18:53:38> TCP connections established under threshold at 2
-<04/18/2018 18:53:38> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 15:26:49> CONNECTION TO 192.168.56.103 ESTABLISHED
+<04/20/2018 15:26:49> ##### GATHERING HOSTNAMES #####
+<04/20/2018 15:26:50> ##### HOSTNAMES GATHERED #####
+<04/20/2018 15:26:50> ##### GATHERING ALERT THRESHOLDS #####
+<04/20/2018 15:26:50> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:26:50> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:26:50> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:26:50> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:26:50> ##### ALERT THRESHOLDS SET #####
+<04/20/2018 15:26:50> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 15:26:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 15:26:51> ##### DATABASE QUERIES RAN #####
+<04/20/2018 15:26:51> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 15:26:51> Assessing drive C...
+<04/20/2018 15:26:51> C: Threshold exceeded at 52%
+<04/20/2018 15:34:18> CONNECTION TO 192.168.56.103 ESTABLISHED
+<04/20/2018 15:34:18> ##### GATHERING HOSTNAMES #####
+<04/20/2018 15:34:18> ##### HOSTNAMES GATHERED #####
+<04/20/2018 15:34:18> ##### GATHERING ALERT THRESHOLDS #####
+<04/20/2018 15:34:18> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:34:18> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:34:18> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:34:18> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:34:18> ##### ALERT THRESHOLDS SET #####
+<04/20/2018 15:34:18> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 15:34:18> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 15:34:18> ##### DATABASE QUERIES RAN #####
+<04/20/2018 15:34:18> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 15:34:18> Assessing drive C...
+<04/20/2018 15:34:18> C: Threshold exceeded at 52%
+<04/20/2018 15:40:39> CONNECTION TO 192.168.56.103 ESTABLISHED
+<04/20/2018 15:40:39> ##### GATHERING HOSTNAMES #####
+<04/20/2018 15:40:39> ##### HOSTNAMES GATHERED #####
+<04/20/2018 15:40:39> ##### GATHERING ALERT THRESHOLDS #####
+<04/20/2018 15:40:39> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:40:39> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:40:39> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:40:39> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 15:40:39> ##### ALERT THRESHOLDS SET #####
+<04/20/2018 15:40:39> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 15:40:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 15:40:40> ##### DATABASE QUERIES RAN #####
+<04/20/2018 15:40:40> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 15:40:40> Assessing drive C...
+<04/20/2018 15:40:40> C: Threshold exceeded at 52%
+<04/20/2018 16:00:01> CONNECTION TO 192.168.56.103 ESTABLISHED
+<04/20/2018 16:00:02> ##### GATHERING HOSTNAMES #####
+<04/20/2018 16:00:02> ##### HOSTNAMES GATHERED #####
+<04/20/2018 16:00:02> ##### GATHERING ALERT THRESHOLDS #####
+<04/20/2018 16:00:02> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 16:00:02> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 16:00:02> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 16:00:02> Windows-VM-02 has not been defined in the thresholds JSON - ALL THRESHOLDS SET TO DEFAULT
+<04/20/2018 16:00:02> ##### ALERT THRESHOLDS SET #####
+<04/20/2018 16:00:02> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:02> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:02> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:02> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:02> Assessing drive C...
+<04/20/2018 16:00:02> C: Threshold exceeded at 52%
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 5
+<04/20/2018 16:00:37> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:37> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:37> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:37> Assessing drive C...
+<04/20/2018 16:00:37> C: Under Threshold at 51.00%
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 2
+<04/20/2018 16:00:37> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:37> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:37> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:37> Assessing drive C...
+<04/20/2018 16:00:37> C: Threshold exceeded at 52%
+<04/20/2018 16:00:37> Action already taken no more space can be cleared
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 5
+<04/20/2018 16:00:37> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:37> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:37> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:37> Assessing drive C...
+<04/20/2018 16:00:37> C: Under Threshold at 51.00%
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 2
+<04/20/2018 16:00:37> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:37> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:37> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:37> Assessing drive C...
+<04/20/2018 16:00:37> C: Threshold exceeded at 52%
+<04/20/2018 16:00:37> Action already taken no more space can be cleared
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 5
+<04/20/2018 16:00:37> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:37> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:37> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:37> Assessing drive C...
+<04/20/2018 16:00:37> C: Under Threshold at 51.00%
+<04/20/2018 16:00:37> Assessing Memory usage...
+<04/20/2018 16:00:37> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:37> Assessing CPU usage...
+<04/20/2018 16:00:37> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:37> Assessing TCP connection 
+<04/20/2018 16:00:37> TCP connections established under threshold at 2
+<04/20/2018 16:00:37> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:37> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:37> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Threshold exceeded at 52%
+<04/20/2018 16:00:38> Action already taken no more space can be cleared
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 5
+<04/20/2018 16:00:38> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Under Threshold at 51.00%
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 2
+<04/20/2018 16:00:38> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Threshold exceeded at 52%
+<04/20/2018 16:00:38> Action already taken no more space can be cleared
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 5
+<04/20/2018 16:00:38> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Under Threshold at 51.00%
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 2
+<04/20/2018 16:00:38> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Threshold exceeded at 52%
+<04/20/2018 16:00:38> Action already taken no more space can be cleared
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 5
+<04/20/2018 16:00:38> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:38> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:38> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:38> Assessing drive C...
+<04/20/2018 16:00:38> C: Under Threshold at 51.00%
+<04/20/2018 16:00:38> Assessing Memory usage...
+<04/20/2018 16:00:38> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:38> Assessing CPU usage...
+<04/20/2018 16:00:38> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:38> Assessing TCP connection 
+<04/20/2018 16:00:38> TCP connections established under threshold at 2
+<04/20/2018 16:00:38> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:38> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:38> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:39> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:39> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:39> Assessing drive C...
+<04/20/2018 16:00:39> C: Threshold exceeded at 52%
+<04/20/2018 16:00:39> Action already taken no more space can be cleared
+<04/20/2018 16:00:39> Assessing Memory usage...
+<04/20/2018 16:00:39> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:39> Assessing CPU usage...
+<04/20/2018 16:00:39> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:39> Assessing TCP connection 
+<04/20/2018 16:00:39> TCP connections established under threshold at 5
+<04/20/2018 16:00:39> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:39> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:39> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:39> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:39> Assessing drive C...
+<04/20/2018 16:00:39> C: Under Threshold at 51.00%
+<04/20/2018 16:00:39> Assessing Memory usage...
+<04/20/2018 16:00:39> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:39> Assessing CPU usage...
+<04/20/2018 16:00:39> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:39> Assessing TCP connection 
+<04/20/2018 16:00:39> TCP connections established under threshold at 2
+<04/20/2018 16:00:39> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:39> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:39> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:39> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:39> Assessing drive C...
+<04/20/2018 16:00:39> C: Threshold exceeded at 52%
+<04/20/2018 16:00:39> Action already taken no more space can be cleared
+<04/20/2018 16:00:39> Assessing Memory usage...
+<04/20/2018 16:00:39> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:39> Assessing CPU usage...
+<04/20/2018 16:00:39> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:39> Assessing TCP connection 
+<04/20/2018 16:00:39> TCP connections established under threshold at 5
+<04/20/2018 16:00:39> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:39> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:39> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:39> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:39> Assessing drive C...
+<04/20/2018 16:00:39> C: Under Threshold at 51.00%
+<04/20/2018 16:00:39> Assessing Memory usage...
+<04/20/2018 16:00:39> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:39> Assessing CPU usage...
+<04/20/2018 16:00:39> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:39> Assessing TCP connection 
+<04/20/2018 16:00:39> TCP connections established under threshold at 2
+<04/20/2018 16:00:39> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:39> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:39> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:39> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:39> Assessing drive C...
+<04/20/2018 16:00:39> C: Threshold exceeded at 52%
+<04/20/2018 16:00:39> Action already taken no more space can be cleared
+<04/20/2018 16:00:39> Assessing Memory usage...
+<04/20/2018 16:00:39> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:39> Assessing CPU usage...
+<04/20/2018 16:00:39> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:39> Assessing TCP connection 
+<04/20/2018 16:00:39> TCP connections established under threshold at 5
+<04/20/2018 16:00:39> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:39> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:39> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Under Threshold at 51.00%
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 2
+<04/20/2018 16:00:41> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Threshold exceeded at 52%
+<04/20/2018 16:00:41> Action already taken no more space can be cleared
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 5
+<04/20/2018 16:00:41> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Under Threshold at 51.00%
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 2
+<04/20/2018 16:00:41> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Threshold exceeded at 52%
+<04/20/2018 16:00:41> Action already taken no more space can be cleared
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 5
+<04/20/2018 16:00:41> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Under Threshold at 51.00%
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 2
+<04/20/2018 16:00:41> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Threshold exceeded at 52%
+<04/20/2018 16:00:41> Action already taken no more space can be cleared
+<04/20/2018 16:00:41> Assessing Memory usage...
+<04/20/2018 16:00:41> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:41> Assessing CPU usage...
+<04/20/2018 16:00:41> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:41> Assessing TCP connection 
+<04/20/2018 16:00:41> TCP connections established under threshold at 5
+<04/20/2018 16:00:41> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:41> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:41> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:41> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:41> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:41> Assessing drive C...
+<04/20/2018 16:00:41> C: Under Threshold at 51.00%
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 2
+<04/20/2018 16:00:42> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Threshold exceeded at 52%
+<04/20/2018 16:00:42> Action already taken no more space can be cleared
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 5
+<04/20/2018 16:00:42> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Under Threshold at 51.00%
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 2
+<04/20/2018 16:00:42> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Threshold exceeded at 52%
+<04/20/2018 16:00:42> Action already taken no more space can be cleared
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 5
+<04/20/2018 16:00:42> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Under Threshold at 51.00%
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 2
+<04/20/2018 16:00:42> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Threshold exceeded at 52%
+<04/20/2018 16:00:42> Action already taken no more space can be cleared
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 5
+<04/20/2018 16:00:42> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:42> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:42> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:42> Assessing drive C...
+<04/20/2018 16:00:42> C: Under Threshold at 51.00%
+<04/20/2018 16:00:42> Assessing Memory usage...
+<04/20/2018 16:00:42> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:42> Assessing CPU usage...
+<04/20/2018 16:00:42> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:42> Assessing TCP connection 
+<04/20/2018 16:00:42> TCP connections established under threshold at 2
+<04/20/2018 16:00:42> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:42> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:42> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Threshold exceeded at 52%
+<04/20/2018 16:00:43> Action already taken no more space can be cleared
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 5
+<04/20/2018 16:00:43> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Under Threshold at 51.00%
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 2
+<04/20/2018 16:00:43> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Threshold exceeded at 52%
+<04/20/2018 16:00:43> Action already taken no more space can be cleared
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 5
+<04/20/2018 16:00:43> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Under Threshold at 51.00%
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 2
+<04/20/2018 16:00:43> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Threshold exceeded at 52%
+<04/20/2018 16:00:43> Action already taken no more space can be cleared
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 5
+<04/20/2018 16:00:43> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:43> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:43> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:43> Assessing drive C...
+<04/20/2018 16:00:43> C: Under Threshold at 51.00%
+<04/20/2018 16:00:43> Assessing Memory usage...
+<04/20/2018 16:00:43> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:43> Assessing CPU usage...
+<04/20/2018 16:00:43> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:43> Assessing TCP connection 
+<04/20/2018 16:00:43> TCP connections established under threshold at 2
+<04/20/2018 16:00:43> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:43> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:43> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:45> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:45> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:45> Assessing drive C...
+<04/20/2018 16:00:45> C: Threshold exceeded at 52%
+<04/20/2018 16:00:45> Action already taken no more space can be cleared
+<04/20/2018 16:00:45> Assessing Memory usage...
+<04/20/2018 16:00:45> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:45> Assessing CPU usage...
+<04/20/2018 16:00:45> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:45> Assessing TCP connection 
+<04/20/2018 16:00:45> TCP connections established under threshold at 5
+<04/20/2018 16:00:45> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:45> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:45> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:45> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:45> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:45> Assessing drive C...
+<04/20/2018 16:00:45> C: Under Threshold at 51.00%
+<04/20/2018 16:00:45> Assessing Memory usage...
+<04/20/2018 16:00:45> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:45> Assessing CPU usage...
+<04/20/2018 16:00:45> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:45> Assessing TCP connection 
+<04/20/2018 16:00:45> TCP connections established under threshold at 2
+<04/20/2018 16:00:45> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:45> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:45> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:45> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:45> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:45> Assessing drive C...
+<04/20/2018 16:00:45> C: Threshold exceeded at 52%
+<04/20/2018 16:00:45> Action already taken no more space can be cleared
+<04/20/2018 16:00:45> Assessing Memory usage...
+<04/20/2018 16:00:45> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:45> Assessing CPU usage...
+<04/20/2018 16:00:45> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:45> Assessing TCP connection 
+<04/20/2018 16:00:45> TCP connections established under threshold at 5
+<04/20/2018 16:00:45> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:45> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:45> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:45> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:45> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:45> Assessing drive C...
+<04/20/2018 16:00:45> C: Under Threshold at 51.00%
+<04/20/2018 16:00:45> Assessing Memory usage...
+<04/20/2018 16:00:45> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:45> Assessing CPU usage...
+<04/20/2018 16:00:45> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:45> Assessing TCP connection 
+<04/20/2018 16:00:45> TCP connections established under threshold at 2
+<04/20/2018 16:00:45> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:45> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:45> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:45> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:45> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:45> Assessing drive C...
+<04/20/2018 16:00:45> C: Threshold exceeded at 52%
+<04/20/2018 16:00:46> Action already taken no more space can be cleared
+<04/20/2018 16:00:46> Assessing Memory usage...
+<04/20/2018 16:00:46> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:46> Assessing CPU usage...
+<04/20/2018 16:00:46> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:46> Assessing TCP connection 
+<04/20/2018 16:00:46> TCP connections established under threshold at 5
+<04/20/2018 16:00:46> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:46> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:46> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:46> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:46> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:46> Assessing drive C...
+<04/20/2018 16:00:46> C: Under Threshold at 51.00%
+<04/20/2018 16:00:46> Assessing Memory usage...
+<04/20/2018 16:00:46> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:46> Assessing CPU usage...
+<04/20/2018 16:00:46> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:46> Assessing TCP connection 
+<04/20/2018 16:00:46> TCP connections established under threshold at 2
+<04/20/2018 16:00:46> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:46> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:46> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:46> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:46> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:46> Assessing drive C...
+<04/20/2018 16:00:46> C: Threshold exceeded at 52%
+<04/20/2018 16:00:46> Action already taken no more space can be cleared
+<04/20/2018 16:00:46> Assessing Memory usage...
+<04/20/2018 16:00:46> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:46> Assessing CPU usage...
+<04/20/2018 16:00:46> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:46> Assessing TCP connection 
+<04/20/2018 16:00:46> TCP connections established under threshold at 5
+<04/20/2018 16:00:46> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:46> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:46> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:46> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:46> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:46> Assessing drive C...
+<04/20/2018 16:00:46> C: Under Threshold at 51.00%
+<04/20/2018 16:00:46> Assessing Memory usage...
+<04/20/2018 16:00:46> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:46> Assessing CPU usage...
+<04/20/2018 16:00:46> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:46> Assessing TCP connection 
+<04/20/2018 16:00:46> TCP connections established under threshold at 2
+<04/20/2018 16:00:46> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:46> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Threshold exceeded at 52%
+<04/20/2018 16:00:48> Action already taken no more space can be cleared
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 5
+<04/20/2018 16:00:48> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Under Threshold at 51.00%
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 2
+<04/20/2018 16:00:48> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Threshold exceeded at 52%
+<04/20/2018 16:00:48> Action already taken no more space can be cleared
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 5
+<04/20/2018 16:00:48> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Under Threshold at 51.00%
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 2
+<04/20/2018 16:00:48> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Threshold exceeded at 52%
+<04/20/2018 16:00:48> Action already taken no more space can be cleared
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 5
+<04/20/2018 16:00:48> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:48> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:48> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:48> Assessing drive C...
+<04/20/2018 16:00:48> C: Under Threshold at 51.00%
+<04/20/2018 16:00:48> Assessing Memory usage...
+<04/20/2018 16:00:48> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:48> Assessing CPU usage...
+<04/20/2018 16:00:48> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:48> Assessing TCP connection 
+<04/20/2018 16:00:48> TCP connections established under threshold at 2
+<04/20/2018 16:00:48> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:48> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:48> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Threshold exceeded at 52%
+<04/20/2018 16:00:49> Action already taken no more space can be cleared
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 5
+<04/20/2018 16:00:49> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Under Threshold at 51.00%
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 2
+<04/20/2018 16:00:49> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Threshold exceeded at 52%
+<04/20/2018 16:00:49> Action already taken no more space can be cleared
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 5
+<04/20/2018 16:00:49> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Under Threshold at 51.00%
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 2
+<04/20/2018 16:00:49> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Threshold exceeded at 52%
+<04/20/2018 16:00:49> Action already taken no more space can be cleared
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 5
+<04/20/2018 16:00:49> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:49> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:49> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:49> Assessing drive C...
+<04/20/2018 16:00:49> C: Under Threshold at 51.00%
+<04/20/2018 16:00:49> Assessing Memory usage...
+<04/20/2018 16:00:49> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:49> Assessing CPU usage...
+<04/20/2018 16:00:49> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:49> Assessing TCP connection 
+<04/20/2018 16:00:49> TCP connections established under threshold at 2
+<04/20/2018 16:00:49> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:49> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:49> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Threshold exceeded at 52%
+<04/20/2018 16:00:50> Action already taken no more space can be cleared
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 5
+<04/20/2018 16:00:50> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Under Threshold at 51.00%
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 2
+<04/20/2018 16:00:50> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Threshold exceeded at 52%
+<04/20/2018 16:00:50> Action already taken no more space can be cleared
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 5
+<04/20/2018 16:00:50> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Under Threshold at 51.00%
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 2
+<04/20/2018 16:00:50> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Threshold exceeded at 52%
+<04/20/2018 16:00:50> Action already taken no more space can be cleared
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 5
+<04/20/2018 16:00:50> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Under Threshold at 51.00%
+<04/20/2018 16:00:50> Assessing Memory usage...
+<04/20/2018 16:00:50> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:50> Assessing CPU usage...
+<04/20/2018 16:00:50> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:50> Assessing TCP connection 
+<04/20/2018 16:00:50> TCP connections established under threshold at 2
+<04/20/2018 16:00:50> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:50> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:50> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:50> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:50> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:50> Assessing drive C...
+<04/20/2018 16:00:50> C: Threshold exceeded at 52%
+<04/20/2018 16:00:51> Action already taken no more space can be cleared
+<04/20/2018 16:00:51> Assessing Memory usage...
+<04/20/2018 16:00:51> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:51> Assessing CPU usage...
+<04/20/2018 16:00:51> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:51> Assessing TCP connection 
+<04/20/2018 16:00:51> TCP connections established under threshold at 5
+<04/20/2018 16:00:51> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:51> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:51> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Under Threshold at 51.00%
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:52> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:52> Assessing CPU usage...
+<04/20/2018 16:00:52> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:52> Assessing TCP connection 
+<04/20/2018 16:00:52> TCP connections established under threshold at 2
+<04/20/2018 16:00:52> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:52> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:52> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Threshold exceeded at 52%
+<04/20/2018 16:00:52> Action already taken no more space can be cleared
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:52> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:52> Assessing CPU usage...
+<04/20/2018 16:00:52> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:52> Assessing TCP connection 
+<04/20/2018 16:00:52> TCP connections established under threshold at 5
+<04/20/2018 16:00:52> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:52> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:52> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Under Threshold at 51.00%
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:52> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:52> Assessing CPU usage...
+<04/20/2018 16:00:52> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:52> Assessing TCP connection 
+<04/20/2018 16:00:52> TCP connections established under threshold at 2
+<04/20/2018 16:00:52> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:52> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:52> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Threshold exceeded at 52%
+<04/20/2018 16:00:52> Action already taken no more space can be cleared
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:52> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:52> Assessing CPU usage...
+<04/20/2018 16:00:52> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:52> Assessing TCP connection 
+<04/20/2018 16:00:52> TCP connections established under threshold at 5
+<04/20/2018 16:00:52> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:52> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:52> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Under Threshold at 51.00%
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:52> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:52> Assessing CPU usage...
+<04/20/2018 16:00:52> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:52> Assessing TCP connection 
+<04/20/2018 16:00:52> TCP connections established under threshold at 2
+<04/20/2018 16:00:52> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:52> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:52> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:52> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:52> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:52> Assessing drive C...
+<04/20/2018 16:00:52> C: Threshold exceeded at 52%
+<04/20/2018 16:00:52> Action already taken no more space can be cleared
+<04/20/2018 16:00:52> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 5
+<04/20/2018 16:00:53> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Under Threshold at 51.00%
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 2
+<04/20/2018 16:00:53> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Threshold exceeded at 52%
+<04/20/2018 16:00:53> Action already taken no more space can be cleared
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 5
+<04/20/2018 16:00:53> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Under Threshold at 51.00%
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 2
+<04/20/2018 16:00:53> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Threshold exceeded at 52%
+<04/20/2018 16:00:53> Action already taken no more space can be cleared
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 5
+<04/20/2018 16:00:53> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Under Threshold at 51.00%
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 2
+<04/20/2018 16:00:53> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:53> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:53> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:53> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:53> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:53> Assessing drive C...
+<04/20/2018 16:00:53> C: Threshold exceeded at 52%
+<04/20/2018 16:00:53> Action already taken no more space can be cleared
+<04/20/2018 16:00:53> Assessing Memory usage...
+<04/20/2018 16:00:53> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:53> Assessing CPU usage...
+<04/20/2018 16:00:53> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:53> Assessing TCP connection 
+<04/20/2018 16:00:53> TCP connections established under threshold at 5
+<04/20/2018 16:00:53> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:54> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:54> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:54> Assessing drive C...
+<04/20/2018 16:00:54> C: Under Threshold at 51.00%
+<04/20/2018 16:00:54> Assessing Memory usage...
+<04/20/2018 16:00:54> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:54> Assessing CPU usage...
+<04/20/2018 16:00:54> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:54> Assessing TCP connection 
+<04/20/2018 16:00:54> TCP connections established under threshold at 2
+<04/20/2018 16:00:54> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:54> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:54> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:54> Assessing drive C...
+<04/20/2018 16:00:54> C: Threshold exceeded at 52%
+<04/20/2018 16:00:54> Action already taken no more space can be cleared
+<04/20/2018 16:00:54> Assessing Memory usage...
+<04/20/2018 16:00:54> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:54> Assessing CPU usage...
+<04/20/2018 16:00:54> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:54> Assessing TCP connection 
+<04/20/2018 16:00:54> TCP connections established under threshold at 5
+<04/20/2018 16:00:54> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:54> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:54> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:54> Assessing drive C...
+<04/20/2018 16:00:54> C: Under Threshold at 51.00%
+<04/20/2018 16:00:54> Assessing Memory usage...
+<04/20/2018 16:00:54> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:54> Assessing CPU usage...
+<04/20/2018 16:00:54> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:54> Assessing TCP connection 
+<04/20/2018 16:00:54> TCP connections established under threshold at 2
+<04/20/2018 16:00:54> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:54> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:54> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:54> Assessing drive C...
+<04/20/2018 16:00:54> C: Threshold exceeded at 52%
+<04/20/2018 16:00:54> Action already taken no more space can be cleared
+<04/20/2018 16:00:54> Assessing Memory usage...
+<04/20/2018 16:00:54> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:54> Assessing CPU usage...
+<04/20/2018 16:00:54> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:54> Assessing TCP connection 
+<04/20/2018 16:00:54> TCP connections established under threshold at 5
+<04/20/2018 16:00:54> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:54> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:54> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:54> Assessing drive C...
+<04/20/2018 16:00:54> C: Under Threshold at 51.00%
+<04/20/2018 16:00:54> Assessing Memory usage...
+<04/20/2018 16:00:54> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:54> Assessing CPU usage...
+<04/20/2018 16:00:54> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:54> Assessing TCP connection 
+<04/20/2018 16:00:54> TCP connections established under threshold at 2
+<04/20/2018 16:00:54> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:54> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:54> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:55> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:55> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:55> Assessing drive C...
+<04/20/2018 16:00:55> C: Threshold exceeded at 52%
+<04/20/2018 16:00:55> Action already taken no more space can be cleared
+<04/20/2018 16:00:55> Assessing Memory usage...
+<04/20/2018 16:00:55> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:55> Assessing CPU usage...
+<04/20/2018 16:00:55> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:55> Assessing TCP connection 
+<04/20/2018 16:00:55> TCP connections established under threshold at 5
+<04/20/2018 16:00:55> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:55> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:55> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:55> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:55> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:55> Assessing drive C...
+<04/20/2018 16:00:55> C: Under Threshold at 51.00%
+<04/20/2018 16:00:55> Assessing Memory usage...
+<04/20/2018 16:00:55> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:55> Assessing CPU usage...
+<04/20/2018 16:00:55> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:55> Assessing TCP connection 
+<04/20/2018 16:00:55> TCP connections established under threshold at 2
+<04/20/2018 16:00:55> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:55> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:55> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Threshold exceeded at 52%
+<04/20/2018 16:00:56> Action already taken no more space can be cleared
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 5
+<04/20/2018 16:00:56> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Under Threshold at 51.00%
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 2
+<04/20/2018 16:00:56> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Threshold exceeded at 52%
+<04/20/2018 16:00:56> Action already taken no more space can be cleared
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 5
+<04/20/2018 16:00:56> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Under Threshold at 51.00%
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 2
+<04/20/2018 16:00:56> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Threshold exceeded at 52%
+<04/20/2018 16:00:56> Action already taken no more space can be cleared
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 5
+<04/20/2018 16:00:56> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:56> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:56> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:56> Assessing drive C...
+<04/20/2018 16:00:56> C: Under Threshold at 51.00%
+<04/20/2018 16:00:56> Assessing Memory usage...
+<04/20/2018 16:00:56> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:56> Assessing CPU usage...
+<04/20/2018 16:00:56> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:56> Assessing TCP connection 
+<04/20/2018 16:00:56> TCP connections established under threshold at 2
+<04/20/2018 16:00:56> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:56> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:56> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:57> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:57> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:57> Assessing drive C...
+<04/20/2018 16:00:57> C: Threshold exceeded at 52%
+<04/20/2018 16:00:57> Action already taken no more space can be cleared
+<04/20/2018 16:00:57> Assessing Memory usage...
+<04/20/2018 16:00:57> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:57> Assessing CPU usage...
+<04/20/2018 16:00:57> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:57> Assessing TCP connection 
+<04/20/2018 16:00:57> TCP connections established under threshold at 5
+<04/20/2018 16:00:57> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:57> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:57> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:57> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:57> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:57> Assessing drive C...
+<04/20/2018 16:00:57> C: Under Threshold at 51.00%
+<04/20/2018 16:00:57> Assessing Memory usage...
+<04/20/2018 16:00:57> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:57> Assessing CPU usage...
+<04/20/2018 16:00:57> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:57> Assessing TCP connection 
+<04/20/2018 16:00:57> TCP connections established under threshold at 2
+<04/20/2018 16:00:57> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:57> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:57> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:57> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:57> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:57> Assessing drive C...
+<04/20/2018 16:00:57> C: Threshold exceeded at 52%
+<04/20/2018 16:00:57> Action already taken no more space can be cleared
+<04/20/2018 16:00:57> Assessing Memory usage...
+<04/20/2018 16:00:57> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:57> Assessing CPU usage...
+<04/20/2018 16:00:57> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:57> Assessing TCP connection 
+<04/20/2018 16:00:57> TCP connections established under threshold at 5
+<04/20/2018 16:00:57> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:57> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:57> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:57> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:57> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:57> Assessing drive C...
+<04/20/2018 16:00:57> C: Under Threshold at 51.00%
+<04/20/2018 16:00:57> Assessing Memory usage...
+<04/20/2018 16:00:57> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:57> Assessing CPU usage...
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 5
+<04/20/2018 16:00:59> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:59> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:59> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:59> Assessing drive C...
+<04/20/2018 16:00:59> C: Under Threshold at 51.00%
+<04/20/2018 16:00:59> Assessing Memory usage...
+<04/20/2018 16:00:59> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:59> Assessing CPU usage...
+<04/20/2018 16:00:59> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 2
+<04/20/2018 16:00:59> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:59> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:59> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:59> Assessing drive C...
+<04/20/2018 16:00:59> C: Threshold exceeded at 52%
+<04/20/2018 16:00:59> Action already taken no more space can be cleared
+<04/20/2018 16:00:59> Assessing Memory usage...
+<04/20/2018 16:00:59> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:59> Assessing CPU usage...
+<04/20/2018 16:00:59> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 5
+<04/20/2018 16:00:59> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:59> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:59> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:59> Assessing drive C...
+<04/20/2018 16:00:59> C: Under Threshold at 51.00%
+<04/20/2018 16:00:59> Assessing Memory usage...
+<04/20/2018 16:00:59> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:59> Assessing CPU usage...
+<04/20/2018 16:00:59> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 2
+<04/20/2018 16:00:59> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:59> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:59> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:59> Assessing drive C...
+<04/20/2018 16:00:59> C: Threshold exceeded at 52%
+<04/20/2018 16:00:59> Action already taken no more space can be cleared
+<04/20/2018 16:00:59> Assessing Memory usage...
+<04/20/2018 16:00:59> Memory usage under threshold at 907 MB
+<04/20/2018 16:00:59> Assessing CPU usage...
+<04/20/2018 16:00:59> CPU usage under threshold at 10.00%
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 5
+<04/20/2018 16:00:59> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:00:59> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:00:59> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:00:59> Assessing drive C...
+<04/20/2018 16:00:59> C: Under Threshold at 51.00%
+<04/20/2018 16:00:59> Assessing Memory usage...
+<04/20/2018 16:00:59> Memory usage under threshold at 426 MB
+<04/20/2018 16:00:59> Assessing CPU usage...
+<04/20/2018 16:00:59> CPU usage under threshold at 50.00%
+<04/20/2018 16:00:59> Assessing TCP connection 
+<04/20/2018 16:00:59> TCP connections established under threshold at 2
+<04/20/2018 16:00:59> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:00:59> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:00:59> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Threshold exceeded at 52%
+<04/20/2018 16:01:00> Action already taken no more space can be cleared
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 5
+<04/20/2018 16:01:00> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Under Threshold at 51.00%
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 2
+<04/20/2018 16:01:00> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Threshold exceeded at 52%
+<04/20/2018 16:01:00> Action already taken no more space can be cleared
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 5
+<04/20/2018 16:01:00> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Under Threshold at 51.00%
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 2
+<04/20/2018 16:01:00> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Threshold exceeded at 52%
+<04/20/2018 16:01:00> Action already taken no more space can be cleared
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 5
+<04/20/2018 16:01:00> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:00> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:00> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:00> Assessing drive C...
+<04/20/2018 16:01:00> C: Under Threshold at 51.00%
+<04/20/2018 16:01:00> Assessing Memory usage...
+<04/20/2018 16:01:00> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:00> Assessing CPU usage...
+<04/20/2018 16:01:00> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:00> Assessing TCP connection 
+<04/20/2018 16:01:00> TCP connections established under threshold at 2
+<04/20/2018 16:01:00> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:00> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:00> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Threshold exceeded at 52%
+<04/20/2018 16:01:01> Action already taken no more space can be cleared
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 5
+<04/20/2018 16:01:01> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Under Threshold at 51.00%
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 2
+<04/20/2018 16:01:01> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Threshold exceeded at 52%
+<04/20/2018 16:01:01> Action already taken no more space can be cleared
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 5
+<04/20/2018 16:01:01> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Under Threshold at 51.00%
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 2
+<04/20/2018 16:01:01> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Threshold exceeded at 52%
+<04/20/2018 16:01:01> Action already taken no more space can be cleared
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 5
+<04/20/2018 16:01:01> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:01> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:01> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:01> Assessing drive C...
+<04/20/2018 16:01:01> C: Under Threshold at 51.00%
+<04/20/2018 16:01:01> Assessing Memory usage...
+<04/20/2018 16:01:01> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:01> Assessing CPU usage...
+<04/20/2018 16:01:01> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:01> Assessing TCP connection 
+<04/20/2018 16:01:01> TCP connections established under threshold at 2
+<04/20/2018 16:01:01> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:01> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:01> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Threshold exceeded at 52%
+<04/20/2018 16:01:03> Action already taken no more space can be cleared
+<04/20/2018 16:01:03> Assessing Memory usage...
+<04/20/2018 16:01:03> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:03> Assessing CPU usage...
+<04/20/2018 16:01:03> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:03> Assessing TCP connection 
+<04/20/2018 16:01:03> TCP connections established under threshold at 5
+<04/20/2018 16:01:03> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:03> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:03> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Under Threshold at 51.00%
+<04/20/2018 16:01:03> Assessing Memory usage...
+<04/20/2018 16:01:03> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:03> Assessing CPU usage...
+<04/20/2018 16:01:03> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:03> Assessing TCP connection 
+<04/20/2018 16:01:03> TCP connections established under threshold at 2
+<04/20/2018 16:01:03> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:03> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:03> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Threshold exceeded at 52%
+<04/20/2018 16:01:03> Action already taken no more space can be cleared
+<04/20/2018 16:01:03> Assessing Memory usage...
+<04/20/2018 16:01:03> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:03> Assessing CPU usage...
+<04/20/2018 16:01:03> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:03> Assessing TCP connection 
+<04/20/2018 16:01:03> TCP connections established under threshold at 5
+<04/20/2018 16:01:03> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:03> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:03> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Under Threshold at 51.00%
+<04/20/2018 16:01:03> Assessing Memory usage...
+<04/20/2018 16:01:03> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:03> Assessing CPU usage...
+<04/20/2018 16:01:03> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:03> Assessing TCP connection 
+<04/20/2018 16:01:03> TCP connections established under threshold at 2
+<04/20/2018 16:01:03> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:03> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:03> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Threshold exceeded at 52%
+<04/20/2018 16:01:03> Action already taken no more space can be cleared
+<04/20/2018 16:01:03> Assessing Memory usage...
+<04/20/2018 16:01:03> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:03> Assessing CPU usage...
+<04/20/2018 16:01:03> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:03> Assessing TCP connection 
+<04/20/2018 16:01:03> TCP connections established under threshold at 5
+<04/20/2018 16:01:03> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:03> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:03> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:03> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:03> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:03> Assessing drive C...
+<04/20/2018 16:01:03> C: Under Threshold at 51.00%
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 2
+<04/20/2018 16:01:04> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Threshold exceeded at 52%
+<04/20/2018 16:01:04> Action already taken no more space can be cleared
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 5
+<04/20/2018 16:01:04> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Under Threshold at 51.00%
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 2
+<04/20/2018 16:01:04> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Threshold exceeded at 52%
+<04/20/2018 16:01:04> Action already taken no more space can be cleared
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 5
+<04/20/2018 16:01:04> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Under Threshold at 51.00%
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 2
+<04/20/2018 16:01:04> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Threshold exceeded at 52%
+<04/20/2018 16:01:04> Action already taken no more space can be cleared
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 5
+<04/20/2018 16:01:04> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:04> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:04> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:04> Assessing drive C...
+<04/20/2018 16:01:04> C: Under Threshold at 51.00%
+<04/20/2018 16:01:04> Assessing Memory usage...
+<04/20/2018 16:01:04> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:04> Assessing CPU usage...
+<04/20/2018 16:01:04> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:04> Assessing TCP connection 
+<04/20/2018 16:01:04> TCP connections established under threshold at 2
+<04/20/2018 16:01:04> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:04> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:04> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Threshold exceeded at 52%
+<04/20/2018 16:01:05> Action already taken no more space can be cleared
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 5
+<04/20/2018 16:01:05> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:05> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:05> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Under Threshold at 51.00%
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 2
+<04/20/2018 16:01:05> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:05> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:05> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Threshold exceeded at 52%
+<04/20/2018 16:01:05> Action already taken no more space can be cleared
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 5
+<04/20/2018 16:01:05> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:05> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:05> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Under Threshold at 51.00%
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 2
+<04/20/2018 16:01:05> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:05> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:05> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Threshold exceeded at 52%
+<04/20/2018 16:01:05> Action already taken no more space can be cleared
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 5
+<04/20/2018 16:01:05> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:05> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:05> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:05> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:05> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:05> Assessing drive C...
+<04/20/2018 16:01:05> C: Under Threshold at 51.00%
+<04/20/2018 16:01:05> Assessing Memory usage...
+<04/20/2018 16:01:05> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:05> Assessing CPU usage...
+<04/20/2018 16:01:05> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:05> Assessing TCP connection 
+<04/20/2018 16:01:05> TCP connections established under threshold at 2
+<04/20/2018 16:01:06> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:06> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:06> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:07> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:07> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:07> Assessing drive C...
+<04/20/2018 16:01:07> C: Threshold exceeded at 52%
+<04/20/2018 16:01:07> Action already taken no more space can be cleared
+<04/20/2018 16:01:07> Assessing Memory usage...
+<04/20/2018 16:01:07> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:07> Assessing CPU usage...
+<04/20/2018 16:01:07> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:07> Assessing TCP connection 
+<04/20/2018 16:01:07> TCP connections established under threshold at 5
+<04/20/2018 16:01:07> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:07> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:07> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:07> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:07> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:07> Assessing drive C...
+<04/20/2018 16:01:07> C: Under Threshold at 51.00%
+<04/20/2018 16:01:07> Assessing Memory usage...
+<04/20/2018 16:01:07> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:07> Assessing CPU usage...
+<04/20/2018 16:01:07> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:07> Assessing TCP connection 
+<04/20/2018 16:01:07> TCP connections established under threshold at 2
+<04/20/2018 16:01:07> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:07> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:07> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:07> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:07> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:07> Assessing drive C...
+<04/20/2018 16:01:07> C: Threshold exceeded at 52%
+<04/20/2018 16:01:07> Action already taken no more space can be cleared
+<04/20/2018 16:01:07> Assessing Memory usage...
+<04/20/2018 16:01:07> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:07> Assessing CPU usage...
+<04/20/2018 16:01:07> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:07> Assessing TCP connection 
+<04/20/2018 16:01:07> TCP connections established under threshold at 5
+<04/20/2018 16:01:07> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:07> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:07> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:07> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:07> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:07> Assessing drive C...
+<04/20/2018 16:01:07> C: Under Threshold at 51.00%
+<04/20/2018 16:01:07> Assessing Memory usage...
+<04/20/2018 16:01:07> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:07> Assessing CPU usage...
+<04/20/2018 16:01:07> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:07> Assessing TCP connection 
+<04/20/2018 16:01:07> TCP connections established under threshold at 2
+<04/20/2018 16:01:07> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:07> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:07> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:07> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:07> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:07> Assessing drive C...
+<04/20/2018 16:01:07> C: Threshold exceeded at 52%
+<04/20/2018 16:01:07> Action already taken no more space can be cleared
+<04/20/2018 16:01:07> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 5
+<04/20/2018 16:01:08> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Under Threshold at 51.00%
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 2
+<04/20/2018 16:01:08> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Threshold exceeded at 52%
+<04/20/2018 16:01:08> Action already taken no more space can be cleared
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 5
+<04/20/2018 16:01:08> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Under Threshold at 51.00%
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 2
+<04/20/2018 16:01:08> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Threshold exceeded at 52%
+<04/20/2018 16:01:08> Action already taken no more space can be cleared
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 5
+<04/20/2018 16:01:08> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Under Threshold at 51.00%
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 2
+<04/20/2018 16:01:08> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:08> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:08> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:08> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:08> Assessing drive C...
+<04/20/2018 16:01:08> C: Threshold exceeded at 52%
+<04/20/2018 16:01:08> Action already taken no more space can be cleared
+<04/20/2018 16:01:08> Assessing Memory usage...
+<04/20/2018 16:01:08> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:08> Assessing CPU usage...
+<04/20/2018 16:01:08> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:08> Assessing TCP connection 
+<04/20/2018 16:01:08> TCP connections established under threshold at 5
+<04/20/2018 16:01:08> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:08> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Under Threshold at 51.00%
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 2
+<04/20/2018 16:01:09> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Threshold exceeded at 52%
+<04/20/2018 16:01:09> Action already taken no more space can be cleared
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 5
+<04/20/2018 16:01:09> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Under Threshold at 51.00%
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 2
+<04/20/2018 16:01:09> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Threshold exceeded at 52%
+<04/20/2018 16:01:09> Action already taken no more space can be cleared
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 5
+<04/20/2018 16:01:09> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Under Threshold at 51.00%
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 2
+<04/20/2018 16:01:09> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:09> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:09> Assessing drive C...
+<04/20/2018 16:01:09> C: Threshold exceeded at 52%
+<04/20/2018 16:01:09> Action already taken no more space can be cleared
+<04/20/2018 16:01:09> Assessing Memory usage...
+<04/20/2018 16:01:09> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:09> Assessing CPU usage...
+<04/20/2018 16:01:09> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:09> Assessing TCP connection 
+<04/20/2018 16:01:09> TCP connections established under threshold at 5
+<04/20/2018 16:01:09> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:09> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:09> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:09> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:10> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:10> Assessing drive C...
+<04/20/2018 16:01:10> C: Under Threshold at 51.00%
+<04/20/2018 16:01:10> Assessing Memory usage...
+<04/20/2018 16:01:10> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:10> Assessing CPU usage...
+<04/20/2018 16:01:10> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:10> Assessing TCP connection 
+<04/20/2018 16:01:10> TCP connections established under threshold at 2
+<04/20/2018 16:01:10> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:10> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:10> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:11> C: Threshold exceeded at 52%
+<04/20/2018 16:01:11> Action already taken no more space can be cleared
+<04/20/2018 16:01:11> Assessing Memory usage...
+<04/20/2018 16:01:11> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:11> Assessing CPU usage...
+<04/20/2018 16:01:11> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:11> Assessing TCP connection 
+<04/20/2018 16:01:11> TCP connections established under threshold at 5
+<04/20/2018 16:01:11> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:11> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:11> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:11> C: Under Threshold at 51.00%
+<04/20/2018 16:01:11> Assessing Memory usage...
+<04/20/2018 16:01:11> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:11> Assessing CPU usage...
+<04/20/2018 16:01:11> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:11> Assessing TCP connection 
+<04/20/2018 16:01:11> TCP connections established under threshold at 2
+<04/20/2018 16:01:11> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:11> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:11> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:11> C: Threshold exceeded at 52%
+<04/20/2018 16:01:11> Action already taken no more space can be cleared
+<04/20/2018 16:01:11> Assessing Memory usage...
+<04/20/2018 16:01:11> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:11> Assessing CPU usage...
+<04/20/2018 16:01:11> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:11> Assessing TCP connection 
+<04/20/2018 16:01:11> TCP connections established under threshold at 5
+<04/20/2018 16:01:11> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:11> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:11> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:11> C: Under Threshold at 51.00%
+<04/20/2018 16:01:11> Assessing Memory usage...
+<04/20/2018 16:01:11> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:11> Assessing CPU usage...
+<04/20/2018 16:01:11> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:11> Assessing TCP connection 
+<04/20/2018 16:01:11> TCP connections established under threshold at 2
+<04/20/2018 16:01:11> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:11> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:11> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:11> C: Threshold exceeded at 52%
+<04/20/2018 16:01:11> Action already taken no more space can be cleared
+<04/20/2018 16:01:11> Assessing Memory usage...
+<04/20/2018 16:01:11> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:11> Assessing CPU usage...
+<04/20/2018 16:01:11> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:11> Assessing TCP connection 
+<04/20/2018 16:01:11> TCP connections established under threshold at 5
+<04/20/2018 16:01:11> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:11> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:11> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:11> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:11> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:11> Assessing drive C...
+<04/20/2018 16:01:12> C: Under Threshold at 51.00%
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 2
+<04/20/2018 16:01:12> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Threshold exceeded at 52%
+<04/20/2018 16:01:12> Action already taken no more space can be cleared
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 5
+<04/20/2018 16:01:12> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Under Threshold at 51.00%
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 2
+<04/20/2018 16:01:12> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Threshold exceeded at 52%
+<04/20/2018 16:01:12> Action already taken no more space can be cleared
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 5
+<04/20/2018 16:01:12> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Under Threshold at 51.00%
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 2
+<04/20/2018 16:01:12> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Threshold exceeded at 52%
+<04/20/2018 16:01:12> Action already taken no more space can be cleared
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 5
+<04/20/2018 16:01:12> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:12> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:12> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:12> Assessing drive C...
+<04/20/2018 16:01:12> C: Under Threshold at 51.00%
+<04/20/2018 16:01:12> Assessing Memory usage...
+<04/20/2018 16:01:12> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:12> Assessing CPU usage...
+<04/20/2018 16:01:12> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:12> Assessing TCP connection 
+<04/20/2018 16:01:12> TCP connections established under threshold at 2
+<04/20/2018 16:01:12> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:12> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:12> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Threshold exceeded at 52%
+<04/20/2018 16:01:13> Action already taken no more space can be cleared
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 5
+<04/20/2018 16:01:13> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Under Threshold at 51.00%
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 2
+<04/20/2018 16:01:13> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Threshold exceeded at 52%
+<04/20/2018 16:01:13> Action already taken no more space can be cleared
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 5
+<04/20/2018 16:01:13> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Under Threshold at 51.00%
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 2
+<04/20/2018 16:01:13> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Threshold exceeded at 52%
+<04/20/2018 16:01:13> Action already taken no more space can be cleared
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 5
+<04/20/2018 16:01:13> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:13> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:13> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:13> Assessing drive C...
+<04/20/2018 16:01:13> C: Under Threshold at 51.00%
+<04/20/2018 16:01:13> Assessing Memory usage...
+<04/20/2018 16:01:13> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:13> Assessing CPU usage...
+<04/20/2018 16:01:13> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:13> Assessing TCP connection 
+<04/20/2018 16:01:13> TCP connections established under threshold at 2
+<04/20/2018 16:01:13> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:13> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:13> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:14> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:14> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:14> Assessing drive C...
+<04/20/2018 16:01:14> C: Threshold exceeded at 52%
+<04/20/2018 16:01:14> Action already taken no more space can be cleared
+<04/20/2018 16:01:14> Assessing Memory usage...
+<04/20/2018 16:01:14> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:14> Assessing CPU usage...
+<04/20/2018 16:01:14> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:14> Assessing TCP connection 
+<04/20/2018 16:01:14> TCP connections established under threshold at 5
+<04/20/2018 16:01:14> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:14> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:14> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Under Threshold at 51.00%
+<04/20/2018 16:01:15> Assessing Memory usage...
+<04/20/2018 16:01:15> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:15> Assessing CPU usage...
+<04/20/2018 16:01:15> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:15> Assessing TCP connection 
+<04/20/2018 16:01:15> TCP connections established under threshold at 2
+<04/20/2018 16:01:15> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:15> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:15> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Threshold exceeded at 52%
+<04/20/2018 16:01:15> Action already taken no more space can be cleared
+<04/20/2018 16:01:15> Assessing Memory usage...
+<04/20/2018 16:01:15> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:15> Assessing CPU usage...
+<04/20/2018 16:01:15> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:15> Assessing TCP connection 
+<04/20/2018 16:01:15> TCP connections established under threshold at 5
+<04/20/2018 16:01:15> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:15> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:15> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Under Threshold at 51.00%
+<04/20/2018 16:01:15> Assessing Memory usage...
+<04/20/2018 16:01:15> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:15> Assessing CPU usage...
+<04/20/2018 16:01:15> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:15> Assessing TCP connection 
+<04/20/2018 16:01:15> TCP connections established under threshold at 2
+<04/20/2018 16:01:15> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:15> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:15> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Threshold exceeded at 52%
+<04/20/2018 16:01:15> Action already taken no more space can be cleared
+<04/20/2018 16:01:15> Assessing Memory usage...
+<04/20/2018 16:01:15> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:15> Assessing CPU usage...
+<04/20/2018 16:01:15> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:15> Assessing TCP connection 
+<04/20/2018 16:01:15> TCP connections established under threshold at 5
+<04/20/2018 16:01:15> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:15> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:15> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Under Threshold at 51.00%
+<04/20/2018 16:01:15> Assessing Memory usage...
+<04/20/2018 16:01:15> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:15> Assessing CPU usage...
+<04/20/2018 16:01:15> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:15> Assessing TCP connection 
+<04/20/2018 16:01:15> TCP connections established under threshold at 2
+<04/20/2018 16:01:15> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:15> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:15> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:15> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:15> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:15> Assessing drive C...
+<04/20/2018 16:01:15> C: Threshold exceeded at 52%
+<04/20/2018 16:01:15> Action already taken no more space can be cleared
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 5
+<04/20/2018 16:01:16> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Under Threshold at 51.00%
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 2
+<04/20/2018 16:01:16> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Threshold exceeded at 52%
+<04/20/2018 16:01:16> Action already taken no more space can be cleared
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 5
+<04/20/2018 16:01:16> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Under Threshold at 51.00%
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 2
+<04/20/2018 16:01:16> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Threshold exceeded at 52%
+<04/20/2018 16:01:16> Action already taken no more space can be cleared
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 5
+<04/20/2018 16:01:16> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Under Threshold at 51.00%
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 2
+<04/20/2018 16:01:16> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:16> C: Threshold exceeded at 52%
+<04/20/2018 16:01:16> Action already taken no more space can be cleared
+<04/20/2018 16:01:16> Assessing Memory usage...
+<04/20/2018 16:01:16> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:16> Assessing CPU usage...
+<04/20/2018 16:01:16> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:16> Assessing TCP connection 
+<04/20/2018 16:01:16> TCP connections established under threshold at 5
+<04/20/2018 16:01:16> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:16> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:16> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:16> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:16> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:16> Assessing drive C...
+<04/20/2018 16:01:17> C: Under Threshold at 51.00%
+<04/20/2018 16:01:17> Assessing Memory usage...
+<04/20/2018 16:01:17> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:17> Assessing CPU usage...
+<04/20/2018 16:01:17> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:17> Assessing TCP connection 
+<04/20/2018 16:01:17> TCP connections established under threshold at 2
+<04/20/2018 16:01:17> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:17> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:17> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:17> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:17> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:17> Assessing drive C...
+<04/20/2018 16:01:17> C: Threshold exceeded at 52%
+<04/20/2018 16:01:17> Action already taken no more space can be cleared
+<04/20/2018 16:01:17> Assessing Memory usage...
+<04/20/2018 16:01:17> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:17> Assessing CPU usage...
+<04/20/2018 16:01:17> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:17> Assessing TCP connection 
+<04/20/2018 16:01:17> TCP connections established under threshold at 5
+<04/20/2018 16:01:17> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:17> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:17> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:17> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:17> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:17> Assessing drive C...
+<04/20/2018 16:01:17> C: Under Threshold at 51.00%
+<04/20/2018 16:01:17> Assessing Memory usage...
+<04/20/2018 16:01:17> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:17> Assessing CPU usage...
+<04/20/2018 16:01:17> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:17> Assessing TCP connection 
+<04/20/2018 16:01:17> TCP connections established under threshold at 2
+<04/20/2018 16:01:17> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:17> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:17> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:17> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:17> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:17> Assessing drive C...
+<04/20/2018 16:01:17> C: Threshold exceeded at 52%
+<04/20/2018 16:01:17> Action already taken no more space can be cleared
+<04/20/2018 16:01:17> Assessing Memory usage...
+<04/20/2018 16:01:17> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:17> Assessing CPU usage...
+<04/20/2018 16:01:17> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:17> Assessing TCP connection 
+<04/20/2018 16:01:17> TCP connections established under threshold at 5
+<04/20/2018 16:01:17> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:17> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:17> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:17> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:17> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:17> Assessing drive C...
+<04/20/2018 16:01:17> C: Under Threshold at 51.00%
+<04/20/2018 16:01:17> Assessing Memory usage...
+<04/20/2018 16:01:17> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:17> Assessing CPU usage...
+<04/20/2018 16:01:17> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:17> Assessing TCP connection 
+<04/20/2018 16:01:17> TCP connections established under threshold at 2
+<04/20/2018 16:01:17> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:17> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:17> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:18> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:18> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:18> Assessing drive C...
+<04/20/2018 16:01:18> C: Threshold exceeded at 52%
+<04/20/2018 16:01:18> Action already taken no more space can be cleared
+<04/20/2018 16:01:18> Assessing Memory usage...
+<04/20/2018 16:01:18> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:18> Assessing CPU usage...
+<04/20/2018 16:01:18> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:18> Assessing TCP connection 
+<04/20/2018 16:01:18> TCP connections established under threshold at 5
+<04/20/2018 16:01:18> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:18> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:18> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:18> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:18> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:18> Assessing drive C...
+<04/20/2018 16:01:18> C: Under Threshold at 51.00%
+<04/20/2018 16:01:18> Assessing Memory usage...
+<04/20/2018 16:01:18> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 2
+<04/20/2018 16:01:19> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Threshold exceeded at 52%
+<04/20/2018 16:01:19> Action already taken no more space can be cleared
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 5
+<04/20/2018 16:01:19> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Under Threshold at 51.00%
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 2
+<04/20/2018 16:01:19> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Threshold exceeded at 52%
+<04/20/2018 16:01:19> Action already taken no more space can be cleared
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 5
+<04/20/2018 16:01:19> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Under Threshold at 51.00%
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 2
+<04/20/2018 16:01:19> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Threshold exceeded at 52%
+<04/20/2018 16:01:19> Action already taken no more space can be cleared
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 5
+<04/20/2018 16:01:19> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:19> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:19> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:19> Assessing drive C...
+<04/20/2018 16:01:19> C: Under Threshold at 51.00%
+<04/20/2018 16:01:19> Assessing Memory usage...
+<04/20/2018 16:01:19> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:19> Assessing CPU usage...
+<04/20/2018 16:01:19> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:19> Assessing TCP connection 
+<04/20/2018 16:01:19> TCP connections established under threshold at 2
+<04/20/2018 16:01:19> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:19> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:19> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:20> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:20> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:20> Assessing drive C...
+<04/20/2018 16:01:20> C: Threshold exceeded at 52%
+<04/20/2018 16:01:20> Action already taken no more space can be cleared
+<04/20/2018 16:01:20> Assessing Memory usage...
+<04/20/2018 16:01:20> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:20> Assessing CPU usage...
+<04/20/2018 16:01:20> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:20> Assessing TCP connection 
+<04/20/2018 16:01:20> TCP connections established under threshold at 5
+<04/20/2018 16:01:20> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:20> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:20> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:20> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:20> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:20> Assessing drive C...
+<04/20/2018 16:01:20> C: Under Threshold at 51.00%
+<04/20/2018 16:01:20> Assessing Memory usage...
+<04/20/2018 16:01:20> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:20> Assessing CPU usage...
+<04/20/2018 16:01:20> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:20> Assessing TCP connection 
+<04/20/2018 16:01:20> TCP connections established under threshold at 2
+<04/20/2018 16:01:20> ##### Windows-VM-02 ASSESED #####
+<04/20/2018 16:01:20> ##### BEGINNING Windows-VM-01 ASSESSMENT #####
+<04/20/2018 16:01:20> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:20> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:20> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:20> Assessing drive C...
+<04/20/2018 16:01:20> C: Threshold exceeded at 52%
+<04/20/2018 16:01:20> Action already taken no more space can be cleared
+<04/20/2018 16:01:20> Assessing Memory usage...
+<04/20/2018 16:01:20> Memory usage under threshold at 907 MB
+<04/20/2018 16:01:20> Assessing CPU usage...
+<04/20/2018 16:01:20> CPU usage under threshold at 10.00%
+<04/20/2018 16:01:20> Assessing TCP connection 
+<04/20/2018 16:01:20> TCP connections established under threshold at 5
+<04/20/2018 16:01:20> ##### Windows-VM-01 ASSESED #####
+<04/20/2018 16:01:20> ##### BEGINNING Windows-VM-02 ASSESSMENT #####
+<04/20/2018 16:01:20> ##### RUNNING DATABASE QUERIES #####
+<04/20/2018 16:01:20> ##### DATABASE QUERIES RAN #####
+<04/20/2018 16:01:20> ##### ASSESSING THRESHOLDS #####
+<04/20/2018 16:01:20> Assessing drive C...
+<04/20/2018 16:01:20> C: Under Threshold at 51.00%
+<04/20/2018 16:01:20> Assessing Memory usage...
+<04/20/2018 16:01:20> Memory usage under threshold at 426 MB
+<04/20/2018 16:01:20> Assessing CPU usage...
+<04/20/2018 16:01:20> CPU usage under threshold at 50.00%
+<04/20/2018 16:01:20> Assessing TCP connection 

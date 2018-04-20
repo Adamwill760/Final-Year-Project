@@ -22,12 +22,12 @@
                     </DataGrid.Resources>
                     <!-- Column header text/bindings -->
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Host" Width="125"/>
-                        <DataGridTextColumn Header="Instance" Width="125"/>
-                        <DataGridTextColumn Header="Threshold" Width="125"/>
-                        <DataGridTextColumn Header="Value" Width="125"/>
-                        <DataGridTextColumn Header="Action" Width="125"/>
-                        <DataGridTextColumn Header="Time" Width="*"/>
+                        <DataGridTextColumn Header="Host" Binding="{Binding Name}" Width="125"/>
+                        <DataGridTextColumn Header="Instance" Binding="{Binding Instance}" Width="125"/>
+                        <DataGridTextColumn Header="Threshold" Binding="{Binding Threshold}" Width="125"/>
+                        <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="125"/>
+                        <DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="125"/>
+                        <DataGridTextColumn Header="Time" Binding="{Binding Time}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <DataGrid x:Name="DatagridCPU" HorizontalAlignment="Left" Height="175" Margin="10,10,0,0" Width="752">
@@ -42,11 +42,11 @@
                     </DataGrid.Resources>
                     <!-- Column header text/bindings -->
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Host" Width="150"/>
-                        <DataGridTextColumn Header="Threshold" Width="150"/>
-                        <DataGridTextColumn Header="Value" Width="150"/>
-                        <DataGridTextColumn Header="Action" Width="150"/>
-                        <DataGridTextColumn Header="Time" Width="*"/>
+                        <DataGridTextColumn Header="Host" Binding="{Binding Host}" Width="150"/>
+                        <DataGridTextColumn Header="Threshold" Binding="{Binding Threshold}" Width="150"/>
+                        <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="150"/>
+                        <DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="150"/>
+                        <DataGridTextColumn Header="Time" Binding="{Binding Time}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <DataGrid x:Name="DatagridMem" HorizontalAlignment="Left" Height="175" Margin="10,10,0,0" Width="752">
@@ -61,11 +61,11 @@
                     </DataGrid.Resources>
                     <!-- Column header text/bindings -->
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Host" Width="150"/>
-                        <DataGridTextColumn Header="Threshold" Width="150"/>
-                        <DataGridTextColumn Header="Value" Width="150"/>
-                        <DataGridTextColumn Header="Action" Width="150"/>
-                        <DataGridTextColumn Header="Time" Width="*"/>
+                        <DataGridTextColumn Header="Host" Binding="{Binding Host}" Width="150"/>
+                        <DataGridTextColumn Header="Threshold" Binding="{Binding Threshold}" Width="150"/>
+                        <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="150"/>
+                        <DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="150"/>
+                        <DataGridTextColumn Header="Time" Binding="{Binding Time}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <DataGrid x:Name="DatagridTCP" HorizontalAlignment="Left" Height="175" Margin="10,10,0,0" Width="752">
@@ -80,11 +80,11 @@
                     </DataGrid.Resources>
                     <!-- Column header text/bindings -->
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Host" Width="150"/>
-                        <DataGridTextColumn Header="Threshold" Width="150"/>
-                        <DataGridTextColumn Header="Value" Width="150"/>
-                        <DataGridTextColumn Header="Action" Width="150"/>
-                        <DataGridTextColumn Header="Time" Width="*"/>
+                        <DataGridTextColumn Header="Host" Binding="{Binding Host}" Width="150"/>
+                        <DataGridTextColumn Header="Threshold" Binding="{Binding Threshold}" Width="150"/>
+                        <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="150"/>
+                        <DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="150"/>
+                        <DataGridTextColumn Header="Time" Binding="{Binding Time}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>

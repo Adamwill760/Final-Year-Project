@@ -1,88 +1,143 @@
-#import custom modules
-Import-Module Logging 
-Import-Module Credentials
-Import-Module Thresholds
-Import-Module Resource-Clearance
-Import-Module Influx-Handler -Force
+function Get-XamlObject {
+		[CmdletBinding()]
+		param(
+			[Parameter(Position = 0,
+				Mandatory = $true,
+				ValuefromPipelineByPropertyName = $true,
+				ValuefromPipeline = $true)]
+			[Alias("FullName")]
+			[System.String[]]$Path
+		)
 
-#Define database IP address
-$DbIP = '192.168.56.103'
+		BEGIN
+		{
+			Set-StrictMode -Version Latest
+			$expandedParams = $null
+			$PSBoundParameters.GetEnumerator() | ForEach-Object { $expandedParams += ' -' + $_.key + ' '; $expandedParams += $_.value }
+			Write-Verbose "Starting: $($MyInvocation.MyCommand.Name)$expandedParams"
+			$output = @{ }
+			Add-Type -AssemblyName presentationframework, presentationcore
+		} #BEGIN
 
-#Define the location to write the log file
-$Logfile = "D:\University work\Third Year\Final Year Project\Product\PerformanceMonitor.log"
+		PROCESS {
+			try
+			{
+				foreach ($xamlFile in $Path)
+				{
+					#Change content of Xaml file to be a set of powershell GUI objects
+					$inputXML = Get-Content -Path $xamlFile -ErrorAction Stop
+					[xml]$xaml = $inputXML -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace 'x:Class=".*?"', '' -replace 'd:DesignHeight="\d*?"', '' -replace 'd:DesignWidth="\d*?"', ''
+					$tempform = [Windows.Markup.XamlReader]::Load((New-Object System.Xml.XmlNodeReader $xaml -ErrorAction Stop))
 
-#Location of the JSON rule files
-$ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\Threshold.json"
-$LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\LogDirs.json"
-$ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\ProcessRules.json"
+					#Grab named objects from tree and put in a flat structure using Xpath
+					$namedNodes = $xaml.SelectNodes("//*[@*[contains(translate(name(.),'n','N'),'Name')]]")
+					$namedNodes | ForEach-Object {
+						$output.Add($_.Name, $tempform.FindName($_.Name))
+					} #foreach-object
+				} #foreach xamlpath
+			} #try
+			catch
+			{
+				throw $error[0]
+			} #catch
+		} #PROCESS
 
+		END
+		{
+			Write-Output $output
+			Write-Verbose "Finished: $($MyInvocation.Mycommand)"
+		} #END
+	}
 
-#Check connection to DB is live 
-if (Test-Connection $DbIP)
-{
-  Write-Log -Logfile $Logfile -Logstring "##### LOADING GUI #####"
+$XamlPath = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\PerformanceMonitor.xaml"
 
-  ### DEFINE GUI OBJECTS ##
-  #
-  #Add-Type -AssemblyName presentationframework, presentationcore
-  #$wpf = @{} 
-  #$inputxml = get-content "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\PerformanceMonitor.xaml" 
-  #$CleanXml = $inputxml -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace 'x:Class=".*?"','' -replace 'd:DesignHeight="\d*?"','' -replace 'd:DesignWidth="\d*?"',''
-  #[xml]$Xaml = $CleanXml
-  #$reader = New-Object System.Xml.XmlNodeReader $Xaml 
-  #$tempform = [windows.markup.xamlreader]::load($reader) 
-  #$namednodes = $xaml.SelectNodes("//*[@*[contains(translate(name(.),'n','N'),'Name')]]")
-  #$namedNodes | ForEach-Object {$wpf.Add($_.Name, $tempform.FindName($_.Name))}
-  #
-  ### END GUI DEFINITION ##
+$script:syncHash = [hashtable]::Synchronized(@{ })
 
+$script:syncHash = Get-item -Path $XamlPath | Get-XamlObject
+
+$Runspace =[runspacefactory]::CreateRunspace()
+
+$powershell = [powershell]::Create()
+
+$powershell.runspace = $Runspace
+
+$Runspace.Open()
+
+$runspace.SessionStateProxy.SetVariable("syncHash",$syncHash)
+
+$powershell.AddScript({
+  #import custom modules
+  Import-Module Logging 
+  Import-Module Credentials
+  Import-Module Thresholds
+  Import-Module Resource-Clearance
+  Import-Module Influx-Handler
+  
+  #Define database IP address
+  $DbIP = '192.168.56.103'
+  
+  #Define the location to write the log file
+  $Logfile = "D:\University work\Third Year\Final Year Project\Product\PerformanceMonitor.log"
+  
+  #Location of the JSON rule files
+  $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\Threshold.json"
+  $LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\LogDirs.json"
+  $ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\ProcessRules.json"
+  $logdir = "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product\Logs"
+  
+  #Check connection to DB is live 
+  if (Test-Connection $DbIP)
+  {
   write-log -logfile $logfile -logstring "CONNECTION TO $DbIP ESTABLISHED"
 
   $credentials = Get-PScredentials
 
+  #region Gather hostnames
   write-log -logfile $logfile -logstring "##### GATHERING HOSTNAMES #####"
 
   $Influxhosts = Get-Hostnames -DbIP $DbIP
 
   write-log -logfile $logfile -logstring "##### HOSTNAMES GATHERED #####"
+  #endregion
 
-  #### GATHER ALERT THRESHOLDS ####
+  #region GATHER ALERT THRESHOLDS 
   write-log -logfile $logfile -logstring "##### GATHERING ALERT THRESHOLDS #####"
 
   #set thresholds for each host in array from relative json
   foreach($Influxhost in $Influxhosts)
   {
-    $Influxhost.CThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "C" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.CThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "C" -Computername $Influxhost.Name -logfile $logfile
     
     if($Influxhost.DThreshold)
     {
-      $Influxhost.DThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "D" -Computername $Influxhost.hostname -logfile $logfile
+      $Influxhost.DThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -FreeSpace -name "D" -Computername $Influxhost.Name -logfile $logfile
     }
     
-    $Influxhost.CPUThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -CPU -name "Processor Time" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.CPUThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -CPU -name "Processor Time" -Computername $Influxhost.Name -logfile $logfile
     
-    $Influxhost.MemoryThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -Memory -name "Available Bytes" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.MemoryThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -Memory -name "Available Bytes" -Computername $Influxhost.Name -logfile $logfile
     
-    $Influxhost.TCPThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -TCP -name "Connections Established" -Computername $Influxhost.hostname -logfile $logfile
+    $Influxhost.TCPThreshold = Get-Threshold -ThresholdsFile $ThresholdsFile -TCP -name "Connections Established" -Computername $Influxhost.Name -logfile $logfile
   }
 
   write-log -logfile $logfile -logstring "##### ALERT THRESHOLDS SET #####"
+  #endregion
 
   #### BEGINNING OF MAIN LOOP - FUNCTIONS LOADED - THRESHOLD CHECKS CARRIED OUT HERE ####
-  
-  While($true)
+
+  While($true) 
   {
     foreach($Influxhost in $Influxhosts)
     {
       #set hostname to query in influxDB
-      $Name = $Influxhost.hostname
+      $Name = $Influxhost.Name
 
       write-log -logfile $logfile -logstring "##### BEGINNING $NAME ASSESSMENT #####"
 
       ##### QUERYING DATABASE
       write-log -logfile $logfile -logstring "##### RUNNING DATABASE QUERIES #####"
       
-      #Set database values for influxhost instance
+      #region Set database values for influxhost instance
       try{$influxhost.CValue = Query-Database -DbIP $DbIP -FreeSpace -SELECT "LAST(`"% Free Space`"), instance" -WHERE "instance = 'C:' AND host = '$name'" -ErrorAction SilentlyContinue}
       catch
       {
@@ -120,10 +175,12 @@ if (Test-Connection $DbIP)
         write-log -logfile $logfile -logstring "Database could not be queried TCP connection value not attained for $name"
         $influxhost.TCPvalue = 0
       }
-    
-      write-log -logfile $logfile -logstring "##### DATABASE QUERIES RAN #####"
+
       
-      ##### ASSESSING THRESHOLDS
+      write-log -logfile $logfile -logstring "##### DATABASE QUERIES RAN #####"
+      #endregion
+      
+      #region ASSESSING THRESHOLDS
       write-log -logfile $logfile -logstring "##### ASSESSING THRESHOLDS #####"
 
       #Check C against threshold values
@@ -144,9 +201,12 @@ if (Test-Connection $DbIP)
           Clear-Drive -RootDirectory "C:\" -LogRulesJson $Rules -Logfile $Logfile
         }
         #move log file back to host PC
-        Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -force
+        Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination $logdir -force
+
+        $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Add($Influxhost)})
 
         $Influxhost.CdriveActionTaken = $true
+
         }
         else #if action already taken print to log
         {
@@ -159,7 +219,10 @@ if (Test-Connection $DbIP)
 
         if($Influxhost.CdriveActionTaken -eq $true) #once under threshold again reset automated action to false
         {
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Remove($Influxhost)})
+          
           $Influxhost.CdriveActionTaken = $false
+          
           write-log -logfile $logfile -logstring "C drive action taken set to false"
         }
       }
@@ -185,8 +248,10 @@ if (Test-Connection $DbIP)
               }
           
             #move log file back to host PC
-            Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -Force
-          
+            Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination $logdir -Force
+            
+            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Add($Influxhost)})
+            
             $Influxhost.DdriveActionTaken = $true
           }
           else #if action already taken print to log
@@ -200,7 +265,10 @@ if (Test-Connection $DbIP)
 
           if($Influxhost.DdriveActionTaken -eq $true) #once under threshold again reset automated action to false
           {
+            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Remove($Influxhost)})
+            
             $Influxhost.DdriveActionTaken = $false
+            
             write-log -logfile $logfile -logstring "D drive action taken set to false"
           }
         }
@@ -225,7 +293,9 @@ if (Test-Connection $DbIP)
           }
 
           #move log file back to host PC
-          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Memory.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -Force
+          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Memory.log" -Destination $logdir -Force
+          
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridMem.Items.Add($Influxhost)})
           
           $Influxhost.MemoryActionTaken = $true
         }
@@ -240,7 +310,10 @@ if (Test-Connection $DbIP)
         
         if($Influxhost.MemoryActionTaken -eq $true)
         {
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridMem.Items.Remove($Influxhost)})
+          
           $Influxhost.MemoryActionTaken = $false
+
           write-log -logfile $logfile -logstring "Memory action taken reset to false"
         }
       }
@@ -264,7 +337,9 @@ if (Test-Connection $DbIP)
           }
 
           #move log file back to host PC
-          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CPU.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -force
+          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CPU.log" -Destination $logdir -force
+
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridCPU.Items.Add($Influxhost)})
 
           $Influxhost.CPUActionTaken = $true
         }
@@ -279,7 +354,10 @@ if (Test-Connection $DbIP)
 
         if($Influxhost.CPUActionTaken -eq $true)
         {
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridCPU.Items.Remove($Influxhost)})
+          
           $Influxhost.CPUActionTaken = $false
+
           write-log -logfile $logfile -logstring "CPU action taken reset to false"
         }
       }
@@ -302,9 +380,11 @@ if (Test-Connection $DbIP)
           }
 
           #move log file back to host PC
-          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-TCP.log" -Destination "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product" -force
+          Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-TCP.log" -Destination $logdir -force
 
-         $Influxhost.TCPActionTaken = $true
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridTCP.Items.Add($Influxhost)})
+
+          $Influxhost.TCPActionTaken = $true
        }
        else
        {
@@ -316,16 +396,30 @@ if (Test-Connection $DbIP)
         write-log -logfile $logfile -logstring "TCP connections established under threshold at $($Influxhost.TCPValue)"
         if($Influxhost.TCPActionTaken -eq $true)
         {
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridTCP.Items.Remove($Influxhost)})
+          
           $Influxhost.TCPActionTaken = $false
+
+          Write-Log -Logfile $Logfile "TCP action taken reset to false"
         }
       }
+
+      #endregion
       
       ##### LOOP COMPLETE SLEEPING 30 UNTIL NEXT LOOP
-      write-log -logfile $logfile -logstring "##### $($Influxhost.Hostname) ASSESED #####"
+      write-log -logfile $logfile -logstring "##### $($Influxhost.Name) ASSESED #####"
     }
   }
 }
-else
-{
+  else
+  {
   write-log -logfile $logfile -logstring "Database not reachable please resolve connectivity issues"
 }
+  
+}) #end AddScript
+
+$asyncobject = $powershell.BeginInvoke()
+
+$script:syncHash.PerformanceMonitorWindow.ShowDialog()
+
+
