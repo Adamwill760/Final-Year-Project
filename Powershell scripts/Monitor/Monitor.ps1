@@ -1,60 +1,15 @@
-function Get-XamlObject {
-		[CmdletBinding()]
-		param(
-			[Parameter(Position = 0,
-				Mandatory = $true,
-				ValuefromPipelineByPropertyName = $true,
-				ValuefromPipeline = $true)]
-			[Alias("FullName")]
-			[System.String[]]$Path
-		)
-
-		BEGIN
-		{
-			Set-StrictMode -Version Latest
-			$expandedParams = $null
-			$PSBoundParameters.GetEnumerator() | ForEach-Object { $expandedParams += ' -' + $_.key + ' '; $expandedParams += $_.value }
-			Write-Verbose "Starting: $($MyInvocation.MyCommand.Name)$expandedParams"
-			$output = @{ }
-			Add-Type -AssemblyName presentationframework, presentationcore
-		} #BEGIN
-
-		PROCESS {
-			try
-			{
-				foreach ($xamlFile in $Path)
-				{
-					#Change content of Xaml file to be a set of powershell GUI objects
-					$inputXML = Get-Content -Path $xamlFile -ErrorAction Stop
-					[xml]$xaml = $inputXML -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace 'x:Class=".*?"', '' -replace 'd:DesignHeight="\d*?"', '' -replace 'd:DesignWidth="\d*?"', ''
-					$tempform = [Windows.Markup.XamlReader]::Load((New-Object System.Xml.XmlNodeReader $xaml -ErrorAction Stop))
-
-					#Grab named objects from tree and put in a flat structure using Xpath
-					$namedNodes = $xaml.SelectNodes("//*[@*[contains(translate(name(.),'n','N'),'Name')]]")
-					$namedNodes | ForEach-Object {
-						$output.Add($_.Name, $tempform.FindName($_.Name))
-					} #foreach-object
-				} #foreach xamlpath
-			} #try
-			catch
-			{
-				throw $error[0]
-			} #catch
-		} #PROCESS
-
-		END
-		{
-			Write-Output $output
-			Write-Verbose "Finished: $($MyInvocation.Mycommand)"
-		} #END
-	}
+## load gui 
+Import-Module XamlGui -force
 
 $XamlPath = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\PerformanceMonitor.xaml"
 
+## set sync hash to use across runspaces
 $script:syncHash = [hashtable]::Synchronized(@{ })
 
+# return item list from xaml file
 $script:syncHash = Get-item -Path $XamlPath | Get-XamlObject
 
+#initialize seperate runspace/attach powershell
 $Runspace =[runspacefactory]::CreateRunspace()
 
 $powershell = [powershell]::Create()
@@ -63,8 +18,10 @@ $powershell.runspace = $Runspace
 
 $Runspace.Open()
 
+#sync hash table across runspace
 $runspace.SessionStateProxy.SetVariable("syncHash",$syncHash)
 
+#define script to be ran in background
 $powershell.AddScript({
   #import custom modules
   Import-Module Logging 
@@ -200,6 +157,8 @@ $powershell.AddScript({
 
           Clear-Drive -RootDirectory "C:\" -LogRulesJson $Rules -Logfile $Logfile
         }
+        $Influxhost.CAlerttime = get-date -Format g
+
         #move log file back to host PC
         Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination $logdir -force
 
@@ -246,7 +205,9 @@ $powershell.AddScript({
           
               Clear-Drive -RootDirectory "D:\" -LogRulesJson $Rules -Logfile $Logfile
               }
-          
+
+            $Influxhost.DAlerttime = get-date -Format g
+
             #move log file back to host PC
             Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination $logdir -Force
             
@@ -291,6 +252,7 @@ $powershell.AddScript({
 
           Clear-Resource -Memory -ProcessesRulesJson $Rules -logfile $Logfile
           }
+          $Influxhost.MemoryAlerttime = get-date -Format g
 
           #move log file back to host PC
           Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Memory.log" -Destination $logdir -Force
@@ -336,6 +298,8 @@ $powershell.AddScript({
             Clear-Resource -CPU -ProcessesRulesJson $Rules -logfile $Logfile
           }
 
+          $Influxhost.CPUAlerttime = get-date -Format g
+
           #move log file back to host PC
           Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CPU.log" -Destination $logdir -force
 
@@ -378,6 +342,7 @@ $powershell.AddScript({
 
             Clear-TCPConnections -logfile $Logfile
           }
+          $Influxhost.TCPAlerttime = get-date -Format g
 
           #move log file back to host PC
           Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-TCP.log" -Destination $logdir -force
