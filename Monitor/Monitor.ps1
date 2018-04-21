@@ -1,7 +1,7 @@
 ## load gui 
 Import-Module XamlGui -force
 
-$XamlPath = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\PerformanceMonitor.xaml"
+$XamlPath = "D:\University work\Third Year\Final Year Project\Product\Monitor\Xaml GUI\PerformanceMonitor.xaml"
 
 ## set sync hash to use across runspaces
 $script:syncHash = [hashtable]::Synchronized(@{ })
@@ -34,12 +34,12 @@ $powershell.AddScript({
   $DbIP = '192.168.56.103'
   
   #Define the location to write the log file
-  $Logfile = "D:\University work\Third Year\Final Year Project\Product\PerformanceMonitor.log"
+  $Logfile = "D:\University work\Third Year\Final Year Project\Product\Logs\Master"
   
   #Location of the JSON rule files
-  $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\Threshold.json"
-  $LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\LogDirs.json"
-  $ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Powershell scripts\Monitor\JSON\ProcessRules.json"
+  $ThresholdsFile = "D:\University work\Third Year\Final Year Project\Product\Monitor\JSON Rules\Threshold.json"
+  $LogRulesJson = "D:\University work\Third Year\Final Year Project\Product\Monitor\JSON Rules\LogDirs.json"
+  $ProcessesRulesJson = "D:\University work\Third Year\Final Year Project\Product\Monitor\JSON Rules\ProcessRules.json"
   $logdir = "\\Adam-PC\D`$\University work\Third Year\Final Year Project\Product\Logs"
   
   #Check connection to DB is live 
