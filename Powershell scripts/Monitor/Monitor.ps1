@@ -203,7 +203,7 @@ $powershell.AddScript({
         #move log file back to host PC
         Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-CDrive.log" -Destination $logdir -force
 
-        $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Add($Influxhost)})
+        $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDiskC.Items.Add($Influxhost)})
 
         $Influxhost.CdriveActionTaken = $true
 
@@ -219,7 +219,7 @@ $powershell.AddScript({
 
         if($Influxhost.CdriveActionTaken -eq $true) #once under threshold again reset automated action to false
         {
-          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Remove($Influxhost)})
+          $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDiskC.Items.Remove($Influxhost)})
           
           $Influxhost.CdriveActionTaken = $false
           
@@ -250,7 +250,7 @@ $powershell.AddScript({
             #move log file back to host PC
             Move-Item -Path "\\$name\C`$\Performance Monitor\Logs\$name-Ddrive.log" -Destination $logdir -Force
             
-            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Add($Influxhost)})
+            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDiskD.Items.Add($Influxhost)})
             
             $Influxhost.DdriveActionTaken = $true
           }
@@ -265,7 +265,7 @@ $powershell.AddScript({
 
           if($Influxhost.DdriveActionTaken -eq $true) #once under threshold again reset automated action to false
           {
-            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDisk.Items.Remove($Influxhost)})
+            $synchash.PerformanceMonitorWindow.Dispatcher.Invoke([action]{$synchash.DatagridDiskD.Items.Remove($Influxhost)})
             
             $Influxhost.DdriveActionTaken = $false
             

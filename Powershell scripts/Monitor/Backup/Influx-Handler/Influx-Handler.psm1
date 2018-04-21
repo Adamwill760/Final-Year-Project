@@ -1,24 +1,30 @@
 ﻿class InfluxHost
 {
   [string]$Name
-  [bool]$CdriveActionTaken
-  [bool]$MemoryActionTaken
-  [bool]$CPUActionTaken
-  [bool]$TCPActionTaken
+
   [int]$CThreshold
-  [int]$CPUThreshold
-  [int]$MemoryThreshold
-  [int]$TCPThreshold
   [int]$CValue
-  [int]$CPUValue
+  [string]$CAlerttime
+  [bool]$CdriveActionTaken
+  [int]$MemoryThreshold
   [int]$MemoryValue
+  [string]$MemoryAlerttime
+  [bool]$MemoryActionTaken
+  [int]$CPUThreshold
+  [int]$CPUValue
+  [string]$CPUAlerttime
+  [bool]$CPUActionTaken
+  [int]$TCPThreshold
   [int]$TCPValue
+  [string]$TCPAlerttime
+  [bool]$TCPActionTaken
 }
 
 class InfluxDHost : Influxhost
 {
   [int]$DThreshold
   [int]$DValue
+  [string]$DAlerttime
   [bool]$DdriveActionTaken
 }
 
