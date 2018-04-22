@@ -1,42 +1,4 @@
 {
-  "Adam-PC":[
-    {
-      "DiskThresholds":[
-        {
-          "name":"D",
-          "value":"20"
-        },
-        {
-          "name":"C",
-          "value":"10"
-        }
-      ]
-    },
-    {
-      "MemoryThresholds":[
-        {
-          "name":"Available Bytes",
-          "value":"2000"
-        }
-      ]
-    },
-    {
-      "CPUThresholds":[
-        {
-          "name":"Processor Time",
-          "value":"80"
-        }
-      ]
-    },
-    {
-      "TCPThresholds":[
-        {
-          "name":"Connections Established",
-          "value":"50"
-        }
-      ]
-    }
-  ],
   "Windows-VM-01":[
     {
       "DiskThresholds":[
@@ -67,6 +29,40 @@
         {
           "name":"Connections Established",
           "value":"100"
+        }
+      ]
+    }
+  ],
+  "Windows-VM-02":[
+    {
+      "DiskThresholds":[
+        {
+          "name":"C",
+          "value":"20"
+        }
+      ]
+    },
+    {
+      "MemoryThresholds":[
+        {
+          "name":"Available Bytes",
+          "value":"1000"
+        }
+      ]
+    },
+    {
+      "CPUThresholds":[
+        {
+          "name":"Processor Time",
+          "value":"10"
+        }
+      ]
+    },
+    {
+      "TCPThresholds":[
+        {
+          "name":"Connections Established",
+          "value":"1"
         }
       ]
     }
